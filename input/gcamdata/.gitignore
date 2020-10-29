@@ -1,0 +1,31 @@
+# Project files
+.Rproj.user
+.Rhistory
+.RData
+..Rcheck/
+.Rapp.history
+
+# Remake files
+.remake/
+
+# Files produced by data system
+outputs/
+xml/
+sample-generator/outputs/
+R/*.html
+Rplots.pdf
+
+# Vignette files
+inst/doc
+
+# Proprietary files
+IEA_EnergyBalances_2019.csv.gz
+
+# OS files
+.DS_Store
+
+# emacs backup files
+*~
+
+# junk produced when developing the python scripts
+*pycache*
