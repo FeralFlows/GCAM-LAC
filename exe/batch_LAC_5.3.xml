@@ -67,7 +67,7 @@ This file must be referenced in the configuration file of interest, with batch r
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_demand_input.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value>
         <!-- Final Energy-->
         <Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value>
         <!-- Electricity -->
@@ -112,7 +112,7 @@ This file must be referenced in the configuration file of interest, with batch r
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_demand_input.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value>
         <!-- Final Energy-->
         <Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value>
         <!-- Electricity -->
