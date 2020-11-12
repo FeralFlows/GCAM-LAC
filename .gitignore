@@ -79,3 +79,4 @@ cvs/
 output/
 input/gcamdata/inst/extdata/socioeconomics
 libs/
+exe/batch-csv-out.csv
