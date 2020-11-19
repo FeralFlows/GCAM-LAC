@@ -1,80 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scenario>
+<?xml version="1.0" encoding="UTF-8"?><scenario>
     <world>
         <region name="Africa_Eastern">
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0734052834850584</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.0938003660133779</fixedOutput>
+                            <fixedOutput>0.0976194860809258</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.114852608314455</fixedOutput>
+                            <fixedOutput>0.121162878561937</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.136426922667513</fixedOutput>
+                            <fixedOutput>0.145383850354651</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.158491213019596</fixedOutput>
+                            <fixedOutput>0.170597913767284</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.200602167784659</fixedOutput>
+                            <fixedOutput>0.21797890684293</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.243714082192718</fixedOutput>
+                            <fixedOutput>0.267101400911031</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.287571252952829</fixedOutput>
+                            <fixedOutput>0.317767269271947</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.331989464875308</fixedOutput>
+                            <fixedOutput>0.369789367772015</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.376844253225544</fixedOutput>
+                            <fixedOutput>0.422979508182025</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.422011585788485</fixedOutput>
+                            <fixedOutput>0.477144515286111</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.467265752882447</fixedOutput>
+                            <fixedOutput>0.532062787252632</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.512424809848699</fixedOutput>
+                            <fixedOutput>0.587548708787384</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.557319057364953</fixedOutput>
+                            <fixedOutput>0.643431056856236</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.601782955408953</fixedOutput>
+                            <fixedOutput>0.699558803648739</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.645643669836082</fixedOutput>
+                            <fixedOutput>0.755761519219806</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.688712058419518</fixedOutput>
+                            <fixedOutput>0.811806099245653</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -98,76 +92,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.06341557084138</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.0664776136197125</fixedOutput>
+                            <fixedOutput>0.0673299019084893</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.0695350038053818</fixedOutput>
+                            <fixedOutput>0.0707227812160468</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.0725397718345934</fixedOutput>
+                            <fixedOutput>0.0739640369241477</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.0754898047116891</fixedOutput>
+                            <fixedOutput>0.0771102344053267</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.0813795588674311</fixedOutput>
+                            <fixedOutput>0.0832451243500315</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.0873037952265183</fixedOutput>
+                            <fixedOutput>0.0894242515187745</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.0932072151524317</fixedOutput>
+                            <fixedOutput>0.0955565594477709</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.0990770422709328</fixedOutput>
+                            <fixedOutput>0.101617632735658</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.104925443860413</fixedOutput>
+                            <fixedOutput>0.107622008475035</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.110761538840177</fixedOutput>
+                            <fixedOutput>0.113579057815295</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.116562149515358</fixedOutput>
+                            <fixedOutput>0.119447611486366</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.122328275180247</fixedOutput>
+                            <fixedOutput>0.12522110349472</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.128062204980513</fixedOutput>
+                            <fixedOutput>0.130896256624604</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.13376970850898</fixedOutput>
+                            <fixedOutput>0.136474957039232</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.139453636470379</fixedOutput>
+                            <fixedOutput>0.141954656676574</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.14509956490916</fixedOutput>
+                            <fixedOutput>0.147309674162985</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -191,76 +180,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.153588138911025</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.16348836702909</fixedOutput>
+                            <fixedOutput>0.162904263938685</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.173263434952534</fixedOutput>
+                            <fixedOutput>0.1727748141124</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.182993932676368</fixedOutput>
+                            <fixedOutput>0.18301273775719</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.192724270139691</fixedOutput>
+                            <fixedOutput>0.193373867262291</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.211015841732158</fixedOutput>
+                            <fixedOutput>0.212413734692779</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.229173031549949</fixedOutput>
+                            <fixedOutput>0.231370627194229</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.24723577669696</fixedOutput>
+                            <fixedOutput>0.250365297434202</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.265169092427703</fixedOutput>
+                            <fixedOutput>0.269376165727025</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.282899251836637</fixedOutput>
+                            <fixedOutput>0.288303321945615</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.300354810343989</fixedOutput>
+                            <fixedOutput>0.307056563013082</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.317523982882944</fixedOutput>
+                            <fixedOutput>0.325663403757575</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.334359114070482</fixedOutput>
+                            <fixedOutput>0.344074010737326</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.350801770271894</fixedOutput>
+                            <fixedOutput>0.362218722290775</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.366794689899171</fixedOutput>
+                            <fixedOutput>0.380014594947743</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.382287455016583</fixedOutput>
+                            <fixedOutput>0.397393725561891</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.39724750596893</fixedOutput>
+                            <fixedOutput>0.414352202470804</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -284,76 +268,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.140413585901897</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.167282779487371</fixedOutput>
+                            <fixedOutput>0.16785965636497</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.193735687935885</fixedOutput>
+                            <fixedOutput>0.194832563007965</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.219779218967175</fixedOutput>
+                            <fixedOutput>0.221779225712372</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.245591072638909</fixedOutput>
+                            <fixedOutput>0.248879684179452</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.296844816584373</fixedOutput>
+                            <fixedOutput>0.302000489388502</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.347443804881961</fixedOutput>
+                            <fixedOutput>0.354435649035671</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.397269467212801</fixedOutput>
+                            <fixedOutput>0.406447845152388</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.446174160558442</fixedOutput>
+                            <fixedOutput>0.45788254819166</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.49398666292383</fixedOutput>
+                            <fixedOutput>0.50826185972555</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.540529400289255</fixedOutput>
+                            <fixedOutput>0.557109699626255</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.585654316358891</fixedOutput>
+                            <fixedOutput>0.604516944155155</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.629230401610381</fixedOutput>
+                            <fixedOutput>0.650300532664255</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.67113440092916</fixedOutput>
+                            <fixedOutput>0.69421307152339</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.711241652289584</fixedOutput>
+                            <fixedOutput>0.735940882749536</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.749395507869074</fixedOutput>
+                            <fixedOutput>0.77519456334323</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.785433851366779</fixedOutput>
+                            <fixedOutput>0.811888281177251</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -377,76 +356,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.122049195340377</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.122847043283529</fixedOutput>
+                            <fixedOutput>0.124544476051118</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.123324836589649</fixedOutput>
+                            <fixedOutput>0.126055247654457</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.122991154332522</fixedOutput>
+                            <fixedOutput>0.127200861839712</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.122047338742034</fixedOutput>
+                            <fixedOutput>0.127880915842857</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.123098029834641</fixedOutput>
+                            <fixedOutput>0.130355977924148</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.124631984936175</fixedOutput>
+                            <fixedOutput>0.13260237283389</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.126000705673604</fixedOutput>
+                            <fixedOutput>0.134400739852162</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.127113804014357</fixedOutput>
+                            <fixedOutput>0.135710580082169</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.128164235166116</fixedOutput>
+                            <fixedOutput>0.136578318894475</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.129285708425565</fixedOutput>
+                            <fixedOutput>0.13703258381431</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.130280398418453</fixedOutput>
+                            <fixedOutput>0.136978032173476</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.131179421915312</fixedOutput>
+                            <fixedOutput>0.136387655624641</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.132054314266628</fixedOutput>
+                            <fixedOutput>0.135245945398471</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.133015540470686</fixedOutput>
+                            <fixedOutput>0.133556484576117</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.134114651996776</fixedOutput>
+                            <fixedOutput>0.13131670722829</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.13525953012093</fixedOutput>
+                            <fixedOutput>0.128472989850769</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -470,76 +444,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.139630606045127</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.145346487911539</fixedOutput>
+                            <fixedOutput>0.147529391029243</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.151171721375795</fixedOutput>
+                            <fixedOutput>0.15401256471474</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.156943892456036</fixedOutput>
+                            <fixedOutput>0.159887164396456</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.162659602055164</fixedOutput>
+                            <fixedOutput>0.165441957393903</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.169947578662502</fixedOutput>
+                            <fixedOutput>0.172550942348116</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.177539303195858</fixedOutput>
+                            <fixedOutput>0.180131083669324</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.185250751031438</fixedOutput>
+                            <fixedOutput>0.187759655995307</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.193071824472354</fixedOutput>
+                            <fixedOutput>0.195376302947083</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.201085035074207</fixedOutput>
+                            <fixedOutput>0.203115186428975</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.20934793196167</fixedOutput>
+                            <fixedOutput>0.211067688466684</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.217801690026603</fixedOutput>
+                            <fixedOutput>0.21910361126396</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.226467584625097</fixedOutput>
+                            <fixedOutput>0.227237542695592</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.235378640597076</fixedOutput>
+                            <fixedOutput>0.235507644106881</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.244582689598945</fixedOutput>
+                            <fixedOutput>0.243981104568382</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.254102721094265</fixedOutput>
+                            <fixedOutput>0.25269204835896</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.263920322546973</fixedOutput>
+                            <fixedOutput>0.261586663732332</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -563,76 +532,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>1.49955422386235</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>1.54855314133885</fixedOutput>
+                            <fixedOutput>1.55399261350633</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>1.59694070034359</fixedOutput>
+                            <fixedOutput>1.60431851869154</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>1.64567471634368</fixedOutput>
+                            <fixedOutput>1.65409596163835</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>1.69525531389903</fixedOutput>
+                            <fixedOutput>1.70600645313401</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>1.76512966242395</fixedOutput>
+                            <fixedOutput>1.77931466391049</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>1.83522856001841</fixedOutput>
+                            <fixedOutput>1.85355722070505</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>1.90628580958553</fixedOutput>
+                            <fixedOutput>1.92981815971318</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>1.97827797924482</fixedOutput>
+                            <fixedOutput>2.00852293554725</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>2.0508530710301</fixedOutput>
+                            <fixedOutput>2.08972389801437</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>2.12376351235301</fixedOutput>
+                            <fixedOutput>2.17353378577545</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>2.19730323187151</fixedOutput>
+                            <fixedOutput>2.26016131017736</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>2.27144356331119</fixedOutput>
+                            <fixedOutput>2.34944871721124</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>2.34609998560974</fixedOutput>
+                            <fixedOutput>2.4411802704422</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>2.42119233591685</fixedOutput>
+                            <fixedOutput>2.53516871929321</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>2.4967043674468</fixedOutput>
+                            <fixedOutput>2.63155132127183</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>2.57265317006393</fixedOutput>
+                            <fixedOutput>2.73060925691427</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -656,76 +620,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>1.32336308525169</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>1.3817980598014</fixedOutput>
+                            <fixedOutput>1.38781618456565</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>1.44000524416879</fixedOutput>
+                            <fixedOutput>1.44996302723985</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>1.49791082256109</fixedOutput>
+                            <fixedOutput>1.512165342409</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>1.55574712590707</fixedOutput>
+                            <fixedOutput>1.57427141537632</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>1.5972009603235</fixedOutput>
+                            <fixedOutput>1.62013109167191</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>1.63848857175852</fixedOutput>
+                            <fixedOutput>1.66646653158342</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>1.67938845224792</fixedOutput>
+                            <fixedOutput>1.71267298545488</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>1.71984521629541</fixedOutput>
+                            <fixedOutput>1.75867109786143</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>1.75987849270686</fixedOutput>
+                            <fixedOutput>1.80462305220835</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>1.79948514973253</fixedOutput>
+                            <fixedOutput>1.85062972223182</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>1.83856013819249</fixedOutput>
+                            <fixedOutput>1.89647474310861</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>1.87707082218035</fixedOutput>
+                            <fixedOutput>1.94209432286463</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>1.91499641731206</fixedOutput>
+                            <fixedOutput>1.98745165180708</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>1.95234409333759</fixedOutput>
+                            <fixedOutput>2.03255764830894</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>1.98907032391245</fixedOutput>
+                            <fixedOutput>2.07740276116956</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>2.02510394709845</fixedOutput>
+                            <fixedOutput>2.12191812723243</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -749,76 +708,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0850263941906117</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.0840007212002977</fixedOutput>
+                            <fixedOutput>0.0886176534663025</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.0831246496793143</fixedOutput>
+                            <fixedOutput>0.0894371307290896</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.0819927230188842</fixedOutput>
+                            <fixedOutput>0.0893278301903102</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.0804744980245617</fixedOutput>
+                            <fixedOutput>0.0884216437751243</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.081008410796083</fixedOutput>
+                            <fixedOutput>0.0894944977669032</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.0817461706056605</fixedOutput>
+                            <fixedOutput>0.090590787709444</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.0823498605997672</fixedOutput>
+                            <fixedOutput>0.0911422311527984</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.0827567166721667</fixedOutput>
+                            <fixedOutput>0.0910155157823042</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.0830703502305061</fixedOutput>
+                            <fixedOutput>0.0903293783104915</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.0833671376651372</fixedOutput>
+                            <fixedOutput>0.0891588951736841</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.0835936999815966</fixedOutput>
+                            <fixedOutput>0.08732217026723</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.0838223196529143</fixedOutput>
+                            <fixedOutput>0.084824268609992</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.0841486743901884</fixedOutput>
+                            <fixedOutput>0.0817048212094536</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.0846824729144834</fixedOutput>
+                            <fixedOutput>0.078030199484803</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.0854746934246802</fixedOutput>
+                            <fixedOutput>0.0738121142876675</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.086505447735835</fixedOutput>
+                            <fixedOutput>0.0689565021303047</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -842,76 +796,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.236325112158061</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.254908274313529</fixedOutput>
+                            <fixedOutput>0.255362596332827</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.273002175477679</fixedOutput>
+                            <fixedOutput>0.274179024880006</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.290161620229945</fixedOutput>
+                            <fixedOutput>0.292827616229492</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.306555124076943</fixedOutput>
+                            <fixedOutput>0.311039038605616</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.3247897815409</fixedOutput>
+                            <fixedOutput>0.330966724863696</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.343320401060922</fixedOutput>
+                            <fixedOutput>0.350524298514937</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.361541993009515</fixedOutput>
+                            <fixedOutput>0.369550172970774</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.379356699654872</fixedOutput>
+                            <fixedOutput>0.38799995192712</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.396954214240972</fixedOutput>
+                            <fixedOutput>0.405890351471931</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.414473631559337</fixedOutput>
+                            <fixedOutput>0.423227171786354</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.431701034446982</fixedOutput>
+                            <fixedOutput>0.439905024469687</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.448656804814064</fixedOutput>
+                            <fixedOutput>0.455858932980842</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.465409308271284</fixedOutput>
+                            <fixedOutput>0.471032105165686</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.482073691897382</fixedOutput>
+                            <fixedOutput>0.485381727894554</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.498713987106788</fixedOutput>
+                            <fixedOutput>0.498884083759537</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.515218736692085</fixedOutput>
+                            <fixedOutput>0.511474187847695</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -935,76 +884,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>2.69728211430468</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>2.7981152687978</fixedOutput>
+                            <fixedOutput>2.75419287601567</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>2.89444403481806</fixedOutput>
+                            <fixedOutput>2.84141988418968</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>2.99316113538289</fixedOutput>
+                            <fixedOutput>2.94432320982355</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>3.09489674991616</fixedOutput>
+                            <fixedOutput>3.05797205609009</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>3.25392076671601</fixedOutput>
+                            <fixedOutput>3.23191252705717</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>3.40460067929189</fixedOutput>
+                            <fixedOutput>3.39772244861257</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>3.55399950090059</fixedOutput>
+                            <fixedOutput>3.5667827904153</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>3.70250041799898</fixedOutput>
+                            <fixedOutput>3.74101628896392</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>3.84723975370356</fixedOutput>
+                            <fixedOutput>3.917477751645</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>3.98617879691381</fixedOutput>
+                            <fixedOutput>4.09424697820477</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>4.12152015862773</fixedOutput>
+                            <fixedOutput>4.27457555897507</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>4.25243442590652</fixedOutput>
+                            <fixedOutput>4.45790911906944</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>4.3775953869782</fixedOutput>
+                            <fixedOutput>4.6430634032697</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>4.49536648868337</fixedOutput>
+                            <fixedOutput>4.82825450345916</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>4.60499773807136</fixedOutput>
+                            <fixedOutput>5.01273899779844</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>4.70722301733514</fixedOutput>
+                            <fixedOutput>5.19819564528972</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1028,76 +972,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.166760006586663</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.20633623545823</fixedOutput>
+                            <fixedOutput>0.208228934754782</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.266856666899447</fixedOutput>
+                            <fixedOutput>0.269194058339117</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.291631491003771</fixedOutput>
+                            <fixedOutput>0.292286247576937</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.304522660615289</fixedOutput>
+                            <fixedOutput>0.302447234549708</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.32084994244591</fixedOutput>
+                            <fixedOutput>0.316046178665885</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.337576310531824</fixedOutput>
+                            <fixedOutput>0.330955396231937</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.355557404740009</fixedOutput>
+                            <fixedOutput>0.346804322625977</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.374969060718365</fixedOutput>
+                            <fixedOutput>0.36371531902917</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.39564212169124</fixedOutput>
+                            <fixedOutput>0.382041825706889</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.417492288445464</fixedOutput>
+                            <fixedOutput>0.402084859151615</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.440928159694408</fixedOutput>
+                            <fixedOutput>0.423716615540276</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.466021366380623</fixedOutput>
+                            <fixedOutput>0.447067647236314</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.492781826941118</fixedOutput>
+                            <fixedOutput>0.472327901259512</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.521171946313285</fixedOutput>
+                            <fixedOutput>0.499717662486206</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.55126068347666</fixedOutput>
+                            <fixedOutput>0.529418877262663</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.583339531140472</fixedOutput>
+                            <fixedOutput>0.561540671495184</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1121,76 +1060,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.162109999382564</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.164295831508802</fixedOutput>
+                            <fixedOutput>0.167066973266633</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.165857114342285</fixedOutput>
+                            <fixedOutput>0.170227376319099</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.166685213791419</fixedOutput>
+                            <fixedOutput>0.173190530610551</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.167008197064072</fixedOutput>
+                            <fixedOutput>0.175933369717336</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.17329346995525</fixedOutput>
+                            <fixedOutput>0.184793881330478</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.179574084795638</fixedOutput>
+                            <fixedOutput>0.193067495414123</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.185575060482803</fixedOutput>
+                            <fixedOutput>0.200994662941801</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.191212828088342</fixedOutput>
+                            <fixedOutput>0.20857611035998</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.19651057583602</fixedOutput>
+                            <fixedOutput>0.215695447009781</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.201471486995802</fixedOutput>
+                            <fixedOutput>0.222260746485338</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.206003487351198</fixedOutput>
+                            <fixedOutput>0.22830829095264</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.210084498026945</fixedOutput>
+                            <fixedOutput>0.233778629179767</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.213705827006853</fixedOutput>
+                            <fixedOutput>0.238596475922554</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.216869600782695</fixedOutput>
+                            <fixedOutput>0.242673106460806</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.219563842711255</fixedOutput>
+                            <fixedOutput>0.245953815824968</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.22172371263607</fixedOutput>
+                            <fixedOutput>0.24843238424916</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1214,76 +1148,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>1.166988483826</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>1.17220201819588</fixedOutput>
+                            <fixedOutput>1.19544256284365</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>1.17263994426585</fixedOutput>
+                            <fixedOutput>1.2076004233261</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>1.16681485014981</fixedOutput>
+                            <fixedOutput>1.21620526976075</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>1.15697295023472</fixedOutput>
+                            <fixedOutput>1.22250021919495</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>1.16356035684249</fixedOutput>
+                            <fixedOutput>1.24414804791935</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>1.17170661153568</fixedOutput>
+                            <fixedOutput>1.26227038250808</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>1.17847986646619</fixedOutput>
+                            <fixedOutput>1.2778336654901</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>1.18339436485246</fixedOutput>
+                            <fixedOutput>1.29104155027711</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>1.18708778506699</fixedOutput>
+                            <fixedOutput>1.30173006328082</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>1.18992056739418</fixedOutput>
+                            <fixedOutput>1.30980957391378</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>1.19116529672888</fixedOutput>
+                            <fixedOutput>1.31543007832039</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>1.19089772515009</fixedOutput>
+                            <fixedOutput>1.31846357720848</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>1.18930203998613</fixedOutput>
+                            <fixedOutput>1.31873460059802</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>1.18669771505997</fixedOutput>
+                            <fixedOutput>1.31612939086105</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>1.18317136045941</fixedOutput>
+                            <fixedOutput>1.31065857919298</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>1.1783547020211</fixedOutput>
+                            <fixedOutput>1.30239605909525</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1307,76 +1236,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0499936798047419</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.0522457763205584</fixedOutput>
+                            <fixedOutput>0.0523787563396654</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.0544843860675454</fixedOutput>
+                            <fixedOutput>0.0548052020314787</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.0568263349166797</fixedOutput>
+                            <fixedOutput>0.057325736016439</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.0592459365375064</fixedOutput>
+                            <fixedOutput>0.0599131992851131</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.0616505993746341</fixedOutput>
+                            <fixedOutput>0.0626019116358004</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.0638916324416845</fixedOutput>
+                            <fixedOutput>0.0653468435729213</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.0661103447229545</fixedOutput>
+                            <fixedOutput>0.0681562507065258</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.068318226320886</fixedOutput>
+                            <fixedOutput>0.0710384507008024</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.070470213958329</fixedOutput>
+                            <fixedOutput>0.0739993122250929</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.0725392185124812</fixedOutput>
+                            <fixedOutput>0.0770447344289149</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.0745693784403548</fixedOutput>
+                            <fixedOutput>0.0801729683884592</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.0765559107680329</fixedOutput>
+                            <fixedOutput>0.0833787300442751</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.0784858324799227</fixedOutput>
+                            <fixedOutput>0.0866559273707665</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.0803420941718538</fixedOutput>
+                            <fixedOutput>0.089999034498548</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.0821185459590498</fixedOutput>
+                            <fixedOutput>0.0934090614152185</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.0838323775667785</fixedOutput>
+                            <fixedOutput>0.0968936710679063</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1400,76 +1324,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.319676748941286</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.304207275980032</fixedOutput>
+                            <fixedOutput>0.310540099085825</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.287631861505393</fixedOutput>
+                            <fixedOutput>0.296927502150573</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.269101223036678</fixedOutput>
+                            <fixedOutput>0.282476977617465</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.249813447172678</fixedOutput>
+                            <fixedOutput>0.267632361992251</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.255796206020883</fixedOutput>
+                            <fixedOutput>0.278828323400346</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.262512898865021</fixedOutput>
+                            <fixedOutput>0.288455258646382</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.268386002985993</fixedOutput>
+                            <fixedOutput>0.296599380663402</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.273109946992418</fixedOutput>
+                            <fixedOutput>0.303182042696644</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.27708952735964</fixedOutput>
+                            <fixedOutput>0.308033409937253</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.280600975256107</fixedOutput>
+                            <fixedOutput>0.311002456388876</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.283142914361846</fixedOutput>
+                            <fixedOutput>0.312022188432557</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.284779661262408</fixedOutput>
+                            <fixedOutput>0.310929423676564</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.285686173211586</fixedOutput>
+                            <fixedOutput>0.307541434903449</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.286142078603597</fixedOutput>
+                            <fixedOutput>0.301685932651652</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.286265141770321</fixedOutput>
+                            <fixedOutput>0.293256290943361</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.28577353801739</fixedOutput>
+                            <fixedOutput>0.282154802700343</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1493,76 +1412,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.592675105024262</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.587287531225677</fixedOutput>
+                            <fixedOutput>0.58238609061972</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.582262741070187</fixedOutput>
+                            <fixedOutput>0.575277240132194</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.578495287942717</fixedOutput>
+                            <fixedOutput>0.568183752948931</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.575214647135072</fixedOutput>
+                            <fixedOutput>0.560899359160918</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.593189556886663</fixedOutput>
+                            <fixedOutput>0.575595642458436</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.610031388662357</fixedOutput>
+                            <fixedOutput>0.591996360569561</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.627013482930683</fixedOutput>
+                            <fixedOutput>0.609368371242528</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.644427039243098</fixedOutput>
+                            <fixedOutput>0.627681610376708</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.662077737805892</fixedOutput>
+                            <fixedOutput>0.647213756300444</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.679862661632574</fixedOutput>
+                            <fixedOutput>0.66814558001956</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.698030438514758</fixedOutput>
+                            <fixedOutput>0.690247144610063</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.716515865282708</fixedOutput>
+                            <fixedOutput>0.713567394371552</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.735203725139849</fixedOutput>
+                            <fixedOutput>0.73819555845094</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.753948564692</fixedOutput>
+                            <fixedOutput>0.764250559870806</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.772716000408213</fixedOutput>
+                            <fixedOutput>0.791782796841733</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.791658777653012</fixedOutput>
+                            <fixedOutput>0.82071561109036</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1586,76 +1500,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.45673133181416</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.503017432339757</fixedOutput>
+                            <fixedOutput>0.500380152837544</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.548246815048015</fixedOutput>
+                            <fixedOutput>0.546443721900005</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.593426030602931</fixedOutput>
+                            <fixedOutput>0.595945549718509</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.638959748200052</fixedOutput>
+                            <fixedOutput>0.648413243067906</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.713232834790954</fixedOutput>
+                            <fixedOutput>0.731441167384389</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.785249537563529</fixedOutput>
+                            <fixedOutput>0.812187877003205</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.855831173466734</fixedOutput>
+                            <fixedOutput>0.893352415739499</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.924757442712436</fixedOutput>
+                            <fixedOutput>0.975174900000178</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.991134489343124</fixedOutput>
+                            <fixedOutput>1.05628372521236</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>1.05417253503133</fixedOutput>
+                            <fixedOutput>1.13550773129001</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>1.11389783748368</fixedOutput>
+                            <fixedOutput>1.21365021216667</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>1.16969227091154</fixedOutput>
+                            <fixedOutput>1.29028463061107</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>1.22074084134529</fixedOutput>
+                            <fixedOutput>1.36466461325409</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>1.26617810301997</fixedOutput>
+                            <fixedOutput>1.43577450394449</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>1.30542831817422</fixedOutput>
+                            <fixedOutput>1.50284214122974</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>1.3383076366961</fixedOutput>
+                            <fixedOutput>1.56610246835034</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1679,76 +1588,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0660646141090708</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.068608580348157</fixedOutput>
+                            <fixedOutput>0.068941985990093</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.071508207201806</fixedOutput>
+                            <fixedOutput>0.0718358751663698</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.0751928566377972</fixedOutput>
+                            <fixedOutput>0.0750614084814483</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.0793225220247154</fixedOutput>
+                            <fixedOutput>0.0785440327498482</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.0849346852955409</fixedOutput>
+                            <fixedOutput>0.0837946398850722</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.0898960762633835</fixedOutput>
+                            <fixedOutput>0.0891317025375632</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.0948816909489136</fixedOutput>
+                            <fixedOutput>0.0946969156607515</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.0999483664070213</fixedOutput>
+                            <fixedOutput>0.100498575946093</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.104857193593927</fixedOutput>
+                            <fixedOutput>0.106479410109801</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.109446067578661</fixedOutput>
+                            <fixedOutput>0.112596268426953</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.113938832573347</fixedOutput>
+                            <fixedOutput>0.118901262275505</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.118292908600693</fixedOutput>
+                            <fixedOutput>0.125415800941334</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.122419239550515</fixedOutput>
+                            <fixedOutput>0.132155503567175</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.126185443223124</fixedOutput>
+                            <fixedOutput>0.139112569987682</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.129523094296905</fixedOutput>
+                            <fixedOutput>0.146255293430359</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.132535379170024</fixedOutput>
+                            <fixedOutput>0.153605201963325</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1772,76 +1676,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.295667712540732</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.295208232551741</fixedOutput>
+                            <fixedOutput>0.29654936459814</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.294470450892196</fixedOutput>
+                            <fixedOutput>0.296516137571227</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.293328453719593</fixedOutput>
+                            <fixedOutput>0.2962749653526</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.291920755730309</fixedOutput>
+                            <fixedOutput>0.295872978844524</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.29461921288961</fixedOutput>
+                            <fixedOutput>0.299514410360997</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.297439769875743</fixedOutput>
+                            <fixedOutput>0.302970430872024</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.300170688696401</fixedOutput>
+                            <fixedOutput>0.306241932098424</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.302775432360275</fixedOutput>
+                            <fixedOutput>0.309341395718342</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.305300568882481</fixedOutput>
+                            <fixedOutput>0.312280749747012</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.307773829783141</fixedOutput>
+                            <fixedOutput>0.315067083936498</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.310141049190367</fixedOutput>
+                            <fixedOutput>0.317681956795132</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.312402610140888</fixedOutput>
+                            <fixedOutput>0.320117066455004</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.31456448505758</fixedOutput>
+                            <fixedOutput>0.322362894494362</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.316644148837075</fixedOutput>
+                            <fixedOutput>0.324415376879326</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.318649194183405</fixedOutput>
+                            <fixedOutput>0.326272433686179</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.320555497897969</fixedOutput>
+                            <fixedOutput>0.327927243012475</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1865,76 +1764,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.128532999138513</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.123354601014554</fixedOutput>
+                            <fixedOutput>0.126110695393264</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.118542748969811</fixedOutput>
+                            <fixedOutput>0.122263621271021</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.113760056733251</fixedOutput>
+                            <fixedOutput>0.118233055779281</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.108937570967574</fixedOutput>
+                            <fixedOutput>0.11398784895825</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.104353741273046</fixedOutput>
+                            <fixedOutput>0.109719581857255</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.100235113239638</fixedOutput>
+                            <fixedOutput>0.105585097060903</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.0963065162227126</fixedOutput>
+                            <fixedOutput>0.101403376010209</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.0925180923482446</fixedOutput>
+                            <fixedOutput>0.0971403095932336</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.0889232662684892</fixedOutput>
+                            <fixedOutput>0.0928305335234973</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.0855500819723887</fixedOutput>
+                            <fixedOutput>0.0884943666029156</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.0823362231496636</fixedOutput>
+                            <fixedOutput>0.0840957559872947</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.079297831932846</fixedOutput>
+                            <fixedOutput>0.0796359868038485</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.0764616183595501</fixedOutput>
+                            <fixedOutput>0.0751219678676577</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.07386348968141</fixedOutput>
+                            <fixedOutput>0.0705631702546125</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.0715130025255828</fixedOutput>
+                            <fixedOutput>0.0659618597399334</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.0693709938914668</fixedOutput>
+                            <fixedOutput>0.0613068432094546</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -1958,76 +1852,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0839545774526927</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.102961824672897</fixedOutput>
+                            <fixedOutput>0.102244678630671</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.120608288464743</fixedOutput>
+                            <fixedOutput>0.119973853208264</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.13620964087405</fixedOutput>
+                            <fixedOutput>0.136976503975461</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.149958331365213</fixedOutput>
+                            <fixedOutput>0.153170050836306</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.171262135316901</fixedOutput>
+                            <fixedOutput>0.177198632068274</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.191983570686342</fixedOutput>
+                            <fixedOutput>0.199301070164435</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.211336498236176</fixedOutput>
+                            <fixedOutput>0.219694322646155</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.229180169093526</fixedOutput>
+                            <fixedOutput>0.238404294043399</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.245914501998762</fixedOutput>
+                            <fixedOutput>0.255296125689697</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.261903029197862</fixedOutput>
+                            <fixedOutput>0.270261105441192</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.276832535918674</fixedOutput>
+                            <fixedOutput>0.283368432741215</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.290859942921173</fixedOutput>
+                            <fixedOutput>0.294480853545288</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.304264572982419</fixedOutput>
+                            <fixedOutput>0.303400378715657</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.317476722665858</fixedOutput>
+                            <fixedOutput>0.309913352338859</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.330795159500264</fixedOutput>
+                            <fixedOutput>0.31395064422237</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.344039699707579</fixedOutput>
+                            <fixedOutput>0.315541897427801</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2051,76 +1940,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.114539804767573</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.114185178257975</fixedOutput>
+                            <fixedOutput>0.115659096345826</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.113381718122563</fixedOutput>
+                            <fixedOutput>0.115938472471454</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.111643190602126</fixedOutput>
+                            <fixedOutput>0.116085621128434</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.109174903317746</fixedOutput>
+                            <fixedOutput>0.115902739646072</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.111720778998766</fixedOutput>
+                            <fixedOutput>0.120877907803751</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.114220032712257</fixedOutput>
+                            <fixedOutput>0.12500044814584</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.116045436145082</fixedOutput>
+                            <fixedOutput>0.128226783648444</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.117133004087249</fixedOutput>
+                            <fixedOutput>0.130569826080254</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.117738229846931</fixedOutput>
+                            <fixedOutput>0.132054639523728</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.11806384564338</fixedOutput>
+                            <fixedOutput>0.132694949843105</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.117876218858819</fixedOutput>
+                            <fixedOutput>0.132388587053955</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.117183356587135</fixedOutput>
+                            <fixedOutput>0.131084062358483</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.11604100765651</fixedOutput>
+                            <fixedOutput>0.128739817529666</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.114563010182551</fixedOutput>
+                            <fixedOutput>0.125323327953633</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.11284291671633</fixedOutput>
+                            <fixedOutput>0.120801758747583</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.110791143104145</fixedOutput>
+                            <fixedOutput>0.115111620922696</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2144,76 +2028,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.646437663655061</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.694335703311138</fixedOutput>
+                            <fixedOutput>0.697971946797147</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.742569531060284</fixedOutput>
+                            <fixedOutput>0.748735659533106</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.791405232969306</fixedOutput>
+                            <fixedOutput>0.800569044805752</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.840795811783225</fixedOutput>
+                            <fixedOutput>0.853341101857883</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.894735917268587</fixedOutput>
+                            <fixedOutput>0.91127889100836</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.948370517225894</fixedOutput>
+                            <fixedOutput>0.969628529900917</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>1.0019832144112</fixedOutput>
+                            <fixedOutput>1.02857559787826</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>1.05553456751751</fixedOutput>
+                            <fixedOutput>1.08809477488206</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>1.10880837778094</fixedOutput>
+                            <fixedOutput>1.14804366964465</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>1.16161834546467</fixedOutput>
+                            <fixedOutput>1.20829854170717</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>1.21397653100774</fixedOutput>
+                            <fixedOutput>1.26886423953648</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>1.2657368100595</fixedOutput>
+                            <fixedOutput>1.32963094208167</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>1.31673106126283</fixedOutput>
+                            <fixedOutput>1.39047536195226</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>1.36676501129069</fixedOutput>
+                            <fixedOutput>1.45124631834821</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>1.41572966815187</fixedOutput>
+                            <fixedOutput>1.51186706234808</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>1.46355591340784</fixedOutput>
+                            <fixedOutput>1.57229358368674</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2237,76 +2116,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.00784529913134056</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.00799542822173665</fixedOutput>
+                            <fixedOutput>0.00792601037967883</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.00815357797711414</fixedOutput>
+                            <fixedOutput>0.00806033235785846</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.00833130651646258</fixedOutput>
+                            <fixedOutput>0.00821074809097217</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.00852026539696737</fixedOutput>
+                            <fixedOutput>0.00835493817156268</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.00888832763348629</fixedOutput>
+                            <fixedOutput>0.00867908816760097</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.00923395940966857</fixedOutput>
+                            <fixedOutput>0.00900588013325928</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.00957230957976608</fixedOutput>
+                            <fixedOutput>0.00932805875514813</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.00990748581243179</fixedOutput>
+                            <fixedOutput>0.00964375273336862</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.0102368086284905</fixedOutput>
+                            <fixedOutput>0.00995355862999647</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.0105588977424692</fixedOutput>
+                            <fixedOutput>0.0102576916243893</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.0108762762060254</fixedOutput>
+                            <fixedOutput>0.0105535862184876</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.0111879312036388</fixedOutput>
+                            <fixedOutput>0.0108431416714442</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.0114917413378936</fixedOutput>
+                            <fixedOutput>0.0111286565220905</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.0117846945168668</fixedOutput>
+                            <fixedOutput>0.0114126440233068</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.0120650121619661</fixedOutput>
+                            <fixedOutput>0.0116945114178234</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.0123348124579074</fixedOutput>
+                            <fixedOutput>0.0119715959543356</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2330,76 +2204,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.273510103663877</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.241208559024675</fixedOutput>
+                            <fixedOutput>0.245188896430596</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.261468533439342</fixedOutput>
+                            <fixedOutput>0.26739969923812</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.255205466228044</fixedOutput>
+                            <fixedOutput>0.262246084431351</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.248700614227401</fixedOutput>
+                            <fixedOutput>0.25651002883287</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.244684476685794</fixedOutput>
+                            <fixedOutput>0.252897759848086</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.241351712486218</fixedOutput>
+                            <fixedOutput>0.249440175364106</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.238165004048956</fixedOutput>
+                            <fixedOutput>0.245645916070732</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.235057587440654</fixedOutput>
+                            <fixedOutput>0.241454636953833</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.232194045166096</fixedOutput>
+                            <fixedOutput>0.237011659948042</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.229683971607856</fixedOutput>
+                            <fixedOutput>0.232409423121863</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.227405582955467</fixedOutput>
+                            <fixedOutput>0.227504755870166</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.225406545042443</fixedOutput>
+                            <fixedOutput>0.222304249585569</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.223765488341399</fixedOutput>
+                            <fixedOutput>0.216842824123391</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.222583207331438</fixedOutput>
+                            <fixedOutput>0.211167578184255</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.22191736140605</fixedOutput>
+                            <fixedOutput>0.205296758088272</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.221717736559297</fixedOutput>
+                            <fixedOutput>0.199180135452097</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2423,76 +2292,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.412705888182306</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.441061949790406</fixedOutput>
+                            <fixedOutput>0.451794828945543</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.470712176340736</fixedOutput>
+                            <fixedOutput>0.485042937022543</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.501502270273407</fixedOutput>
+                            <fixedOutput>0.516774408994469</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.532851701777408</fixedOutput>
+                            <fixedOutput>0.547930004992256</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.588618060448204</fixedOutput>
+                            <fixedOutput>0.60385389871251</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.645180151109522</fixedOutput>
+                            <fixedOutput>0.661148779364348</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.702820473300446</fixedOutput>
+                            <fixedOutput>0.718995545706031</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.76167063322095</fixedOutput>
+                            <fixedOutput>0.777287767122411</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.821787018663544</fixedOutput>
+                            <fixedOutput>0.836392593590466</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.883240566751501</fixedOutput>
+                            <fixedOutput>0.896629340416593</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.946293506056067</fixedOutput>
+                            <fixedOutput>0.957786291868641</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>1.01112281915799</fixedOutput>
+                            <fixedOutput>1.01993446372456</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>1.07788764085353</fixedOutput>
+                            <fixedOutput>1.08320159714255</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>1.14673979823897</fixedOutput>
+                            <fixedOutput>1.1477951381473</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>1.2178238847213</fixedOutput>
+                            <fixedOutput>1.21390697713906</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>1.29133703221314</fixedOutput>
+                            <fixedOutput>1.28152471883661</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2516,76 +2380,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0774215019508665</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.0839739290345093</fixedOutput>
+                            <fixedOutput>0.087099066559916</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.0908229868394042</fixedOutput>
+                            <fixedOutput>0.0953335186984648</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.0980860772791115</fixedOutput>
+                            <fixedOutput>0.103659669831856</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.105623844074705</fixedOutput>
+                            <fixedOutput>0.11226789923642</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.12262206547345</fixedOutput>
+                            <fixedOutput>0.131219795875347</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.139868851775807</fixedOutput>
+                            <fixedOutput>0.151067600700178</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.157540372998484</fixedOutput>
+                            <fixedOutput>0.171759350921623</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.175621396789342</fixedOutput>
+                            <fixedOutput>0.19328407711648</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.19395919100213</fixedOutput>
+                            <fixedOutput>0.215642781491069</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.212420055909045</fixedOutput>
+                            <fixedOutput>0.238833668716547</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.231044848128943</fixedOutput>
+                            <fixedOutput>0.262797935551151</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.249740632726659</fixedOutput>
+                            <fixedOutput>0.287511963103846</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.268380519244074</fixedOutput>
+                            <fixedOutput>0.312958813950471</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.286813053157989</fixedOutput>
+                            <fixedOutput>0.339122540126482</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.304932954397699</fixedOutput>
+                            <fixedOutput>0.365965446407445</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.322740944742599</fixedOutput>
+                            <fixedOutput>0.393453506586203</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2609,76 +2468,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0151257269919354</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.0170084441034025</fixedOutput>
+                            <fixedOutput>0.0168317842708238</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.0189167753109621</fixedOutput>
+                            <fixedOutput>0.0186332582015347</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.0208955919829441</fixedOutput>
+                            <fixedOutput>0.0204724450750919</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.0229362106669036</fixedOutput>
+                            <fixedOutput>0.0223416161510129</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.0262805915269207</fixedOutput>
+                            <fixedOutput>0.0254840917536787</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.0295891359464344</fixedOutput>
+                            <fixedOutput>0.0286394141319667</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.0329193393670533</fixedOutput>
+                            <fixedOutput>0.0318315341931682</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.0362833639882793</fixedOutput>
+                            <fixedOutput>0.035069316537947</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.0396610694617303</fixedOutput>
+                            <fixedOutput>0.0383513918888259</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.0430354293173099</fixedOutput>
+                            <fixedOutput>0.0416765366116107</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.0464305518061554</fixedOutput>
+                            <fixedOutput>0.0450595470940293</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.0498421604902994</fixedOutput>
+                            <fixedOutput>0.048509971024316</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.0532591117439472</fixedOutput>
+                            <fixedOutput>0.0520364902559894</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.0566629900007131</fixedOutput>
+                            <fixedOutput>0.055644679962</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.0600437193718316</fixedOutput>
+                            <fixedOutput>0.0593366732022547</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.0634157084976334</fixedOutput>
+                            <fixedOutput>0.0631220787814838</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2702,76 +2556,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.263745566490891</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.273554071887711</fixedOutput>
+                            <fixedOutput>0.270105875039158</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.283547162149136</fixedOutput>
+                            <fixedOutput>0.278701824998496</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.294205568580413</fixedOutput>
+                            <fixedOutput>0.288215375085169</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.305345594118558</fixedOutput>
+                            <fixedOutput>0.298202975225052</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.335726230247236</fixedOutput>
+                            <fixedOutput>0.327096891551233</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.365340542892213</fixedOutput>
+                            <fixedOutput>0.355491627585875</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.39492994787419</fixedOutput>
+                            <fixedOutput>0.383932709887128</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.424554126645984</fixedOutput>
+                            <fixedOutput>0.41255484802279</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>0.453869704193621</fixedOutput>
+                            <fixedOutput>0.441234094067342</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>0.48259954071814</fixedOutput>
+                            <fixedOutput>0.469885118934904</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>0.511077555898427</fixedOutput>
+                            <fixedOutput>0.498744856479709</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>0.539241601533547</fixedOutput>
+                            <fixedOutput>0.52781901754056</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>0.566942945705913</fixedOutput>
+                            <fixedOutput>0.557061818538849</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>0.593968858752387</fixedOutput>
+                            <fixedOutput>0.586353621781122</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>0.620219601685</fixedOutput>
+                            <fixedOutput>0.615631648667718</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>0.645839704870523</fixedOutput>
+                            <fixedOutput>0.645073782443237</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -2795,169 +2644,71 @@
             <supplysector name="electricity">
                 <subsector name="hydro">
                     <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.950899526050746</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
                         <period year="2020">
-                            <fixedOutput>0.957146408396161</fixedOutput>
+                            <fixedOutput>0.970424173981896</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2025">
-                            <fixedOutput>0.964447311572995</fixedOutput>
+                            <fixedOutput>0.981036269583</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2030">
-                            <fixedOutput>0.971184574624553</fixedOutput>
+                            <fixedOutput>0.987126429065326</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2035">
-                            <fixedOutput>0.977489196062642</fixedOutput>
+                            <fixedOutput>0.990488152796223</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2040">
-                            <fixedOutput>0.979684605594608</fixedOutput>
+                            <fixedOutput>0.989111613981708</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2045">
-                            <fixedOutput>0.984750993679505</fixedOutput>
+                            <fixedOutput>0.991532511361832</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2050">
-                            <fixedOutput>0.990769036174599</fixedOutput>
+                            <fixedOutput>0.994250913290217</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2055">
-                            <fixedOutput>0.997555084508881</fixedOutput>
+                            <fixedOutput>0.996807439955245</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2060">
-                            <fixedOutput>1.00567436553299</fixedOutput>
+                            <fixedOutput>1.0001158782612</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2065">
-                            <fixedOutput>1.01545649279024</fixedOutput>
+                            <fixedOutput>1.00473015839779</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2070">
-                            <fixedOutput>1.02631221187188</fixedOutput>
+                            <fixedOutput>1.00971189406867</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2075">
-                            <fixedOutput>1.03838800444604</fixedOutput>
+                            <fixedOutput>1.01511574994985</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2080">
-                            <fixedOutput>1.05190338462106</fixedOutput>
+                            <fixedOutput>1.02111638003357</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2085">
-                            <fixedOutput>1.06714698953262</fixedOutput>
+                            <fixedOutput>1.02804028152</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2090">
-                            <fixedOutput>1.08418246175326</fixedOutput>
+                            <fixedOutput>1.03605837880232</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2095">
-                            <fixedOutput>1.10271867290891</fixedOutput>
+                            <fixedOutput>1.04480333276791</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                     </stub-technology>
-                    <share-weight year="2015">0</share-weight>
-                    <share-weight year="2020">0</share-weight>
-                    <share-weight year="2025">0</share-weight>
-                    <share-weight year="2030">0</share-weight>
-                    <share-weight year="2035">0</share-weight>
-                    <share-weight year="2040">0</share-weight>
-                    <share-weight year="2045">0</share-weight>
-                    <share-weight year="2050">0</share-weight>
-                    <share-weight year="2055">0</share-weight>
-                    <share-weight year="2060">0</share-weight>
-                    <share-weight year="2065">0</share-weight>
-                    <share-weight year="2070">0</share-weight>
-                    <share-weight year="2075">0</share-weight>
-                    <share-weight year="2080">0</share-weight>
-                    <share-weight year="2085">0</share-weight>
-                    <share-weight year="2090">0</share-weight>
-                    <share-weight year="2095">0</share-weight>
-                </subsector>
-            </supplysector>
-        </region>
-        <region name="Uruguay">
-            <supplysector name="electricity">
-                <subsector name="hydro">
-                    <stub-technology name="hydro">
-                        <period year="2015">
-                            <fixedOutput>0.0248769377836966</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2020">
-                            <fixedOutput>0.025753263472232</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2025">
-                            <fixedOutput>0.0263445372725056</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2030">
-                            <fixedOutput>0.0266226627850746</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2035">
-                            <fixedOutput>0.0267499782300882</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2040">
-                            <fixedOutput>0.0268657385203149</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2045">
-                            <fixedOutput>0.0270807446837303</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2050">
-                            <fixedOutput>0.0272404520278579</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2055">
-                            <fixedOutput>0.0273320377940985</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2060">
-                            <fixedOutput>0.0274010798414079</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2065">
-                            <fixedOutput>0.0274726193748169</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2070">
-                            <fixedOutput>0.027496446403853</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2075">
-                            <fixedOutput>0.0274830977925919</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2080">
-                            <fixedOutput>0.0274515278453979</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2085">
-                            <fixedOutput>0.02742574271208</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2090">
-                            <fixedOutput>0.0274101193003209</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                        <period year="2095">
-                            <fixedOutput>0.0273779458355809</fixedOutput>
-                            <share-weight>0</share-weight>
-                        </period>
-                    </stub-technology>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
