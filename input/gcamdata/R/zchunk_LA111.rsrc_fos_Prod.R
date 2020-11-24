@@ -151,6 +151,9 @@ module_energy_LA111.rsrc_fos_Prod <- function(command, ...) {
       L100.IEA_en_bal_ctry_hist %>%
         filter(FLOW == "INDPROD", PRODUCT %in% IEA_product_rsrc$PRODUCT) %>%
         gather_years %>%
+        # Fill out to all countries in IEA database. Important in case of GCAM regions w no historical rsrc production
+        complete(nesting(year, PRODUCT, FLOW), iso = sort(unique(L100.IEA_en_bal_ctry_hist$iso))) %>%
+        replace_na(list(value = 0)) %>%
         # bring in resource information and summarise
         left_join_error_no_match(IEA_product_rsrc, by = "PRODUCT") %>%
         group_by(iso, resource) %>%
@@ -213,9 +216,11 @@ module_energy_LA111.rsrc_fos_Prod <- function(command, ...) {
         add_comments("Use crude oil production shares as a proxy for unconventional oil resources.") %>%
         add_legacy_name("L111.RsrcCurves_EJ_R_Ffos") %>%
         add_precursors("common/iso_GCAM_regID", "energy/A11.fos_curves",
-                       "energy/mappings/IEA_product_rsrc", "L100.IEA_en_bal_ctry_hist",
-                       "L1011.en_bal_EJ_R_Si_Fi_Yh") ->
+                       "energy/mappings/IEA_product_rsrc", "L100.IEA_en_bal_ctry_hist") ->
         L111.RsrcCurves_EJ_R_Ffos
+
+      # At this point output should be identical to the prebuilt version
+      verify_identical_prebuilt(L111.RsrcCurves_EJ_R_Ffos)
     }
 
     return_data(L111.Prod_EJ_R_F_Yh, L111.RsrcCurves_EJ_R_Ffos)
