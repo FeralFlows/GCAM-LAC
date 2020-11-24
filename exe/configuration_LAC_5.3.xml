@@ -24,7 +24,7 @@
 		<Value name = "energy_supply">../input/gcamdata/xml/en_supply.xml</Value>
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
 		<!--Value name = "electricity">../input/gcamdata/xml/electricity.xml</Value-->
-		<Value name = "elec_water_base">../input/idb_5.3/update_elec/electricity_water_LAC_global_update.xml</Value>
+		<Value name = "elec_water_base">../input/idb_5.3/update_elec/electricity_water_LACglobal_update.xml</Value>
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
 		<Value name = "energy_distribution">../input/gcamdata/xml/en_distribution.xml</Value>
@@ -35,7 +35,7 @@
 		<Value name = "fertilizer_energy">../input/gcamdata/xml/en_Fert.xml</Value>
 		<Value name = "hddcdd">../input/gcamdata/xml/HDDCDD_constdd_no_GCM.xml</Value>
 		<Value name = "building">../input/gcamdata/xml/building_det.xml</Value>
-		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE.xml</Value>
+		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost_ModEVsw.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
 
