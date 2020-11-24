@@ -49,15 +49,25 @@ This file must be referenced in the configuration file of interest, with batch r
        <Value name = "policy link file">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_LINK_CO_ARG.xml</Value>
 
 
-		<!--RDM files-->
-		<!--Uncertainties-->
+	<!--RDM Uncertainties-->
+	    <!-- Socio-Economics -->
+		<Value name = "Population">../input/idb_5.3/rdm/uncertainty/Socioeconomic/Population/Colombia_Population_Low.xml</Value>
+		<!--Value name = "Population">../input/idb_5.3/rdm/uncertainty/Socioeconomic/Population/Colombia_Population_High.xml</Value-->
+		<Value name = "GDP">../input/idb_5.3/rdm/uncertainty/Socioeconomic/GDP/Colombia_GDP_Low.xml</Value>
+		<!--Value name = "GDP">../input/idb_5.3/rdm/uncertainty/Socioeconomic/GDP/Colombia_GDP_High.xml</Value-->
+		
 		<!--Climate Impacts Files-->
-      <Value name = "hydro">../input/idb_5.3/impacts/Hydro/hydro_impacts_HadGEM2-ES_rcp8p5.xml</Value>
-      <Value name = "water">../input/idb_5.3/impacts/Water/runoff_impacts_HadGEM2-ES_rcp8p5.xml</Value>
-      <!--<Value name = "water">../input/idb_5.3/impacts/Water/water_cc_hadgem_8p5_exp_wg.xml</Value>-->
-      <Value name = "ag">../input/idb_5.3/impacts/Ag/ag_prodchange_rcp8p5_hadgem2_pdssat.xml</Value> 
+      <Value name = "hydro">../input/idb_5.3/rdm/uncertainty/ClimateImpacts/hydro_impacts_HadGEM2-ES_rcp2p6.xml</Value> 
+      <Value name = "water">../input/idb_5.3/rdm/uncertainty/ClimateImpacts/runoff_impacts_HadGEM2-ES_rcp2p6.xml</Value>
+      <Value name = "ag">../input/idb_5.3/rdm/uncertainty/ClimateImpacts/ag_prodchange_rcp2p6_hadgem2_pdssat.xml</Value> 
 
-		<!--Levers-->
+		<!--Technology-->
+		<Value name = "Nuclear">../input/idb_5.3/rdm/uncertainty/Technology/Nuclear/Colombia_Nuclear_Zero.xml</Value>
+		<Value name = "Nuclear">../input/idb_5.3/rdm/uncertainty/Technology/Nuclear/Colombia_Nuclear_Normal.xml</Value>
+		<Value name = "CCS">../input/idb_5.3/rdm/uncertainty/Technology/Nuclear/Global_CCS_Cost_High.xml</Value>
+		<Value name = "CCS">../input/idb_5.3/rdm/uncertainty/Technology/Nuclear/Global_CCS_Cost_Normal.xml</Value>
+
+<!--RDM Levers-->
 
 	</ComponentSet>
 </BatchRunner>
