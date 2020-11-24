@@ -71,6 +71,8 @@ This file must be referenced in the configuration file of interest, with batch r
 		<!--Value name = "RE">../input/idb_5.3/rdm/uncertainty/Technology/RenewablePower/Global_RenewableElecTechCost_Mid.xml</Value-->
 		<!--Value name = "RE">../input/idb_5.3/rdm/uncertainty/Technology/RenewablePower/Global_RenewableElecTechCost_High.xml</Value-->
 
+		<!--Note: UCD transportation file is currently commented out in configuration file 
+				so that costs (here) and shareweights (below) can be read in separately-->
 		<Value name = "EVcost">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_ModEVcost.xml</Value>
 		<!--Value name = "EVcost">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_RapidEVcost.xml</Value-->
 
