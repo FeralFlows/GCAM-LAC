@@ -5,7 +5,7 @@
             <supplysector name="electricity">
                 <subsector name="nuclear">
                     <interpolation-rule apply-to="share-weight"
-                        delete="1" from-year="2010" to-year="2015">
+                        delete="1" from-year="2015" to-year="2020">
                         <interpolation-function name="linear"/>
                    <overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
@@ -21,10 +21,10 @@
                     </interpolation-rule>
                     <interpolation-rule apply-to="share-weight"
                         delete="1" from-year="2050" to-year="2300">
+                        <to-value>1</to-value>
                         <interpolation-function name="s-curve"/>
                    <overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>

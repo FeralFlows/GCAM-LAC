@@ -1,0 +1,599 @@
+INPUT_TABLE,,,,,,
+Variable ID,,,,,,
+StubTechRESSecondaryOutput,,,,,,
+,,,,,,
+region,supplysector,subsector,stub.technology,year,res.secondary.output,output.ratio
+Colombia,electricity,wind,wind,1975,ELEC_RPS,1
+Colombia,electricity,wind,wind,1990,ELEC_RPS,1
+Colombia,electricity,wind,wind,2005,ELEC_RPS,1
+Colombia,electricity,wind,wind,2010,ELEC_RPS,1
+Colombia,electricity,wind,wind,2015,ELEC_RPS,1
+Colombia,electricity,wind,wind,2020,ELEC_RPS,1
+Colombia,electricity,wind,wind,2025,ELEC_RPS,1
+Colombia,electricity,wind,wind,2030,ELEC_RPS,1
+Colombia,electricity,wind,wind,2035,ELEC_RPS,1
+Colombia,electricity,wind,wind,2040,ELEC_RPS,1
+Colombia,electricity,wind,wind,2045,ELEC_RPS,1
+Colombia,electricity,wind,wind,2050,ELEC_RPS,1
+Colombia,electricity,wind,wind,2055,ELEC_RPS,1
+Colombia,electricity,wind,wind,2060,ELEC_RPS,1
+Colombia,electricity,wind,wind,2065,ELEC_RPS,1
+Colombia,electricity,wind,wind,2070,ELEC_RPS,1
+Colombia,electricity,wind,wind,2075,ELEC_RPS,1
+Colombia,electricity,wind,wind,2080,ELEC_RPS,1
+Colombia,electricity,wind,wind,2085,ELEC_RPS,1
+Colombia,electricity,wind,wind,2090,ELEC_RPS,1
+Colombia,electricity,wind,wind,2095,ELEC_RPS,1
+Colombia,electricity,wind,wind,2100,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,1975,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,1990,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2005,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2010,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2015,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2020,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2025,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2030,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2035,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2040,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2045,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2050,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2055,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2060,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2065,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2070,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2075,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2080,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2085,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2090,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2095,ELEC_RPS,1
+Colombia,electricity,wind,wind_storage,2100,ELEC_RPS,1
+Colombia,electricity,solar,PV,1975,ELEC_RPS,1
+Colombia,electricity,solar,PV,1990,ELEC_RPS,1
+Colombia,electricity,solar,PV,2005,ELEC_RPS,1
+Colombia,electricity,solar,PV,2010,ELEC_RPS,1
+Colombia,electricity,solar,PV,2015,ELEC_RPS,1
+Colombia,electricity,solar,PV,2020,ELEC_RPS,1
+Colombia,electricity,solar,PV,2025,ELEC_RPS,1
+Colombia,electricity,solar,PV,2030,ELEC_RPS,1
+Colombia,electricity,solar,PV,2035,ELEC_RPS,1
+Colombia,electricity,solar,PV,2040,ELEC_RPS,1
+Colombia,electricity,solar,PV,2045,ELEC_RPS,1
+Colombia,electricity,solar,PV,2050,ELEC_RPS,1
+Colombia,electricity,solar,PV,2055,ELEC_RPS,1
+Colombia,electricity,solar,PV,2060,ELEC_RPS,1
+Colombia,electricity,solar,PV,2065,ELEC_RPS,1
+Colombia,electricity,solar,PV,2070,ELEC_RPS,1
+Colombia,electricity,solar,PV,2075,ELEC_RPS,1
+Colombia,electricity,solar,PV,2080,ELEC_RPS,1
+Colombia,electricity,solar,PV,2085,ELEC_RPS,1
+Colombia,electricity,solar,PV,2090,ELEC_RPS,1
+Colombia,electricity,solar,PV,2095,ELEC_RPS,1
+Colombia,electricity,solar,PV,2100,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,1975,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,1990,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2005,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2010,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2015,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2020,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2025,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2030,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2035,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2040,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2045,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2050,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2055,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2060,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2065,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2070,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2075,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2080,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2085,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2090,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2095,ELEC_RPS,1
+Colombia,electricity,solar,PV_storage,2100,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),1975,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),1990,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2005,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2010,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2015,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2020,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2025,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2030,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2035,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2040,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2045,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2050,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2055,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2060,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2065,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2070,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2075,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2080,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2085,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2090,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2095,ELEC_RPS,1
+Colombia,electricity,solar,CSP (dry_hybrid),2100,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,solar,CSP (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),1975,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),1990,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2005,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2010,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2015,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2020,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2025,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2030,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2035,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2040,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2045,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2050,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2055,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2060,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2065,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2070,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2075,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2080,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2085,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2090,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2095,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (dry_hybrid),2100,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,solar,CSP_storage (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),1975,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),1990,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2005,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2010,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2015,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2020,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2025,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2030,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2035,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2040,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2045,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2050,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2055,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2060,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2065,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2070,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2075,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2080,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2085,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2090,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2095,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (dry_hybrid),2100,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,geothermal,geothermal (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (once through),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (seawater),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (dry cooling),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv) (cooling pond),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (once through),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (seawater),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (conv CCS) (dry cooling),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (once through),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (seawater),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC) (dry cooling),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (once through),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (seawater),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (recirculating),2100,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),1975,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),1990,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2005,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2010,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2015,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2020,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2025,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2030,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2035,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2040,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2045,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2050,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2055,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2060,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2065,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2070,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2075,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2080,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2085,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2090,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2095,ELEC_RPS,1
+Colombia,electricity,biomass,biomass (IGCC CCS) (dry cooling),2100,ELEC_RPS,1

@@ -1,0 +1,1410 @@
+# Service output values were first aggregated by sector to calculate the portion of each input as coefficients, then the coefficients were interpolated to cover last base year, future years and industry coefficient convergence year
+region,supplysector,subsector,stub.technology,minicam.energy.input,market.name,year,coefficient
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,1975,0.9701998
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,1990,0.9601532
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2005,0.9685992
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2010,0.9612469
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2015,0.9467332
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2020,0.9322195
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2025,0.9177058
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2030,0.9031921
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2035,0.8886783
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2040,0.8741646
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2045,0.8596509
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2050,0.8451372
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2055,0.8306235
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2060,0.8161097
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2065,0.801596
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2070,0.7870823
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2075,0.7725686
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2080,0.7580549
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2085,0.7435412
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2090,0.7290274
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2095,0.7145137
+Africa_Eastern,industry,industry,industry,industrial energy use,Africa_Eastern,2100,0.7
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,1975,0.0298002
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,1990,0.0398468
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2005,0.0314008
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2010,0.0387531
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2015,0.0532668
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2020,0.0677805
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2025,0.0822942
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2030,0.0968079
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2035,0.1113217
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2040,0.1258354
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2045,0.1403491
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2050,0.1548628
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2055,0.1693765
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2060,0.1838903
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2065,0.198404
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2070,0.2129177
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2075,0.2274314
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2080,0.2419451
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2085,0.2564588
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2090,0.2709726
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2095,0.2854863
+Africa_Eastern,industry,industry,industry,industrial feedstocks,Africa_Eastern,2100,0.3
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,1975,0.8774596
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,1990,0.816053
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2005,0.7837201
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2010,0.7617664
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2015,0.7583349
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2020,0.7549035
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2025,0.751472
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2030,0.7480405
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2035,0.7446091
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2040,0.7411776
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2045,0.7377461
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2050,0.7343147
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2055,0.7308832
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2060,0.7274517
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2065,0.7240203
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2070,0.7205888
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2075,0.7171573
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2080,0.7137259
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2085,0.7102944
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2090,0.7068629
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2095,0.7034315
+Africa_Northern,industry,industry,industry,industrial energy use,Africa_Northern,2100,0.7
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,1975,0.1225404
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,1990,0.183947
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2005,0.2162799
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2010,0.2382336
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2015,0.2416651
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2020,0.2450965
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2025,0.248528
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2030,0.2519595
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2035,0.2553909
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2040,0.2588224
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2045,0.2622539
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2050,0.2656853
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2055,0.2691168
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2060,0.2725483
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2065,0.2759797
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2070,0.2794112
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2075,0.2828427
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2080,0.2862741
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2085,0.2897056
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2090,0.2931371
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2095,0.2965685
+Africa_Northern,industry,industry,industry,industrial feedstocks,Africa_Northern,2100,0.3
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,1975,0.9772834
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,1990,0.9804844
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2005,0.9824499
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2010,0.9817338
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2015,0.9660819
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2020,0.95043
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2025,0.9347781
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2030,0.9191263
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2035,0.9034744
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2040,0.8878225
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2045,0.8721706
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2050,0.8565188
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2055,0.8408669
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2060,0.825215
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2065,0.8095631
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2070,0.7939113
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2075,0.7782594
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2080,0.7626075
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2085,0.7469556
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2090,0.7313038
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2095,0.7156519
+Africa_Southern,industry,industry,industry,industrial energy use,Africa_Southern,2100,0.7
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,1975,0.0227166
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,1990,0.0195156
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2005,0.0175501
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2010,0.0182662
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2015,0.0339181
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2020,0.04957
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2025,0.0652219
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2030,0.0808737
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2035,0.0965256
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2040,0.1121775
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2045,0.1278294
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2050,0.1434812
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2055,0.1591331
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2060,0.174785
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2065,0.1904369
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2070,0.2060887
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2075,0.2217406
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2080,0.2373925
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2085,0.2530444
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2090,0.2686962
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2095,0.2843481
+Africa_Southern,industry,industry,industry,industrial feedstocks,Africa_Southern,2100,0.3
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,1975,0.9532033
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,1990,0.94925060000000006
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2005,0.9821688
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2010,0.9857175
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2015,0.9698443
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2020,0.9539711
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2025,0.9380979
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2030,0.9222247
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2035,0.9063515
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2040,0.8904783
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2045,0.8746051
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2050,0.8587319
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2055,0.8428587
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2060,0.8269856
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2065,0.8111124
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2070,0.7952392
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2075,0.779366
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2080,0.7634928
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2085,0.7476196
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2090,0.7317464
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2095,0.7158732
+Africa_Western,industry,industry,industry,industrial energy use,Africa_Western,2100,0.7
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,1975,0.0467967
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,1990,0.0507494
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2005,0.0178312
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2010,0.0142825
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2015,0.0301557
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2020,0.0460289
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2025,0.0619021
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2030,0.0777753
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2035,0.0936485
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2040,0.1095217
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2045,0.1253949
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2050,0.1412681
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2055,0.1571413
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2060,0.1730144
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2065,0.1888876
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2070,0.2047608
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2075,0.220634
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2080,0.2365072
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2085,0.2523804
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2090,0.2682536
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2095,0.2841268
+Africa_Western,industry,industry,industry,industrial feedstocks,Africa_Western,2100,0.3
+Argentina,industry,industry,industry,industrial energy use,Argentina,1975,0.8243396
+Argentina,industry,industry,industry,industrial energy use,Argentina,1990,0.8703719
+Argentina,industry,industry,industry,industrial energy use,Argentina,2005,0.8242768
+Argentina,industry,industry,industry,industrial energy use,Argentina,2010,0.8202355
+Argentina,industry,industry,industry,industrial energy use,Argentina,2015,0.8135558
+Argentina,industry,industry,industry,industrial energy use,Argentina,2020,0.806876
+Argentina,industry,industry,industry,industrial energy use,Argentina,2025,0.8001963
+Argentina,industry,industry,industry,industrial energy use,Argentina,2030,0.7935165
+Argentina,industry,industry,industry,industrial energy use,Argentina,2035,0.7868368
+Argentina,industry,industry,industry,industrial energy use,Argentina,2040,0.780157
+Argentina,industry,industry,industry,industrial energy use,Argentina,2045,0.7734773
+Argentina,industry,industry,industry,industrial energy use,Argentina,2050,0.7667975
+Argentina,industry,industry,industry,industrial energy use,Argentina,2055,0.7601178
+Argentina,industry,industry,industry,industrial energy use,Argentina,2060,0.753438
+Argentina,industry,industry,industry,industrial energy use,Argentina,2065,0.7467583
+Argentina,industry,industry,industry,industrial energy use,Argentina,2070,0.7400785
+Argentina,industry,industry,industry,industrial energy use,Argentina,2075,0.7333988
+Argentina,industry,industry,industry,industrial energy use,Argentina,2080,0.726719
+Argentina,industry,industry,industry,industrial energy use,Argentina,2085,0.7200393
+Argentina,industry,industry,industry,industrial energy use,Argentina,2090,0.7133595
+Argentina,industry,industry,industry,industrial energy use,Argentina,2095,0.7066798
+Argentina,industry,industry,industry,industrial energy use,Argentina,2100,0.7
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,1975,0.1756604
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,1990,0.1296281
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2005,0.1757232
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2010,0.1797645
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2015,0.1864442
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2020,0.193124
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2025,0.1998037
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2030,0.2064835
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2035,0.2131632
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2040,0.219843
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2045,0.2265227
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2050,0.2332025
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2055,0.2398822
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2060,0.246562
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2065,0.2532417
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2070,0.2599215
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2075,0.2666012
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2080,0.273281
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2085,0.2799607
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2090,0.2866405
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2095,0.2933202
+Argentina,industry,industry,industry,industrial feedstocks,Argentina,2100,0.3
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,1975,0.8939131
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,1990,0.8540513
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2005,0.8722883
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2010,0.8736414
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2015,0.8639946
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2020,0.8543479
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2025,0.8447011
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2030,0.8350544
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2035,0.8254076
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2040,0.8157609
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2045,0.8061142
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2050,0.7964674
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2055,0.7868207
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2060,0.7771739
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2065,0.7675272
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2070,0.7578805
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2075,0.7482337
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2080,0.738587
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2085,0.7289402
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2090,0.7192935
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2095,0.7096467
+Australia_NZ,industry,industry,industry,industrial energy use,Australia_NZ,2100,0.7
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,1975,0.1060869
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,1990,0.1459487
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2005,0.1277117
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2010,0.1263586
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2015,0.1360054
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2020,0.1456521
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2025,0.1552989
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2030,0.1649456
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2035,0.1745924
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2040,0.1842391
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2045,0.1938858
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2050,0.2035326
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2055,0.2131793
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2060,0.2228261
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2065,0.2324728
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2070,0.2421195
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2075,0.2517663
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2080,0.261413
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2085,0.2710598
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2090,0.2807065
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2095,0.2903533
+Australia_NZ,industry,industry,industry,industrial feedstocks,Australia_NZ,2100,0.3
+Brazil,industry,industry,industry,industrial energy use,Brazil,1975,0.8988625
+Brazil,industry,industry,industry,industrial energy use,Brazil,1990,0.8492481
+Brazil,industry,industry,industry,industrial energy use,Brazil,2005,0.8669017
+Brazil,industry,industry,industry,industrial energy use,Brazil,2010,0.8541239
+Brazil,industry,industry,industry,industrial energy use,Brazil,2015,0.8455615
+Brazil,industry,industry,industry,industrial energy use,Brazil,2020,0.836999
+Brazil,industry,industry,industry,industrial energy use,Brazil,2025,0.8284366
+Brazil,industry,industry,industry,industrial energy use,Brazil,2030,0.8198741
+Brazil,industry,industry,industry,industrial energy use,Brazil,2035,0.8113117
+Brazil,industry,industry,industry,industrial energy use,Brazil,2040,0.8027493
+Brazil,industry,industry,industry,industrial energy use,Brazil,2045,0.7941868
+Brazil,industry,industry,industry,industrial energy use,Brazil,2050,0.7856244
+Brazil,industry,industry,industry,industrial energy use,Brazil,2055,0.7770619
+Brazil,industry,industry,industry,industrial energy use,Brazil,2060,0.7684995
+Brazil,industry,industry,industry,industrial energy use,Brazil,2065,0.7599371
+Brazil,industry,industry,industry,industrial energy use,Brazil,2070,0.7513746
+Brazil,industry,industry,industry,industrial energy use,Brazil,2075,0.7428122
+Brazil,industry,industry,industry,industrial energy use,Brazil,2080,0.7342498
+Brazil,industry,industry,industry,industrial energy use,Brazil,2085,0.7256873
+Brazil,industry,industry,industry,industrial energy use,Brazil,2090,0.7171249
+Brazil,industry,industry,industry,industrial energy use,Brazil,2095,0.7085624
+Brazil,industry,industry,industry,industrial energy use,Brazil,2100,0.7
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,1975,0.1011375
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,1990,0.1507519
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2005,0.1330983
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2010,0.1458761
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2015,0.1544385
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2020,0.163001
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2025,0.1715634
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2030,0.1801259
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2035,0.1886883
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2040,0.1972507
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2045,0.2058132
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2050,0.2143756
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2055,0.2229381
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2060,0.2315005
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2065,0.2400629
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2070,0.2486254
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2075,0.2571878
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2080,0.2657502
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2085,0.2743127
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2090,0.2828751
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2095,0.2914376
+Brazil,industry,industry,industry,industrial feedstocks,Brazil,2100,0.3
+Canada,industry,industry,industry,industrial energy use,Canada,1975,0.8686144
+Canada,industry,industry,industry,industrial energy use,Canada,1990,0.7883674
+Canada,industry,industry,industry,industrial energy use,Canada,2005,0.74453
+Canada,industry,industry,industry,industrial energy use,Canada,2010,0.7494985
+Canada,industry,industry,industry,industrial energy use,Canada,2015,0.7467486
+Canada,industry,industry,industry,industrial energy use,Canada,2020,0.7439987
+Canada,industry,industry,industry,industrial energy use,Canada,2025,0.7412487
+Canada,industry,industry,industry,industrial energy use,Canada,2030,0.7384988
+Canada,industry,industry,industry,industrial energy use,Canada,2035,0.7357489
+Canada,industry,industry,industry,industrial energy use,Canada,2040,0.732999
+Canada,industry,industry,industry,industrial energy use,Canada,2045,0.7302491
+Canada,industry,industry,industry,industrial energy use,Canada,2050,0.7274992
+Canada,industry,industry,industry,industrial energy use,Canada,2055,0.7247492
+Canada,industry,industry,industry,industrial energy use,Canada,2060,0.7219993
+Canada,industry,industry,industry,industrial energy use,Canada,2065,0.7192494
+Canada,industry,industry,industry,industrial energy use,Canada,2070,0.7164995
+Canada,industry,industry,industry,industrial energy use,Canada,2075,0.7137496
+Canada,industry,industry,industry,industrial energy use,Canada,2080,0.7109997
+Canada,industry,industry,industry,industrial energy use,Canada,2085,0.7082497
+Canada,industry,industry,industry,industrial energy use,Canada,2090,0.7054998
+Canada,industry,industry,industry,industrial energy use,Canada,2095,0.7027499
+Canada,industry,industry,industry,industrial energy use,Canada,2100,0.7
+Canada,industry,industry,industry,industrial feedstocks,Canada,1975,0.1313856
+Canada,industry,industry,industry,industrial feedstocks,Canada,1990,0.2116326
+Canada,industry,industry,industry,industrial feedstocks,Canada,2005,0.25547
+Canada,industry,industry,industry,industrial feedstocks,Canada,2010,0.2505015
+Canada,industry,industry,industry,industrial feedstocks,Canada,2015,0.2532514
+Canada,industry,industry,industry,industrial feedstocks,Canada,2020,0.2560013
+Canada,industry,industry,industry,industrial feedstocks,Canada,2025,0.2587513
+Canada,industry,industry,industry,industrial feedstocks,Canada,2030,0.2615012
+Canada,industry,industry,industry,industrial feedstocks,Canada,2035,0.2642511
+Canada,industry,industry,industry,industrial feedstocks,Canada,2040,0.267001
+Canada,industry,industry,industry,industrial feedstocks,Canada,2045,0.2697509
+Canada,industry,industry,industry,industrial feedstocks,Canada,2050,0.2725008
+Canada,industry,industry,industry,industrial feedstocks,Canada,2055,0.2752508
+Canada,industry,industry,industry,industrial feedstocks,Canada,2060,0.2780007
+Canada,industry,industry,industry,industrial feedstocks,Canada,2065,0.2807506
+Canada,industry,industry,industry,industrial feedstocks,Canada,2070,0.2835005
+Canada,industry,industry,industry,industrial feedstocks,Canada,2075,0.2862504
+Canada,industry,industry,industry,industrial feedstocks,Canada,2080,0.2890003
+Canada,industry,industry,industry,industrial feedstocks,Canada,2085,0.2917503
+Canada,industry,industry,industry,industrial feedstocks,Canada,2090,0.2945002
+Canada,industry,industry,industry,industrial feedstocks,Canada,2095,0.2972501
+Canada,industry,industry,industry,industrial feedstocks,Canada,2100,0.3
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,1975,0.9232803
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,1990,0.8433965
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2005,0.6240842
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2010,0.6076648
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2015,0.6127946
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2020,0.6179243
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2025,0.623054
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2030,0.6281838
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2035,0.6333135
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2040,0.6384432
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2045,0.643573
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2050,0.6487027
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2055,0.6538324
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2060,0.6589622
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2065,0.6640919
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2070,0.6692216
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2075,0.6743513
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2080,0.6794811
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2085,0.6846108
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2090,0.6897405
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2095,0.6948703
+Central America and Caribbean,industry,industry,industry,industrial energy use,Central America and Caribbean,2100,0.7
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,1975,0.0767197
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,1990,0.1566035
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2005,0.3759158
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2010,0.3923352
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2015,0.3872054
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2020,0.3820757
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2025,0.376946
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2030,0.3718162
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2035,0.3666865
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2040,0.3615568
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2045,0.356427
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2050,0.3512973
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2055,0.3461676
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2060,0.3410378
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2065,0.3359081
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2070,0.3307784
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2075,0.3256487
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2080,0.3205189
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2085,0.3153892
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2090,0.3102595
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2095,0.3051297
+Central America and Caribbean,industry,industry,industry,industrial feedstocks,Central America and Caribbean,2100,0.3
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,1975,0.8684585
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,1990,0.9021292
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2005,0.9425711
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2010,0.9637802
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2015,0.9491257
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2020,0.9344712
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2025,0.9198168
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2030,0.9051623
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2035,0.8905079
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2040,0.8758534
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2045,0.861199
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2050,0.8465445
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2055,0.8318901
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2060,0.8172356
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2065,0.8025812
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2070,0.7879267
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2075,0.7732723
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2080,0.7586178
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2085,0.7439634
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2090,0.7293089
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2095,0.7146545
+Central Asia,industry,industry,industry,industrial energy use,Central Asia,2100,0.7
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,1975,0.1315415
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,1990,0.0978708
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2005,0.0574289
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2010,0.0362198
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2015,0.0508743
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2020,0.0655288
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2025,0.0801832
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2030,0.0948377
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2035,0.1094921
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2040,0.1241466
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2045,0.138801
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2050,0.1534555
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2055,0.1681099
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2060,0.1827644
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2065,0.1974188
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2070,0.2120733
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2075,0.2267277
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2080,0.2413822
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2085,0.2560366
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2090,0.2706911
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2095,0.2853455
+Central Asia,industry,industry,industry,industrial feedstocks,Central Asia,2100,0.3
+China,industry,industry,industry,industrial energy use,China,1975,0.9743841
+China,industry,industry,industry,industrial energy use,China,1990,0.8765309
+China,industry,industry,industry,industrial energy use,China,2005,0.8898603
+China,industry,industry,industry,industrial energy use,China,2010,0.8584359
+China,industry,industry,industry,industrial energy use,China,2015,0.8496339
+China,industry,industry,industry,industrial energy use,China,2020,0.8408319
+China,industry,industry,industry,industrial energy use,China,2025,0.8320299
+China,industry,industry,industry,industrial energy use,China,2030,0.8232279
+China,industry,industry,industry,industrial energy use,China,2035,0.8144259
+China,industry,industry,industry,industrial energy use,China,2040,0.8056239
+China,industry,industry,industry,industrial energy use,China,2045,0.7968219
+China,industry,industry,industry,industrial energy use,China,2050,0.7880199
+China,industry,industry,industry,industrial energy use,China,2055,0.779218
+China,industry,industry,industry,industrial energy use,China,2060,0.770416
+China,industry,industry,industry,industrial energy use,China,2065,0.761614
+China,industry,industry,industry,industrial energy use,China,2070,0.752812
+China,industry,industry,industry,industrial energy use,China,2075,0.74401
+China,industry,industry,industry,industrial energy use,China,2080,0.735208
+China,industry,industry,industry,industrial energy use,China,2085,0.726406
+China,industry,industry,industry,industrial energy use,China,2090,0.717604
+China,industry,industry,industry,industrial energy use,China,2095,0.708802
+China,industry,industry,industry,industrial energy use,China,2100,0.7
+China,industry,industry,industry,industrial feedstocks,China,1975,0.0256159
+China,industry,industry,industry,industrial feedstocks,China,1990,0.1234691
+China,industry,industry,industry,industrial feedstocks,China,2005,0.1101397
+China,industry,industry,industry,industrial feedstocks,China,2010,0.1415641
+China,industry,industry,industry,industrial feedstocks,China,2015,0.1503661
+China,industry,industry,industry,industrial feedstocks,China,2020,0.1591681
+China,industry,industry,industry,industrial feedstocks,China,2025,0.1679701
+China,industry,industry,industry,industrial feedstocks,China,2030,0.1767721
+China,industry,industry,industry,industrial feedstocks,China,2035,0.1855741
+China,industry,industry,industry,industrial feedstocks,China,2040,0.1943761
+China,industry,industry,industry,industrial feedstocks,China,2045,0.2031781
+China,industry,industry,industry,industrial feedstocks,China,2050,0.2119801
+China,industry,industry,industry,industrial feedstocks,China,2055,0.220782
+China,industry,industry,industry,industrial feedstocks,China,2060,0.229584
+China,industry,industry,industry,industrial feedstocks,China,2065,0.238386
+China,industry,industry,industry,industrial feedstocks,China,2070,0.247188
+China,industry,industry,industry,industrial feedstocks,China,2075,0.25599
+China,industry,industry,industry,industrial feedstocks,China,2080,0.264792
+China,industry,industry,industry,industrial feedstocks,China,2085,0.273594
+China,industry,industry,industry,industrial feedstocks,China,2090,0.282396
+China,industry,industry,industry,industrial feedstocks,China,2095,0.291198
+China,industry,industry,industry,industrial feedstocks,China,2100,0.3
+Colombia,industry,industry,industry,industrial energy use,Colombia,1975,0.9751094
+Colombia,industry,industry,industry,industrial energy use,Colombia,1990,0.9492941
+Colombia,industry,industry,industry,industrial energy use,Colombia,2005,0.8139577
+Colombia,industry,industry,industry,industrial energy use,Colombia,2010,0.8718331
+Colombia,industry,industry,industry,industrial energy use,Colombia,2015,0.8622868
+Colombia,industry,industry,industry,industrial energy use,Colombia,2020,0.8527405
+Colombia,industry,industry,industry,industrial energy use,Colombia,2025,0.8431942
+Colombia,industry,industry,industry,industrial energy use,Colombia,2030,0.8336479
+Colombia,industry,industry,industry,industrial energy use,Colombia,2035,0.8241017
+Colombia,industry,industry,industry,industrial energy use,Colombia,2040,0.8145554
+Colombia,industry,industry,industry,industrial energy use,Colombia,2045,0.8050091
+Colombia,industry,industry,industry,industrial energy use,Colombia,2050,0.7954628
+Colombia,industry,industry,industry,industrial energy use,Colombia,2055,0.7859165
+Colombia,industry,industry,industry,industrial energy use,Colombia,2060,0.7763702
+Colombia,industry,industry,industry,industrial energy use,Colombia,2065,0.766824
+Colombia,industry,industry,industry,industrial energy use,Colombia,2070,0.7572777
+Colombia,industry,industry,industry,industrial energy use,Colombia,2075,0.7477314
+Colombia,industry,industry,industry,industrial energy use,Colombia,2080,0.7381851
+Colombia,industry,industry,industry,industrial energy use,Colombia,2085,0.7286388
+Colombia,industry,industry,industry,industrial energy use,Colombia,2090,0.7190926
+Colombia,industry,industry,industry,industrial energy use,Colombia,2095,0.7095463
+Colombia,industry,industry,industry,industrial energy use,Colombia,2100,0.7
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,1975,0.0248906
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,1990,0.0507059
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2005,0.1860423
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2010,0.1281669
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2015,0.1377132
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2020,0.1472595
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2025,0.1568058
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2030,0.1663521
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2035,0.1758983
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2040,0.1854446
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2045,0.1949909
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2050,0.2045372
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2055,0.2140835
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2060,0.2236298
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2065,0.233176
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2070,0.2427223
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2075,0.2522686
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2080,0.2618149
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2085,0.2713612
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2090,0.2809074
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2095,0.2904537
+Colombia,industry,industry,industry,industrial feedstocks,Colombia,2100,0.3
+EU-12,industry,industry,industry,industrial energy use,EU-12,1975,0.9324072
+EU-12,industry,industry,industry,industrial energy use,EU-12,1990,0.9176508
+EU-12,industry,industry,industry,industrial energy use,EU-12,2005,0.8205883
+EU-12,industry,industry,industry,industrial energy use,EU-12,2010,0.8247797
+EU-12,industry,industry,industry,industrial energy use,EU-12,2015,0.8178475
+EU-12,industry,industry,industry,industrial energy use,EU-12,2020,0.8109153
+EU-12,industry,industry,industry,industrial energy use,EU-12,2025,0.8039831
+EU-12,industry,industry,industry,industrial energy use,EU-12,2030,0.7970509
+EU-12,industry,industry,industry,industrial energy use,EU-12,2035,0.7901187
+EU-12,industry,industry,industry,industrial energy use,EU-12,2040,0.7831864
+EU-12,industry,industry,industry,industrial energy use,EU-12,2045,0.7762542
+EU-12,industry,industry,industry,industrial energy use,EU-12,2050,0.769322
+EU-12,industry,industry,industry,industrial energy use,EU-12,2055,0.7623898
+EU-12,industry,industry,industry,industrial energy use,EU-12,2060,0.7554576
+EU-12,industry,industry,industry,industrial energy use,EU-12,2065,0.7485254
+EU-12,industry,industry,industry,industrial energy use,EU-12,2070,0.7415932
+EU-12,industry,industry,industry,industrial energy use,EU-12,2075,0.734661
+EU-12,industry,industry,industry,industrial energy use,EU-12,2080,0.7277288
+EU-12,industry,industry,industry,industrial energy use,EU-12,2085,0.7207966
+EU-12,industry,industry,industry,industrial energy use,EU-12,2090,0.7138644
+EU-12,industry,industry,industry,industrial energy use,EU-12,2095,0.7069322
+EU-12,industry,industry,industry,industrial energy use,EU-12,2100,0.7
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,1975,0.0675928
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,1990,0.0823492
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2005,0.1794117
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2010,0.1752203
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2015,0.1821525
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2020,0.1890847
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2025,0.1960169
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2030,0.2029491
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2035,0.2098813
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2040,0.2168136
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2045,0.2237458
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2050,0.230678
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2055,0.2376102
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2060,0.2445424
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2065,0.2514746
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2070,0.2584068
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2075,0.265339
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2080,0.2722712
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2085,0.2792034
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2090,0.2861356
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2095,0.2930678
+EU-12,industry,industry,industry,industrial feedstocks,EU-12,2100,0.3
+EU-15,industry,industry,industry,industrial energy use,EU-15,1975,0.8254056
+EU-15,industry,industry,industry,industrial energy use,EU-15,1990,0.7655144
+EU-15,industry,industry,industry,industrial energy use,EU-15,2005,0.7511851
+EU-15,industry,industry,industry,industrial energy use,EU-15,2010,0.7424668
+EU-15,industry,industry,industry,industrial energy use,EU-15,2015,0.7401076
+EU-15,industry,industry,industry,industrial energy use,EU-15,2020,0.7377483
+EU-15,industry,industry,industry,industrial energy use,EU-15,2025,0.735389
+EU-15,industry,industry,industry,industrial energy use,EU-15,2030,0.7330298
+EU-15,industry,industry,industry,industrial energy use,EU-15,2035,0.7306705
+EU-15,industry,industry,industry,industrial energy use,EU-15,2040,0.7283112
+EU-15,industry,industry,industry,industrial energy use,EU-15,2045,0.7259519
+EU-15,industry,industry,industry,industrial energy use,EU-15,2050,0.7235927
+EU-15,industry,industry,industry,industrial energy use,EU-15,2055,0.7212334
+EU-15,industry,industry,industry,industrial energy use,EU-15,2060,0.7188741
+EU-15,industry,industry,industry,industrial energy use,EU-15,2065,0.7165149
+EU-15,industry,industry,industry,industrial energy use,EU-15,2070,0.7141556
+EU-15,industry,industry,industry,industrial energy use,EU-15,2075,0.7117963
+EU-15,industry,industry,industry,industrial energy use,EU-15,2080,0.7094371
+EU-15,industry,industry,industry,industrial energy use,EU-15,2085,0.7070778
+EU-15,industry,industry,industry,industrial energy use,EU-15,2090,0.7047185
+EU-15,industry,industry,industry,industrial energy use,EU-15,2095,0.7023593
+EU-15,industry,industry,industry,industrial energy use,EU-15,2100,0.7
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,1975,0.1745944
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,1990,0.2344856
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2005,0.2488149
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2010,0.2575332
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2015,0.2598924
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2020,0.2622517
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2025,0.264611
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2030,0.2669702
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2035,0.2693295
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2040,0.2716888
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2045,0.2740481
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2050,0.2764073
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2055,0.2787666
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2060,0.2811259
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2065,0.2834851
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2070,0.2858444
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2075,0.2882037
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2080,0.2905629
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2085,0.2929222
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2090,0.2952815
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2095,0.2976407
+EU-15,industry,industry,industry,industrial feedstocks,EU-15,2100,0.3
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,1975,0.8374914
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,1990,0.8964992
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2005,0.8488853
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2010,0.8784418
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2015,0.8685284
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2020,0.858615
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2025,0.8487015
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2030,0.8387881
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2035,0.8288747
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2040,0.8189612
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2045,0.8090478
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2050,0.7991344
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2055,0.7892209
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2060,0.7793075
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2065,0.769394
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2070,0.7594806
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2075,0.7495672
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2080,0.7396537
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2085,0.7297403
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2090,0.7198269
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2095,0.7099134
+Europe_Eastern,industry,industry,industry,industrial energy use,Europe_Eastern,2100,0.7
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,1975,0.1625086
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,1990,0.1035008
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2005,0.1511147
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2010,0.1215582
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2015,0.1314716
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2020,0.141385
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2025,0.1512985
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2030,0.1612119
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2035,0.1711253
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2040,0.1810388
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2045,0.1909522
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2050,0.2008656
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2055,0.2107791
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2060,0.2206925
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2065,0.230606
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2070,0.2405194
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2075,0.2504328
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2080,0.2603463
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2085,0.2702597
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2090,0.2801731
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2095,0.29008659999999997
+Europe_Eastern,industry,industry,industry,industrial feedstocks,Europe_Eastern,2100,0.3
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,1975,0.8716947
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,1990,0.8506676
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2005,0.8459808
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2010,0.7880431
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2015,0.7831518
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2020,0.7782605
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2025,0.7733692
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2030,0.7684779
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2035,0.7635867
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2040,0.7586954
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2045,0.7538041
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2050,0.7489128
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2055,0.7440215
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2060,0.7391302
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2065,0.734239
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2070,0.7293477
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2075,0.7244564
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2080,0.7195651
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2085,0.7146738
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2090,0.7097826
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2095,0.7048913
+Europe_Non_EU,industry,industry,industry,industrial energy use,Europe_Non_EU,2100,0.7
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,1975,0.1283053
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,1990,0.1493324
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2005,0.1540192
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2010,0.2119569
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2015,0.2168482
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2020,0.2217395
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2025,0.2266308
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2030,0.2315221
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2035,0.2364133
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2040,0.2413046
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2045,0.2461959
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2050,0.2510872
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2055,0.2559785
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2060,0.2608698
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2065,0.265761
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2070,0.2706523
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2075,0.2755436
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2080,0.2804349
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2085,0.2853262
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2090,0.2902174
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2095,0.2951087
+Europe_Non_EU,industry,industry,industry,industrial feedstocks,Europe_Non_EU,2100,0.3
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,1975,0.8503293
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,1990,0.8294036
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2005,0.8544011
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2010,0.8466603
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2015,0.8385125
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2020,0.8303647
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2025,0.8222169
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2030,0.8140691
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2035,0.8059213
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2040,0.7977736
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2045,0.7896258
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2050,0.781478
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2055,0.7733302
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2060,0.7651824
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2065,0.7570346
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2070,0.7488868
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2075,0.740739
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2080,0.7325912
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2085,0.7244434
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2090,0.7162956
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2095,0.7081478
+European Free Trade Association,industry,industry,industry,industrial energy use,European Free Trade Association,2100,0.7
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,1975,0.1496707
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,1990,0.1705964
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2005,0.1455989
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2010,0.1533397
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2015,0.1614875
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2020,0.1696353
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2025,0.1777831
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2030,0.1859309
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2035,0.1940787
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2040,0.2022264
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2045,0.2103742
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2050,0.218522
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2055,0.2266698
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2060,0.2348176
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2065,0.2429654
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2070,0.2511132
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2075,0.259261
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2080,0.2674088
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2085,0.2755566
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2090,0.2837044
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2095,0.2918522
+European Free Trade Association,industry,industry,industry,industrial feedstocks,European Free Trade Association,2100,0.3
+India,industry,industry,industry,industrial energy use,India,1975,0.9125772
+India,industry,industry,industry,industrial energy use,India,1990,0.8928186
+India,industry,industry,industry,industrial energy use,India,2005,0.8035206
+India,industry,industry,industry,industrial energy use,India,2010,0.8248893
+India,industry,industry,industry,industrial energy use,India,2015,0.817951
+India,industry,industry,industry,industrial energy use,India,2020,0.8110127
+India,industry,industry,industry,industrial energy use,India,2025,0.8040744
+India,industry,industry,industry,industrial energy use,India,2030,0.7971361
+India,industry,industry,industry,industrial energy use,India,2035,0.7901978
+India,industry,industry,industry,industrial energy use,India,2040,0.7832595
+India,industry,industry,industry,industrial energy use,India,2045,0.7763212
+India,industry,industry,industry,industrial energy use,India,2050,0.7693829
+India,industry,industry,industry,industrial energy use,India,2055,0.7624447
+India,industry,industry,industry,industrial energy use,India,2060,0.7555064
+India,industry,industry,industry,industrial energy use,India,2065,0.7485681
+India,industry,industry,industry,industrial energy use,India,2070,0.7416298
+India,industry,industry,industry,industrial energy use,India,2075,0.7346915
+India,industry,industry,industry,industrial energy use,India,2080,0.7277532
+India,industry,industry,industry,industrial energy use,India,2085,0.7208149
+India,industry,industry,industry,industrial energy use,India,2090,0.7138766
+India,industry,industry,industry,industrial energy use,India,2095,0.7069383
+India,industry,industry,industry,industrial energy use,India,2100,0.7
+India,industry,industry,industry,industrial feedstocks,India,1975,0.0874228
+India,industry,industry,industry,industrial feedstocks,India,1990,0.1071814
+India,industry,industry,industry,industrial feedstocks,India,2005,0.1964794
+India,industry,industry,industry,industrial feedstocks,India,2010,0.1751107
+India,industry,industry,industry,industrial feedstocks,India,2015,0.182049
+India,industry,industry,industry,industrial feedstocks,India,2020,0.1889873
+India,industry,industry,industry,industrial feedstocks,India,2025,0.1959256
+India,industry,industry,industry,industrial feedstocks,India,2030,0.2028639
+India,industry,industry,industry,industrial feedstocks,India,2035,0.2098022
+India,industry,industry,industry,industrial feedstocks,India,2040,0.2167405
+India,industry,industry,industry,industrial feedstocks,India,2045,0.2236788
+India,industry,industry,industry,industrial feedstocks,India,2050,0.2306171
+India,industry,industry,industry,industrial feedstocks,India,2055,0.2375553
+India,industry,industry,industry,industrial feedstocks,India,2060,0.2444936
+India,industry,industry,industry,industrial feedstocks,India,2065,0.2514319
+India,industry,industry,industry,industrial feedstocks,India,2070,0.2583702
+India,industry,industry,industry,industrial feedstocks,India,2075,0.2653085
+India,industry,industry,industry,industrial feedstocks,India,2080,0.2722468
+India,industry,industry,industry,industrial feedstocks,India,2085,0.2791851
+India,industry,industry,industry,industrial feedstocks,India,2090,0.28612340000000003
+India,industry,industry,industry,industrial feedstocks,India,2095,0.2930617
+India,industry,industry,industry,industrial feedstocks,India,2100,0.3
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,1975,0.9566123
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,1990,0.7851227
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2005,0.8098532
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2010,0.8848064
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2015,0.8745394
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2020,0.8642723
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2025,0.8540053
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2030,0.8437383
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2035,0.8334713
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2040,0.8232043
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2045,0.8129372
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2050,0.8026702
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2055,0.7924032
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2060,0.7821362
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2065,0.7718692
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2070,0.7616021
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2075,0.7513351
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2080,0.7410681
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2085,0.7308011
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2090,0.720534
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2095,0.710267
+Indonesia,industry,industry,industry,industrial energy use,Indonesia,2100,0.7
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,1975,0.0433877
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,1990,0.2148773
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2005,0.1901468
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2010,0.1151936
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2015,0.1254606
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2020,0.1357277
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2025,0.1459947
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2030,0.1562617
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2035,0.1665287
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2040,0.1767957
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2045,0.1870628
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2050,0.1973298
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2055,0.2075968
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2060,0.2178638
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2065,0.2281308
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2070,0.2383979
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2075,0.2486649
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2080,0.2589319
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2085,0.2691989
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2090,0.279466
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2095,0.289733
+Indonesia,industry,industry,industry,industrial feedstocks,Indonesia,2100,0.3
+Japan,industry,industry,industry,industrial energy use,Japan,1975,0.7806859
+Japan,industry,industry,industry,industrial energy use,Japan,1990,0.7711336
+Japan,industry,industry,industry,industrial energy use,Japan,2005,0.7256308
+Japan,industry,industry,industry,industrial energy use,Japan,2010,0.7265996
+Japan,industry,industry,industry,industrial energy use,Japan,2015,0.7251218
+Japan,industry,industry,industry,industrial energy use,Japan,2020,0.7236441
+Japan,industry,industry,industry,industrial energy use,Japan,2025,0.7221663
+Japan,industry,industry,industry,industrial energy use,Japan,2030,0.7206886
+Japan,industry,industry,industry,industrial energy use,Japan,2035,0.7192108
+Japan,industry,industry,industry,industrial energy use,Japan,2040,0.717733
+Japan,industry,industry,industry,industrial energy use,Japan,2045,0.7162553
+Japan,industry,industry,industry,industrial energy use,Japan,2050,0.7147775
+Japan,industry,industry,industry,industrial energy use,Japan,2055,0.7132998
+Japan,industry,industry,industry,industrial energy use,Japan,2060,0.711822
+Japan,industry,industry,industry,industrial energy use,Japan,2065,0.7103443
+Japan,industry,industry,industry,industrial energy use,Japan,2070,0.7088665
+Japan,industry,industry,industry,industrial energy use,Japan,2075,0.7073888
+Japan,industry,industry,industry,industrial energy use,Japan,2080,0.705911
+Japan,industry,industry,industry,industrial energy use,Japan,2085,0.7044333
+Japan,industry,industry,industry,industrial energy use,Japan,2090,0.7029555
+Japan,industry,industry,industry,industrial energy use,Japan,2095,0.7014778
+Japan,industry,industry,industry,industrial energy use,Japan,2100,0.7
+Japan,industry,industry,industry,industrial feedstocks,Japan,1975,0.2193141
+Japan,industry,industry,industry,industrial feedstocks,Japan,1990,0.2288664
+Japan,industry,industry,industry,industrial feedstocks,Japan,2005,0.2743692
+Japan,industry,industry,industry,industrial feedstocks,Japan,2010,0.2734004
+Japan,industry,industry,industry,industrial feedstocks,Japan,2015,0.2748782
+Japan,industry,industry,industry,industrial feedstocks,Japan,2020,0.2763559
+Japan,industry,industry,industry,industrial feedstocks,Japan,2025,0.2778337
+Japan,industry,industry,industry,industrial feedstocks,Japan,2030,0.2793114
+Japan,industry,industry,industry,industrial feedstocks,Japan,2035,0.2807892
+Japan,industry,industry,industry,industrial feedstocks,Japan,2040,0.282267
+Japan,industry,industry,industry,industrial feedstocks,Japan,2045,0.2837447
+Japan,industry,industry,industry,industrial feedstocks,Japan,2050,0.2852225
+Japan,industry,industry,industry,industrial feedstocks,Japan,2055,0.2867002
+Japan,industry,industry,industry,industrial feedstocks,Japan,2060,0.288178
+Japan,industry,industry,industry,industrial feedstocks,Japan,2065,0.2896557
+Japan,industry,industry,industry,industrial feedstocks,Japan,2070,0.2911335
+Japan,industry,industry,industry,industrial feedstocks,Japan,2075,0.2926112
+Japan,industry,industry,industry,industrial feedstocks,Japan,2080,0.294089
+Japan,industry,industry,industry,industrial feedstocks,Japan,2085,0.2955667
+Japan,industry,industry,industry,industrial feedstocks,Japan,2090,0.2970445
+Japan,industry,industry,industry,industrial feedstocks,Japan,2095,0.2985222
+Japan,industry,industry,industry,industrial feedstocks,Japan,2100,0.3
+Mexico,industry,industry,industry,industrial energy use,Mexico,1975,0.8682081
+Mexico,industry,industry,industry,industrial energy use,Mexico,1990,0.769466
+Mexico,industry,industry,industry,industrial energy use,Mexico,2005,0.7975601
+Mexico,industry,industry,industry,industrial energy use,Mexico,2010,0.830936
+Mexico,industry,industry,industry,industrial energy use,Mexico,2015,0.8236618
+Mexico,industry,industry,industry,industrial energy use,Mexico,2020,0.8163876
+Mexico,industry,industry,industry,industrial energy use,Mexico,2025,0.8091133
+Mexico,industry,industry,industry,industrial energy use,Mexico,2030,0.8018391
+Mexico,industry,industry,industry,industrial energy use,Mexico,2035,0.7945649
+Mexico,industry,industry,industry,industrial energy use,Mexico,2040,0.7872907
+Mexico,industry,industry,industry,industrial energy use,Mexico,2045,0.7800164
+Mexico,industry,industry,industry,industrial energy use,Mexico,2050,0.7727422
+Mexico,industry,industry,industry,industrial energy use,Mexico,2055,0.765468
+Mexico,industry,industry,industry,industrial energy use,Mexico,2060,0.7581938
+Mexico,industry,industry,industry,industrial energy use,Mexico,2065,0.7509196
+Mexico,industry,industry,industry,industrial energy use,Mexico,2070,0.7436453
+Mexico,industry,industry,industry,industrial energy use,Mexico,2075,0.7363711
+Mexico,industry,industry,industry,industrial energy use,Mexico,2080,0.7290969
+Mexico,industry,industry,industry,industrial energy use,Mexico,2085,0.7218227
+Mexico,industry,industry,industry,industrial energy use,Mexico,2090,0.7145484
+Mexico,industry,industry,industry,industrial energy use,Mexico,2095,0.7072742
+Mexico,industry,industry,industry,industrial energy use,Mexico,2100,0.7
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,1975,0.1317919
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,1990,0.230534
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2005,0.2024399
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2010,0.169064
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2015,0.1763382
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2020,0.1836124
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2025,0.1908867
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2030,0.1981609
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2035,0.2054351
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2040,0.2127093
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2045,0.2199836
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2050,0.2272578
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2055,0.234532
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2060,0.2418062
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2065,0.2490804
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2070,0.2563547
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2075,0.2636289
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2080,0.2709031
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2085,0.2781773
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2090,0.2854516
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2095,0.2927258
+Mexico,industry,industry,industry,industrial feedstocks,Mexico,2100,0.3
+Middle East,industry,industry,industry,industrial energy use,Middle East,1975,0.7517883
+Middle East,industry,industry,industry,industrial energy use,Middle East,1990,0.7037325
+Middle East,industry,industry,industry,industrial energy use,Middle East,2005,0.6959917
+Middle East,industry,industry,industry,industrial energy use,Middle East,2010,0.6956855
+Middle East,industry,industry,industry,industrial energy use,Middle East,2015,0.6959252
+Middle East,industry,industry,industry,industrial energy use,Middle East,2020,0.6961649
+Middle East,industry,industry,industry,industrial energy use,Middle East,2025,0.6964046
+Middle East,industry,industry,industry,industrial energy use,Middle East,2030,0.6966443
+Middle East,industry,industry,industry,industrial energy use,Middle East,2035,0.696884
+Middle East,industry,industry,industry,industrial energy use,Middle East,2040,0.6971237
+Middle East,industry,industry,industry,industrial energy use,Middle East,2045,0.6973634
+Middle East,industry,industry,industry,industrial energy use,Middle East,2050,0.6976031
+Middle East,industry,industry,industry,industrial energy use,Middle East,2055,0.6978428
+Middle East,industry,industry,industry,industrial energy use,Middle East,2060,0.6980825
+Middle East,industry,industry,industry,industrial energy use,Middle East,2065,0.6983222
+Middle East,industry,industry,industry,industrial energy use,Middle East,2070,0.6985618
+Middle East,industry,industry,industry,industrial energy use,Middle East,2075,0.6988015
+Middle East,industry,industry,industry,industrial energy use,Middle East,2080,0.6990412
+Middle East,industry,industry,industry,industrial energy use,Middle East,2085,0.6992809
+Middle East,industry,industry,industry,industrial energy use,Middle East,2090,0.6995206
+Middle East,industry,industry,industry,industrial energy use,Middle East,2095,0.6997603
+Middle East,industry,industry,industry,industrial energy use,Middle East,2100,0.7
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,1975,0.2482117
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,1990,0.2962675
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2005,0.3040083
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2010,0.3043145
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2015,0.3040748
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2020,0.3038351
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2025,0.3035954
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2030,0.3033557
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2035,0.303116
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2040,0.3028763
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2045,0.3026366
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2050,0.3023969
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2055,0.3021572
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2060,0.3019175
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2065,0.3016778
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2070,0.3014382
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2075,0.3011985
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2080,0.3009588
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2085,0.3007191
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2090,0.3004794
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2095,0.3002397
+Middle East,industry,industry,industry,industrial feedstocks,Middle East,2100,0.3
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,1975,0.9101891
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,1990,0.8214254
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2005,0.8721332
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2010,0.8994183
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2015,0.8883395
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2020,0.8772607
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2025,0.8661819
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2030,0.8551031
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2035,0.8440244
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2040,0.8329456
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2045,0.8218668
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2050,0.810788
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2055,0.7997092
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2060,0.7886304
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2065,0.7775516
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2070,0.7664728
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2075,0.755394
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2080,0.7443152
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2085,0.7332364
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2090,0.7221576
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2095,0.7110788
+Pakistan,industry,industry,industry,industrial energy use,Pakistan,2100,0.7
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,1975,0.0898109
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,1990,0.1785746
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2005,0.1278668
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2010,0.1005817
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2015,0.1116605
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2020,0.1227393
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2025,0.1338181
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2030,0.1448969
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2035,0.1559756
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2040,0.1670544
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2045,0.1781332
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2050,0.189212
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2055,0.2002908
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2060,0.2113696
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2065,0.2224484
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2070,0.2335272
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2075,0.244606
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2080,0.2556848
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2085,0.2667636
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2090,0.2778424
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2095,0.2889212
+Pakistan,industry,industry,industry,industrial feedstocks,Pakistan,2100,0.3
+Russia,industry,industry,industry,industrial energy use,Russia,1975,0.9357071
+Russia,industry,industry,industry,industrial energy use,Russia,1990,0.8895856
+Russia,industry,industry,industry,industrial energy use,Russia,2005,0.8343785
+Russia,industry,industry,industry,industrial energy use,Russia,2010,0.7937997
+Russia,industry,industry,industry,industrial energy use,Russia,2015,0.7885886
+Russia,industry,industry,industry,industrial energy use,Russia,2020,0.7833775
+Russia,industry,industry,industry,industrial energy use,Russia,2025,0.7781665
+Russia,industry,industry,industry,industrial energy use,Russia,2030,0.7729554
+Russia,industry,industry,industry,industrial energy use,Russia,2035,0.7677443
+Russia,industry,industry,industry,industrial energy use,Russia,2040,0.7625332
+Russia,industry,industry,industry,industrial energy use,Russia,2045,0.7573221
+Russia,industry,industry,industry,industrial energy use,Russia,2050,0.752111
+Russia,industry,industry,industry,industrial energy use,Russia,2055,0.7468999
+Russia,industry,industry,industry,industrial energy use,Russia,2060,0.7416888
+Russia,industry,industry,industry,industrial energy use,Russia,2065,0.7364777
+Russia,industry,industry,industry,industrial energy use,Russia,2070,0.7312666
+Russia,industry,industry,industry,industrial energy use,Russia,2075,0.7260555
+Russia,industry,industry,industry,industrial energy use,Russia,2080,0.7208444
+Russia,industry,industry,industry,industrial energy use,Russia,2085,0.7156333
+Russia,industry,industry,industry,industrial energy use,Russia,2090,0.7104222
+Russia,industry,industry,industry,industrial energy use,Russia,2095,0.7052111
+Russia,industry,industry,industry,industrial energy use,Russia,2100,0.7
+Russia,industry,industry,industry,industrial feedstocks,Russia,1975,0.0642929
+Russia,industry,industry,industry,industrial feedstocks,Russia,1990,0.1104144
+Russia,industry,industry,industry,industrial feedstocks,Russia,2005,0.1656215
+Russia,industry,industry,industry,industrial feedstocks,Russia,2010,0.2062003
+Russia,industry,industry,industry,industrial feedstocks,Russia,2015,0.2114114
+Russia,industry,industry,industry,industrial feedstocks,Russia,2020,0.2166225
+Russia,industry,industry,industry,industrial feedstocks,Russia,2025,0.2218335
+Russia,industry,industry,industry,industrial feedstocks,Russia,2030,0.2270446
+Russia,industry,industry,industry,industrial feedstocks,Russia,2035,0.2322557
+Russia,industry,industry,industry,industrial feedstocks,Russia,2040,0.2374668
+Russia,industry,industry,industry,industrial feedstocks,Russia,2045,0.2426779
+Russia,industry,industry,industry,industrial feedstocks,Russia,2050,0.247889
+Russia,industry,industry,industry,industrial feedstocks,Russia,2055,0.2531001
+Russia,industry,industry,industry,industrial feedstocks,Russia,2060,0.2583112
+Russia,industry,industry,industry,industrial feedstocks,Russia,2065,0.2635223
+Russia,industry,industry,industry,industrial feedstocks,Russia,2070,0.2687334
+Russia,industry,industry,industry,industrial feedstocks,Russia,2075,0.2739445
+Russia,industry,industry,industry,industrial feedstocks,Russia,2080,0.2791556
+Russia,industry,industry,industry,industrial feedstocks,Russia,2085,0.28436669999999997
+Russia,industry,industry,industry,industrial feedstocks,Russia,2090,0.2895778
+Russia,industry,industry,industry,industrial feedstocks,Russia,2095,0.2947889
+Russia,industry,industry,industry,industrial feedstocks,Russia,2100,0.3
+South Africa,industry,industry,industry,industrial energy use,South Africa,1975,0.9581086
+South Africa,industry,industry,industry,industrial energy use,South Africa,1990,0.8738238
+South Africa,industry,industry,industry,industrial energy use,South Africa,2005,0.9167031
+South Africa,industry,industry,industry,industrial energy use,South Africa,2010,0.8973244
+South Africa,industry,industry,industry,industrial energy use,South Africa,2015,0.8863619
+South Africa,industry,industry,industry,industrial energy use,South Africa,2020,0.8753995
+South Africa,industry,industry,industry,industrial energy use,South Africa,2025,0.864437
+South Africa,industry,industry,industry,industrial energy use,South Africa,2030,0.8534745
+South Africa,industry,industry,industry,industrial energy use,South Africa,2035,0.8425121
+South Africa,industry,industry,industry,industrial energy use,South Africa,2040,0.8315496
+South Africa,industry,industry,industry,industrial energy use,South Africa,2045,0.8205871
+South Africa,industry,industry,industry,industrial energy use,South Africa,2050,0.8096247
+South Africa,industry,industry,industry,industrial energy use,South Africa,2055,0.7986622
+South Africa,industry,industry,industry,industrial energy use,South Africa,2060,0.7876997
+South Africa,industry,industry,industry,industrial energy use,South Africa,2065,0.7767373
+South Africa,industry,industry,industry,industrial energy use,South Africa,2070,0.7657748
+South Africa,industry,industry,industry,industrial energy use,South Africa,2075,0.7548123
+South Africa,industry,industry,industry,industrial energy use,South Africa,2080,0.7438499
+South Africa,industry,industry,industry,industrial energy use,South Africa,2085,0.7328874
+South Africa,industry,industry,industry,industrial energy use,South Africa,2090,0.7219249
+South Africa,industry,industry,industry,industrial energy use,South Africa,2095,0.7109625
+South Africa,industry,industry,industry,industrial energy use,South Africa,2100,0.7
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,1975,0.0418914
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,1990,0.1261762
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2005,0.0832969
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2010,0.1026756
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2015,0.1136381
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2020,0.1246005
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2025,0.135563
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2030,0.1465255
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2035,0.1574879
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2040,0.1684504
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2045,0.1794129
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2050,0.1903753
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2055,0.2013378
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2060,0.2123003
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2065,0.2232627
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2070,0.2342252
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2075,0.2451877
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2080,0.2561501
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2085,0.2671126
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2090,0.2780751
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2095,0.2890375
+South Africa,industry,industry,industry,industrial feedstocks,South Africa,2100,0.3
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,1975,0.9256968
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,1990,0.9484883
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2005,0.9380418
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2010,0.9623887
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2015,0.9478115
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2020,0.9332344
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2025,0.9186572
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2030,0.9040801
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2035,0.8895029
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2040,0.8749258
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2045,0.8603486
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2050,0.8457715
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2055,0.8311943
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2060,0.8166172
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2065,0.80204
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2070,0.7874629
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2075,0.7728857
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2080,0.7583086
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2085,0.7437314
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2090,0.7291543
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2095,0.7145771
+South America_Northern,industry,industry,industry,industrial energy use,South America_Northern,2100,0.7
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,1975,0.0743032
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,1990,0.0515117
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2005,0.0619582
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2010,0.0376113
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2015,0.0521885
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2020,0.0667656
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2025,0.0813428
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2030,0.0959199
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2035,0.1104971
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2040,0.1250742
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2045,0.1396514
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2050,0.1542285
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2055,0.1688057
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2060,0.1833828
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2065,0.19796
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2070,0.2125371
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2075,0.2271143
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2080,0.2416914
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2085,0.2562686
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2090,0.2708457
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2095,0.2854229
+South America_Northern,industry,industry,industry,industrial feedstocks,South America_Northern,2100,0.3
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,1975,0.9679209
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,1990,0.8833181
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2005,0.8405151
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2010,0.9135916
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2015,0.9017254
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2020,0.8898592
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2025,0.877993
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2030,0.8661268
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2035,0.8542606
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2040,0.8423944
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2045,0.8305282
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2050,0.818662
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2055,0.8067958
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2060,0.7949296
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2065,0.7830634
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2070,0.7711972
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2075,0.759331
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2080,0.7474648
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2085,0.7355986
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2090,0.7237324
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2095,0.7118662
+South America_Southern,industry,industry,industry,industrial energy use,South America_Southern,2100,0.7
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,1975,0.0320791
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,1990,0.1166819
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2005,0.1594849
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2010,0.0864084
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2015,0.0982746
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2020,0.1101408
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2025,0.122007
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2030,0.1338732
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2035,0.1457394
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2040,0.1576056
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2045,0.1694718
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2050,0.181338
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2055,0.1932042
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2060,0.2050704
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2065,0.2169366
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2070,0.2288028
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2075,0.240669
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2080,0.2525352
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2085,0.2644014
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2090,0.2762676
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2095,0.2881338
+South America_Southern,industry,industry,industry,industrial feedstocks,South America_Southern,2100,0.3
+South Asia,industry,industry,industry,industrial energy use,South Asia,1975,0.9078488
+South Asia,industry,industry,industry,industrial energy use,South Asia,1990,0.6880411
+South Asia,industry,industry,industry,industrial energy use,South Asia,2005,0.7340036
+South Asia,industry,industry,industry,industrial energy use,South Asia,2010,0.8460445
+South Asia,industry,industry,industry,industrial energy use,South Asia,2015,0.8379309
+South Asia,industry,industry,industry,industrial energy use,South Asia,2020,0.8298173
+South Asia,industry,industry,industry,industrial energy use,South Asia,2025,0.8217037
+South Asia,industry,industry,industry,industrial energy use,South Asia,2030,0.8135901
+South Asia,industry,industry,industry,industrial energy use,South Asia,2035,0.8054765
+South Asia,industry,industry,industry,industrial energy use,South Asia,2040,0.797363
+South Asia,industry,industry,industry,industrial energy use,South Asia,2045,0.7892494
+South Asia,industry,industry,industry,industrial energy use,South Asia,2050,0.7811358
+South Asia,industry,industry,industry,industrial energy use,South Asia,2055,0.7730222
+South Asia,industry,industry,industry,industrial energy use,South Asia,2060,0.7649086
+South Asia,industry,industry,industry,industrial energy use,South Asia,2065,0.7567951
+South Asia,industry,industry,industry,industrial energy use,South Asia,2070,0.7486815
+South Asia,industry,industry,industry,industrial energy use,South Asia,2075,0.7405679
+South Asia,industry,industry,industry,industrial energy use,South Asia,2080,0.7324543
+South Asia,industry,industry,industry,industrial energy use,South Asia,2085,0.7243407
+South Asia,industry,industry,industry,industrial energy use,South Asia,2090,0.7162272
+South Asia,industry,industry,industry,industrial energy use,South Asia,2095,0.7081136
+South Asia,industry,industry,industry,industrial energy use,South Asia,2100,0.7
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,1975,0.0921512
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,1990,0.3119589
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2005,0.2659964
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2010,0.1539555
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2015,0.1620691
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2020,0.1701827
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2025,0.1782963
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2030,0.1864099
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2035,0.1945235
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2040,0.202637
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2045,0.2107506
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2050,0.2188642
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2055,0.2269778
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2060,0.2350914
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2065,0.2432049
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2070,0.2513185
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2075,0.2594321
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2080,0.2675457
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2085,0.2756593
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2090,0.2837728
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2095,0.2918864
+South Asia,industry,industry,industry,industrial feedstocks,South Asia,2100,0.3
+South Korea,industry,industry,industry,industrial energy use,South Korea,1975,0.8486501
+South Korea,industry,industry,industry,industrial energy use,South Korea,1990,0.792915
+South Korea,industry,industry,industry,industrial energy use,South Korea,2005,0.5958805
+South Korea,industry,industry,industry,industrial energy use,South Korea,2010,0.5806714
+South Korea,industry,industry,industry,industrial energy use,South Korea,2015,0.5873008
+South Korea,industry,industry,industry,industrial energy use,South Korea,2020,0.5939301
+South Korea,industry,industry,industry,industrial energy use,South Korea,2025,0.6005595
+South Korea,industry,industry,industry,industrial energy use,South Korea,2030,0.6071889
+South Korea,industry,industry,industry,industrial energy use,South Korea,2035,0.6138182
+South Korea,industry,industry,industry,industrial energy use,South Korea,2040,0.6204476
+South Korea,industry,industry,industry,industrial energy use,South Korea,2045,0.627077
+South Korea,industry,industry,industry,industrial energy use,South Korea,2050,0.6337063
+South Korea,industry,industry,industry,industrial energy use,South Korea,2055,0.6403357
+South Korea,industry,industry,industry,industrial energy use,South Korea,2060,0.6469651
+South Korea,industry,industry,industry,industrial energy use,South Korea,2065,0.6535944
+South Korea,industry,industry,industry,industrial energy use,South Korea,2070,0.6602238
+South Korea,industry,industry,industry,industrial energy use,South Korea,2075,0.6668532
+South Korea,industry,industry,industry,industrial energy use,South Korea,2080,0.6734825
+South Korea,industry,industry,industry,industrial energy use,South Korea,2085,0.6801119
+South Korea,industry,industry,industry,industrial energy use,South Korea,2090,0.6867413
+South Korea,industry,industry,industry,industrial energy use,South Korea,2095,0.6933706
+South Korea,industry,industry,industry,industrial energy use,South Korea,2100,0.7
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,1975,0.1513499
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,1990,0.207085
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2005,0.4041195
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2010,0.4193286
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2015,0.4126992
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2020,0.4060699
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2025,0.3994405
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2030,0.3928111
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2035,0.3861818
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2040,0.3795524
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2045,0.372923
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2050,0.3662937
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2055,0.3596643
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2060,0.3530349
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2065,0.3464056
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2070,0.3397762
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2075,0.3331468
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2080,0.3265175
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2085,0.3198881
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2090,0.3132587
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2095,0.3066294
+South Korea,industry,industry,industry,industrial feedstocks,South Korea,2100,0.3
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,1975,0.9576487
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,1990,0.9295664
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2005,0.7878014
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2010,0.7054192
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2015,0.7051182
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2020,0.7048171
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2025,0.704516
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2030,0.704215
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2035,0.7039139
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2040,0.7036128
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2045,0.7033118
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2050,0.7030107
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2055,0.7027096
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2060,0.7024086
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2065,0.7021075
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2070,0.7018064
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2075,0.7015053
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2080,0.7012043
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2085,0.7009032
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2090,0.7006021
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2095,0.7003011
+Southeast Asia,industry,industry,industry,industrial energy use,Southeast Asia,2100,0.7
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,1975,0.0423513
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,1990,0.0704336
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2005,0.2121986
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2010,0.2945808
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2015,0.2948818
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2020,0.2951829
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2025,0.295484
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2030,0.295785
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2035,0.2960861
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2040,0.2963872
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2045,0.2966882
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2050,0.2969893
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2055,0.2972904
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2060,0.2975914
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2065,0.2978925
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2070,0.2981936
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2075,0.2984947
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2080,0.2987957
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2085,0.2990968
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2090,0.2993979
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2095,0.2996989
+Southeast Asia,industry,industry,industry,industrial feedstocks,Southeast Asia,2100,0.3
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,1975,0.8477565
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,1990,0.7595415
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2005,0.6445735
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2010,0.5589531
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2015,0.566789
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2020,0.574625
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2025,0.5824609
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2030,0.5902969
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2035,0.5981328
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2040,0.6059687
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2045,0.6138047
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2050,0.6216406
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2055,0.6294765
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2060,0.6373125
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2065,0.6451484
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2070,0.6529844
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2075,0.6608203
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2080,0.6686562
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2085,0.6764922
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2090,0.6843281
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2095,0.6921641
+Taiwan,industry,industry,industry,industrial energy use,Taiwan,2100,0.7
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,1975,0.1522435
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,1990,0.2404585
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2005,0.3554265
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2010,0.4410469
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2015,0.433211
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2020,0.425375
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2025,0.4175391
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2030,0.4097031
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2035,0.4018672
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2040,0.3940313
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2045,0.3861953
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2050,0.3783594
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2055,0.3705235
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2060,0.3626875
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2065,0.3548516
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2070,0.3470156
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2075,0.3391797
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2080,0.3313438
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2085,0.3235078
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2090,0.3156719
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2095,0.3078359
+Taiwan,industry,industry,industry,industrial feedstocks,Taiwan,2100,0.3
+USA,industry,industry,industry,industrial energy use,USA,1975,0.7973174
+USA,industry,industry,industry,industrial energy use,USA,1990,0.7443386
+USA,industry,industry,industry,industrial energy use,USA,2005,0.6626552
+USA,industry,industry,industry,industrial energy use,USA,2010,0.6941659
+USA,industry,industry,industry,industrial energy use,USA,2015,0.69449
+USA,industry,industry,industry,industrial energy use,USA,2020,0.6948141
+USA,industry,industry,industry,industrial energy use,USA,2025,0.6951382
+USA,industry,industry,industry,industrial energy use,USA,2030,0.6954624
+USA,industry,industry,industry,industrial energy use,USA,2035,0.6957865
+USA,industry,industry,industry,industrial energy use,USA,2040,0.6961106
+USA,industry,industry,industry,industrial energy use,USA,2045,0.6964347
+USA,industry,industry,industry,industrial energy use,USA,2050,0.6967588
+USA,industry,industry,industry,industrial energy use,USA,2055,0.6970829
+USA,industry,industry,industry,industrial energy use,USA,2060,0.6974071
+USA,industry,industry,industry,industrial energy use,USA,2065,0.6977312
+USA,industry,industry,industry,industrial energy use,USA,2070,0.6980553
+USA,industry,industry,industry,industrial energy use,USA,2075,0.6983794
+USA,industry,industry,industry,industrial energy use,USA,2080,0.6987035
+USA,industry,industry,industry,industrial energy use,USA,2085,0.6990276
+USA,industry,industry,industry,industrial energy use,USA,2090,0.6993518
+USA,industry,industry,industry,industrial energy use,USA,2095,0.6996759
+USA,industry,industry,industry,industrial energy use,USA,2100,0.7
+USA,industry,industry,industry,industrial feedstocks,USA,1975,0.2026826
+USA,industry,industry,industry,industrial feedstocks,USA,1990,0.2556614
+USA,industry,industry,industry,industrial feedstocks,USA,2005,0.3373448
+USA,industry,industry,industry,industrial feedstocks,USA,2010,0.3058341
+USA,industry,industry,industry,industrial feedstocks,USA,2015,0.30551
+USA,industry,industry,industry,industrial feedstocks,USA,2020,0.3051859
+USA,industry,industry,industry,industrial feedstocks,USA,2025,0.3048618
+USA,industry,industry,industry,industrial feedstocks,USA,2030,0.3045376
+USA,industry,industry,industry,industrial feedstocks,USA,2035,0.3042135
+USA,industry,industry,industry,industrial feedstocks,USA,2040,0.3038894
+USA,industry,industry,industry,industrial feedstocks,USA,2045,0.3035653
+USA,industry,industry,industry,industrial feedstocks,USA,2050,0.3032412
+USA,industry,industry,industry,industrial feedstocks,USA,2055,0.3029171
+USA,industry,industry,industry,industrial feedstocks,USA,2060,0.3025929
+USA,industry,industry,industry,industrial feedstocks,USA,2065,0.3022688
+USA,industry,industry,industry,industrial feedstocks,USA,2070,0.3019447
+USA,industry,industry,industry,industrial feedstocks,USA,2075,0.3016206
+USA,industry,industry,industry,industrial feedstocks,USA,2080,0.3012965
+USA,industry,industry,industry,industrial feedstocks,USA,2085,0.3009724
+USA,industry,industry,industry,industrial feedstocks,USA,2090,0.3006482
+USA,industry,industry,industry,industrial feedstocks,USA,2095,0.3003241
+USA,industry,industry,industry,industrial feedstocks,USA,2100,0.3

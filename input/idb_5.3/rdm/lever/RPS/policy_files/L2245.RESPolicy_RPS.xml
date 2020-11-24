@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="Colombia">
+            <policy-portfolio-standard name="ELEC_RPS">
+                <market>Colombia</market>
+                <policyType>RES</policyType>
+                <constraint fillout="1" year="2020">1</constraint>
+            </policy-portfolio-standard>
+        </region>
+    </world>
+</scenario>

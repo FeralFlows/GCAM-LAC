@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="Colombia">
+            <supplysector name="electricity">
+                <subsector name="hydro">
+                    <stub-technology name="hydro">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="wind">
+                    <stub-technology name="wind">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="wind_storage">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="solar">
+                    <stub-technology name="PV">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="PV_storage">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="CSP">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="CSP_storage">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="geothermal">
+                    <stub-technology name="geothermal">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="biomass">
+                    <stub-technology name="biomass (conv)">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="biomass (conv CCS)">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="biomass (IGCC)">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                    <stub-technology name="biomass (IGCC CCS)">
+                        <period year="1975">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="1990">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2005">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2010">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2015">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2020">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2025">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2030">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2035">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2040">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2045">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2050">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2055">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2060">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2065">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2070">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2075">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2080">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2085">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2090">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2095">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                        <period year="2100">
+                            <res-secondary-output name="ELEC_RPS">
+                                <output-ratio>1</output-ratio>
+                            </res-secondary-output>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+        </region>
+    </world>
+</scenario>

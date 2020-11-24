@@ -6,7 +6,7 @@
                 <subsector name="nuclear">
                     <share-weight fillout="1" year="1975">0</share-weight>
                     <interpolation-rule apply-to="share-weight"
-                        from-year="2010" to-year="2015">
+                        from-year="2015" to-year="2020">
                         <interpolation-function name="linear"/>
                     </interpolation-rule>
                     <interpolation-rule apply-to="share-weight"
@@ -25,7 +25,6 @@
                     <relative-cost-logit>
                         <logit-exponent fillout="1" year="1975">-6</logit-exponent>
                     </relative-cost-logit>
-                    <share-weight year="2015">0</share-weight>
                     <share-weight year="2020">0</share-weight>
                     <share-weight year="2025">0</share-weight>
                     <share-weight year="2030">0</share-weight>
@@ -58,12 +57,19 @@
                                 <calOutputValue>0</calOutputValue>
                             </CalDataOutput>
                         </period>
+                        <period year="2015">
+                            <share-weight>0</share-weight>
+                            <CalDataOutput>
+                                <calOutputValue>0</calOutputValue>
+                            </CalDataOutput>
+                        </period>
                     </stub-technology>
                     <stub-technology name="Gen_III"/>
                     <share-weight year="1975">0</share-weight>
                     <share-weight year="1990">0</share-weight>
                     <share-weight year="2005">0</share-weight>
                     <share-weight year="2010">0</share-weight>
+                    <share-weight year="2015">0</share-weight>
                 </subsector>
 		</supplysector>
         </region>

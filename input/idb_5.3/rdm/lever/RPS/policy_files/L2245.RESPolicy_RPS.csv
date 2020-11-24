@@ -1,0 +1,6 @@
+INPUT_TABLE,,,,,
+Variable ID,,,,,
+RESPolicy,,,,,
+,,,,,
+region,policy.portfolio.standard,market.name,policyType,start.year,constraint
+Colombia,ELEC_RPS,Colombia,RES,2020,1
