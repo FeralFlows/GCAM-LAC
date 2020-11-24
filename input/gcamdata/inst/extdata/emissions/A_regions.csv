@@ -3,7 +3,7 @@
 # Units: bio_N2O_coef:kg N2O per GJ bioenergy
 # Source: Fertilizer application rates and yields from Adler et al. 2007. Ecological Applications; Fertilizer-N to N2O rate from Davidson 2009. Nature Geoscience.
 # Description: Specifies region-specific assumptions in the emissions system. USA values estimated from Adler et al. 2007-with other regions indexed to USA.
-# Column types: iccncc 
+# Column types: iccncc
 # ----------
 GCAM_region_ID,region,MAC_region,bio_N2O_coef,SO2_name,GAINS_region
 1,USA,United States,0.011314286,SO2_1,USA
@@ -38,3 +38,4 @@ GCAM_region_ID,region,MAC_region,bio_N2O_coef,SO2_name,GAINS_region
 30,Taiwan,China,0.0095297,SO2_2,China+
 31,Argentina,Central and South America,0.008163204,SO2_3,Rest South America
 32,Colombia,Central and South America,0.008163204,SO2_3,Rest South America
+33,Uruguay,Central and South America,0.008163204,SO2_3,Rest South America

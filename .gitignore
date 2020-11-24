@@ -80,3 +80,4 @@ output/
 input/gcamdata/inst/extdata/socioeconomics
 libs/
 exe/batch-csv-out.csv
+input/gcamdata/inst/extdata/energy/IEA_EnergyBalances_2019.csv
