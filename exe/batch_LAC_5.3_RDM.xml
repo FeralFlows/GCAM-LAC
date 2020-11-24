@@ -1,0 +1,63 @@
+<!-- 
+This xml file was initially created in notepad, by giving the file a .xml extension.
+This file must be referenced in the configuration file of interest, with batch run turned on.
+-->
+<BatchRunner>
+	<ComponentSet name="IDB_RDM">
+		<!--This will run just the configuration script, i.e. a reference case, without any added policies, unless policies are added there already.-->
+		<FileSet name="Reference">
+
+		<!--Colombia-specific files-->
+	    <!-- Socio-Economics -->
+		<Value name = "colombia_population_gdp">../input/idb/reference/Colombia_refPopGDP_gSSP2.xml</Value>
+		<Value name = "demand_input_CO">../input/idb/reference/Colombia_refPopGDP_demand_input.xml</Value>
+		<Value name = "cement_income_elas_CO">../input/idb/reference/Colombia_refPopGDP_cement_incelas_gssp2.xml</Value>
+		<Value name = "industry_income_elas_CO">../input/idb/reference/Colombia_refPopGDP_industry_incelas_gssp2.xml</Value>
+        <!-- Electricity -->
+		<Value name = "colombia_ref_hydro">../input/idb/reference/Colombia_ref_hydro.xml</Value>
+        <!-- Water-->
+		<Value name = "livestock_water_demand_coeff">../input/idb/reference/Colombia_ref_livestock_water_demand_coeff.xml</Value>
+		<Value name = "colombia_PrimEner_water_coeff">../input/idb/reference/Colombia_ref_L210.TechCoef_mod.xml</Value>
+		<Value name = "colombia_Industrial_water_coeff">../input/idb/reference/Colombia_ref_L232.TechCoef_mod.xml</Value>
+		<Value name = "colombia_irrig_water_coeff">../input/idb/reference/Colombia_ref_L2072.AgCoef_IrrWaterWdraw_ag_mgmt_mod2.xml</Value>
+		<!--Uruguay-specific files-->
+	    <!-- Socio-Economics -->
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_socioeconomics_gSSP2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_demand_input.xml</Value>
+        <!-- Final Energy-->
+        <Value name = "Uruguay_refFinalNrg">../input/idb/reference/Uruguay_refFinalNrg.xml</Value>
+        <!-- Electricity -->
+        <Value name = "Uruguay_refElecShareWeights_ref">../input/idb/reference/Uruguay_refElecShareWeights_L223.SubsectorShrwt.xml</Value>
+        <Value name = "Uruguay_refElecShareWeights_ref">../input/idb/reference/Uruguay_refElecHydro.xml</Value>
+       <!-- Ag -->
+      <!-- Water-->
+      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWater.xml</Value>
+      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterCons_ag_mgmt.xml</Value>
+      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterWdraw_ag_mgmt.xml</Value>
+		<!--Argentina-specific files-->
+	    <!-- Socio-Economics -->
+		<Value name = "argentina_population_gdp">../input/idb/reference/Argentina_refPop_gSSP2.xml</Value>
+		</FileSet>
+
+	
+		<!--GHG constraint files-->
+       <Value name = "policy">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_CO_ARG.xml</Value>
+       <Value name = "policy link file">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_LINK_CO_ARG.xml</Value>
+
+
+		<!--RDM files-->
+		<!--Uncertainties-->
+		<!--Climate Impacts Files-->
+      <Value name = "hydro">../input/idb_5.3/impacts/Hydro/hydro_impacts_HadGEM2-ES_rcp8p5.xml</Value>
+      <Value name = "water">../input/idb_5.3/impacts/Water/runoff_impacts_HadGEM2-ES_rcp8p5.xml</Value>
+      <!--<Value name = "water">../input/idb_5.3/impacts/Water/water_cc_hadgem_8p5_exp_wg.xml</Value>-->
+      <Value name = "ag">../input/idb_5.3/impacts/Ag/ag_prodchange_rcp8p5_hadgem2_pdssat.xml</Value> 
+
+		<!--Levers-->
+
+	</ComponentSet>
+</BatchRunner>
