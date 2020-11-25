@@ -5,7 +5,7 @@ This file must be referenced in the configuration file of interest, with batch r
 <BatchRunner>
 	<ComponentSet name="IDB_RDM">
 		<!--This will run just the configuration script, i.e. a reference case, without any added policies, unless policies are added there already.-->
-		<FileSet name="RDM_test">
+		<FileSet name="RDM_test_LACpolicy_EV">
 
 		<!--Colombia-specific files-->
 <!-- Socio-Economics -->
@@ -44,8 +44,8 @@ This file must be referenced in the configuration file of interest, with batch r
 		<Value name = "argentina_population_gdp">../input/idb_5.3/reference/Argentina_refPop_gSSP2.xml</Value>
 	
 		<!--GHG constraint files-->
-       <Value name = "policy">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_CO_ARG.xml</Value>
-       <Value name = "policy link file">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_LINK_CO_ARG.xml</Value>
+       <!--Value name = "policy">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_CO_ARG.xml</Value-->
+       <!--Value name = "policy link file">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_LINK_CO_ARG.xml</Value-->
 
 
 	<!--RDM Uncertainties-->
@@ -88,8 +88,9 @@ This file must be referenced in the configuration file of interest, with batch r
 		<!--Value name = "RPS">../input/idb_5.3/rdm/lever/RPS/policy_files/Colombia_RPS_High.xml</Value-->
 
 		<!--EV policy-->
-		<Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_ModEVsw.xml</Value>
+		<!--Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_ModEVsw.xml</Value-->
 		<!--Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_RapidEVsw.xml</Value-->
+		<Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_LACpolicy_sw.xml</Value>
 
 		</FileSet>
 	</ComponentSet>
