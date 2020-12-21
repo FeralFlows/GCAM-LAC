@@ -33,7 +33,8 @@
 		<Value name = "fertilizer_energy">../input/gcamdata/xml/en_Fert.xml</Value>
 		<Value name = "hddcdd">../input/gcamdata/xml/HDDCDD_constdd_no_GCM.xml</Value>
 		<Value name = "building">../input/gcamdata/xml/building_det.xml</Value>
-		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost.xml</Value>
+		<!--<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost.xml</Value>-->
+		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost_ModEVsw.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
 		<Value name = "ag_base">../input/gcamdata/xml/ag_For_Past_bio_base_IRR_MGMT.xml</Value>
