@@ -5,7 +5,7 @@ This file must be referenced in the configuration file of interest, with batch r
 <BatchRunner>
 	<ComponentSet name="IDB_RDM">
 		<!--This will run just the configuration script, i.e. a reference case, without any added policies, unless policies are added there already.-->
-		<FileSet name="RDM_test_LACpolicy_EV">
+		<FileSet name="RDM_test_Public_Transport">
 
 		<!--Colombia-specific files-->
 <!-- Socio-Economics -->
@@ -73,8 +73,8 @@ This file must be referenced in the configuration file of interest, with batch r
 
 		<!--Note: UCD transportation file is currently commented out in configuration file 
 				so that costs (here) and shareweights (below) can be read in separately-->
-		<Value name = "EVcost">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_ModEVcost.xml</Value>
-		<!--Value name = "EVcost">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_RapidEVcost.xml</Value-->
+		<Value name = "EVcost">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_ModEVcost_Colombia_noPubTrninterp.xml</Value>
+		<!--Value name = "EVcost">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_RapidEVcost_Colombia_noPubTrninterp.xml</Value-->
 
 	<!--RDM Levers-->
 		<!-- Efficiency -->
@@ -87,10 +87,14 @@ This file must be referenced in the configuration file of interest, with batch r
 		<Value name = "RPS">../input/idb_5.3/rdm/lever/RPS/policy_files/Colombia_RPS_Low.xml</Value>
 		<!--Value name = "RPS">../input/idb_5.3/rdm/lever/RPS/policy_files/Colombia_RPS_High.xml</Value-->
 
+		<!--Public Transport-->
+		<Value name = "PublicTransport">../input/idb_5.3/rdm/lever/PublicTransport/Colombia_Public_Transport_High.xml</Value>
+		<!--Value name = "PublicTransport">../input/idb_5.3/rdm/lever/PublicTransport/Colombia_Public_Transport_Normal.xml</Value-->
+
 		<!--EV policy-->
-		<!--Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_ModEVsw.xml</Value-->
-		<!--Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_RapidEVsw.xml</Value-->
-		<Value name = "EVcost">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_LACpolicy_sw.xml</Value>
+		<!--Value name = "EVsw">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_ModEVsw.xml</Value-->
+		<!--Value name = "EVsw">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_RapidEVsw.xml</Value-->
+		<Value name = "EVsw">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_LACpolicy_sw.xml</Value>
 
 		</FileSet>
 	</ComponentSet>
