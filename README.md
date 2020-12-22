@@ -21,7 +21,7 @@ GCAM-LAC is a branch of the publicly available 'release version' of GCAM v5.3 (h
 
 This section provides a very brief guide to get started with GCAM-LAC. 
 
-# <a name="Pubs"></a>Publications using PySedSim
+# <a name="Pubs"></a>Publications using GCAM-LAC
 
 <strong> Peer-reviewed Publications: </strong>
 
