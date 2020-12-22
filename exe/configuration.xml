@@ -2,10 +2,10 @@
 <Configuration>
 	<Files>
 		<Value name="xmlInputFileName">../input/gcamdata/xml/modeltime.xml</Value>
-		<Value name="BatchFileName">batch_LAC_5.3_RDM.xml</Value>
+		<Value name="BatchFileName">batch_LAC_5.3_RDM_trn_sw_test.xml</Value>
 		<Value name="policy-target-file">../input/policy/forcing_target_4p5.xml</Value>
 		<Value name="GHGInputFileName">../input/magicc/inputs/input_gases.emk</Value>
-		<Value write-output="1" append-scenario-name="0" name="xmldb-location">../output/test_RDM</Value>
+		<Value write-output="1" append-scenario-name="0" name="xmldb-location">../output/test_12182020</Value>
 		<Value write-output="1" append-scenario-name="0" name="restart">./restart/restart</Value>
 		<Value write-output="1" append-scenario-name="1" name="xmlDebugFileName">debug.xml</Value>
 		<Value write-output="1" append-scenario-name="0" name="climatFileName">gas.emk</Value>
@@ -35,7 +35,9 @@
 		<Value name = "fertilizer_energy">../input/gcamdata/xml/en_Fert.xml</Value>
 		<Value name = "hddcdd">../input/gcamdata/xml/HDDCDD_constdd_no_GCM.xml</Value>
 		<Value name = "building">../input/gcamdata/xml/building_det.xml</Value>
-		<!--Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost_ModEVsw.xml</Value-->
+		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost.xml</Value>
+
+
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
 
