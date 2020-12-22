@@ -1,8 +1,6 @@
 # GCAM-LAC
 Global Change Analysis Model (GCAM) for Latin America and the Caribbean (LAC)
 
-Publications that have used this model:
-
 - [Contact Us](#Contact)
 - [Introduction](#Introduction)
 - [Getting Started](#InstallGuide)
