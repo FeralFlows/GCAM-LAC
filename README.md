@@ -27,10 +27,6 @@ This section provides a very brief guide to get started with GCAM-LAC.
 
 <strong> Peer-reviewed Publications: </strong>
 
-Wild, T.B., Reed, P.M., Loucks, D.P., Mallen-Cooper, M., Jensen, E.D. (2019). Balancing Hydropower and Ecological Impacts in the Mekong: Tradeoffs for Sambor Mega Dam. J. Water Resour. Plann. Manage. DOI: 10.1061/(ASCE)WR.1943-5452.0001036.
-
-<strong> Presentations: </strong>
-
 Da Silva, S.R.S., Hejazi, M., Iyer, G., Wild, T.B., Binsted, M., Miralles-Wilhelm, F., Patel, P., Snyder, A., Vernon, C. (accepted). Power Sector Investment Implications of Climate Impacts on Renewable Resources in Latin America and the Caribbean. Nature Communications.
 
 Delgado, R., Wild, T.B., Arguello, R., Clarke, L. (2020). Options for Colombia’s Mid-Century Deep Decarbonization Strategy. Energy Strategy Reviews. https://doi.org/10.1016/j.esr.2020.100525.
