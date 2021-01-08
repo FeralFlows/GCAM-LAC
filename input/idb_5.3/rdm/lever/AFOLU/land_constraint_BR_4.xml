@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="Brazil">
+            <LandAllocatorRoot name="root">
+		         <LandNode name="AgroForestLand_AmazonR">
+		               <LandNode name="AgroForest_NonPasture_AmazonR">
+		               	   <LandNode name="AllForestLand_AmazonR">
+                                 <UnmanagedLandLeaf name="UnmanagedForest_AmazonR">
+                                      <land-constraint-policy>deforestation</land-constraint-policy>
+                                 </UnmanagedLandLeaf>
+		               	   </LandNode>
+		               </LandNode>		         
+		               <LandNode name="AllPastureLand_AmazonR">		                           
+                                 <UnmanagedLandLeaf name="UnmanagedPasture_AmazonR">
+                                      <land-constraint-policy>deforestation</land-constraint-policy>
+                                 </UnmanagedLandLeaf>
+		               </LandNode>
+		         </LandNode>
+            </LandAllocatorRoot>
+            <policy-portfolio-standard name="deforestation">
+                    <market>Brazil</market>
+					<policyType>tax</policyType>
+					<constraint year="2020">303</constraint>
+					<constraint year="2025">267</constraint>
+					<constraint year="2030">230</constraint>
+					<constraint year="2035">194</constraint>
+					<constraint year="2040">158</constraint>
+					<constraint year="2045">121</constraint>
+					<constraint year="2050">85</constraint>
+					<constraint year="2055">48</constraint>
+					<constraint year="2060">12</constraint>
+                    <constraint year="2065" fillout="1">1</constraint>
+             </policy-portfolio-standard>
+        </region>
+    </world>
+</scenario>
