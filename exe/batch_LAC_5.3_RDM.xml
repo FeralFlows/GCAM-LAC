@@ -5,7 +5,7 @@ This file must be referenced in the configuration file of interest, with batch r
 <BatchRunner>
 	<ComponentSet name="IDB_RDM">
 		<!--This will run just the configuration script, i.e. a reference case, without any added policies, unless policies are added there already.-->
-		<FileSet name="RDM_test_Public_Transport">
+		<FileSet name="RDM">
 
 		<!--Colombia-specific files-->
 <!-- Socio-Economics -->
@@ -94,7 +94,11 @@ This file must be referenced in the configuration file of interest, with batch r
 		<!--EV policy-->
 		<!--Value name = "EVsw">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_ModEVsw.xml</Value-->
 		<!--Value name = "EVsw">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_RapidEVsw.xml</Value-->
-		<Value name = "EVsw">../input/idb_5.3/rdm/lever/ElectricVehicles/transportation_UCD_CORE_LACpolicy_sw.xml</Value>
+
+		<!--AFOLU-->
+		<!--no constraint would not have any additional AFOLU add-on-->
+ 		<!--Value name = "land_constraint">../input/idb_5.3/rdm/lever/AFOLU/land_constraint_Colombia_constant.xml</Value-->
+ 		<Value name = "land_constraint">../input/idb_5.3/rdm/lever/AFOLU/land_constraint_Colombia_10_afforestation.xml</Value>
 
 		</FileSet>
 	</ComponentSet>

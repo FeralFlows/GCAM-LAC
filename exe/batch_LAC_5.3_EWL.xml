@@ -143,9 +143,9 @@ This file must be referenced in the configuration file of interest, with batch r
 
 	<!--2. Apply CO2 prices to CO2 to achieve constraint described above, but also then apply the price to Non Co2-->
               
-       <Value name = "policy">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_CO_ARG.xml</Value>
-       <Value name = "policy link file">../input/idb_5.3/policy/CarbonTax_CO2_NonCO2_LINK_CO_ARG.xml</Value>
-
+       <Value name = "policy">../input/idb_5.3/rdm/climate_policy/ddp_colombia_co2_constraint.xml</Value>
+       <Value name = "policy">../input/idb_5.3/rdm/climate_policy/ddp_other_regions_co2_constraint.xml</Value>
+       <Value name = "policy link file">../input/idb_5.3/rdm/climate_policy/ddp_LINK.xml</Value>
 
 	<!--3. Original 2 market policy files-->
        <!--<Value name = "policy">../input/idb_5.3/policy/NDC_PIA_constraint_2Markets_2DS.xml</Value>-->
