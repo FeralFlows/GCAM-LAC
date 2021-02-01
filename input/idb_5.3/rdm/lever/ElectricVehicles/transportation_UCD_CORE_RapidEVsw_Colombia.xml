@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+		<region name="Colombia"> 
+            <supplysector name="trn_freight_road">
+				<tranSubsector name="Light truck">
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+				<tranSubsector name="Medium truck">
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+				<tranSubsector name="Heavy truck">
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>20</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>10</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+            </supplysector>
+            <supplysector name="trn_pass_road">
+				<tranSubsector name="Bus">        
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.124</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>15</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.122</steepness>
+                            <half-life>8</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+            </supplysector>
+            <supplysector name="trn_pass_road_LDV">
+			 <tranSubsector name="2W and 3W">
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+            </supplysector>
+            <supplysector name="trn_pass_road_LDV_4W">
+				<tranSubsector name="Car">     
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.218</steepness>
+                            <half-life>11</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+				<tranSubsector name="Large Car and Truck">
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.23</steepness>
+                            <half-life>11</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+				<tranSubsector name="Mini Car">
+                <stub-technology name="BEV">
+                    <period year="1975">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="1990">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2005">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2010">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                    </period>
+                    <period year="2015">
+                        <share-weight>0</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.218</steepness>
+                            <half-life>11</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2020">
+                        <share-weight>0.25</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2025">
+                        <share-weight>1.375</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2030">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2035">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2040">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2045">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2050">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2055">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2060">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2065">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2070">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2075">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2080">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2085">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2090">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2095">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                    <period year="2100">
+                        <share-weight>2.5</share-weight>
+                        <CO2 name="CO2"/>
+                        <lifetime>25</lifetime>
+                        <s-curve-shutdown-decider name="s-curve">
+                            <steepness>0.193</steepness>
+                            <half-life>12</half-life>
+                        </s-curve-shutdown-decider>
+                    </period>
+                </stub-technology>
+				</tranSubsector>
+            </supplysector>
+        </region>
+    </world>
+</scenario>
