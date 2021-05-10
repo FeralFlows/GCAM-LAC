@@ -13,6 +13,8 @@ Brinda Yarlagadda, brinday@umd.edu
 
 Leon Clarke, lclarke@umd.edu
 
+Mengqi Zhao, mengqiz@umd.edu
+
 # <a name="Introduction"></a>Introduction
 
 GCAM-LAC is a branch of the publicly available 'release version' of GCAM v5.3 (https://github.com/JGCRI/gcam-core/tree/gcam-v5.3). GCAM-LAC includes several additional input files that improve the fidelity of EWL projections for the LAC region. While GCAM 5.3 includes 32 geopolitical regions (including Argentina and Colombia), GCAM-LAC also breaks out Uruguay as a separate region for a total of 33 regions represented. GCAM-LAC includes improved regional EWL reference scenarios for Argentina, Colombia, and Uruguay. Updated parameters include: population and GDP from each country’s own national projections, updated assumptions on sectoral water demand (e.g. primary energy, industrial manufacturing, crop and livestock production) and end-use sector energy demands (e.g. cement, industry, building and transportation), sector-specific preferences for energy technologies,  as well as an array of global improvements, such as updated technology cost data reflecting the potential for increased deployment of wind power, solar power, and battery electric vehicle technology. 
