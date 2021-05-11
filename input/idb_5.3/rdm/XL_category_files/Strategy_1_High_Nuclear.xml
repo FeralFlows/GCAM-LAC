@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="Colombia">
+            <supplysector name="electricity">
+                <subsector name="nuclear">
+                    <interpolation-rule apply-to="share-weight"
+                        delete="1" from-year="2015" to-year="2020">
+                        <interpolation-function name="linear"/>
+                   <overwrite-policy warn="0">NEVER</overwrite-policy>
+                    </interpolation-rule>
+                    <interpolation-rule apply-to="share-weight"
+                        delete="1" from-year="2020" to-year="2035">
+                        <interpolation-function name="linear"/>
+                   <overwrite-policy warn="0">NEVER</overwrite-policy>
+                    </interpolation-rule>
+                    <interpolation-rule apply-to="share-weight"
+                        delete="1" from-year="2035" to-year="2050">
+                        <interpolation-function name="linear"/>
+                   <overwrite-policy warn="0">NEVER</overwrite-policy>
+                    </interpolation-rule>
+                    <interpolation-rule apply-to="share-weight"
+                        delete="1" from-year="2050" to-year="2300">
+                        <to-value>1</to-value>
+                        <interpolation-function name="s-curve"/>
+                   <overwrite-policy warn="0">NEVER</overwrite-policy>
+                    </interpolation-rule>
+                    <share-weight year="2020">0</share-weight>
+                    <share-weight year="2025">0</share-weight>
+                    <share-weight year="2030">0</share-weight>
+                    <share-weight year="2035">0</share-weight>
+                    <share-weight year="2040">0</share-weight>
+                    <share-weight year="2045">0</share-weight>
+                    <share-weight year="2050">0</share-weight>
+                    <share-weight year="2055">0</share-weight>
+                    <share-weight year="2060">0</share-weight>
+                    <share-weight year="2065">0</share-weight>
+                    <share-weight year="2070">0</share-weight>
+                    <share-weight year="2075">0</share-weight>
+                    <share-weight year="2080">0</share-weight>
+                    <share-weight year="2085">0</share-weight>
+                    <share-weight year="2090">0</share-weight>
+                    <share-weight year="2095">0</share-weight>
+                    <share-weight year="2100">0</share-weight>
+                </subsector>
+        </supplysector>
+        </region>
+    </world>
+</scenario>

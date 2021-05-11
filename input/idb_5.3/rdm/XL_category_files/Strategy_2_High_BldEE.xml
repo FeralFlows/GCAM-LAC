@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="Colombia">
+            <gcam-consumer name="comm">
+                <nodeInput name="comm">
+                    <building-node-input name="comm_building">
+                        <shell-conductance year="1975">1.444</shell-conductance>
+                        <shell-conductance year="1990">1.346</shell-conductance>
+                        <shell-conductance year="2005">1.254</shell-conductance>
+                        <shell-conductance year="2010">1.219</shell-conductance>
+                        <shell-conductance year="2015">1.185</shell-conductance>
+                        <shell-conductance year="2020">1.0981</shell-conductance>
+                        <shell-conductance year="2025">1.0112</shell-conductance>
+                        <shell-conductance year="2030">0.9243</shell-conductance>
+                        <shell-conductance year="2035">0.915057</shell-conductance>
+                        <shell-conductance year="2040">0.905814</shell-conductance>
+                        <shell-conductance year="2045">0.896571</shell-conductance>
+                        <shell-conductance year="2050">0.887328</shell-conductance>
+                        <shell-conductance year="2055">0.878085</shell-conductance>
+                        <shell-conductance year="2060">0.868842</shell-conductance>
+                        <shell-conductance year="2065">0.859599</shell-conductance>
+                        <shell-conductance year="2070">0.850356</shell-conductance>
+                        <shell-conductance year="2075">0.841113</shell-conductance>
+                        <shell-conductance year="2080">0.83187</shell-conductance>
+                        <shell-conductance year="2085">0.822627</shell-conductance>
+                        <shell-conductance year="2090">0.813384</shell-conductance>
+                        <shell-conductance year="2095">0.804141</shell-conductance>
+                        <shell-conductance year="2100">0.794898</shell-conductance>
+                    </building-node-input>
+                </nodeInput>
+            </gcam-consumer>
+            <gcam-consumer name="resid">
+                <nodeInput name="resid">
+                    <building-node-input name="resid_building">
+                        <shell-conductance year="1975">1.463</shell-conductance>
+                        <shell-conductance year="1990">1.352</shell-conductance>
+                        <shell-conductance year="2005">1.251</shell-conductance>
+                        <shell-conductance year="2010">1.213</shell-conductance>
+                        <shell-conductance year="2015">1.176</shell-conductance>
+                        <shell-conductance year="2020">1.08976</shell-conductance>
+                        <shell-conductance year="2025">1.00352</shell-conductance>
+                        <shell-conductance year="2030">0.91728</shell-conductance>
+                        <shell-conductance year="2035">0.9081072</shell-conductance>
+                        <shell-conductance year="2040">0.8989344</shell-conductance>
+                        <shell-conductance year="2045">0.8897616</shell-conductance>
+                        <shell-conductance year="2050">0.8805888</shell-conductance>
+                        <shell-conductance year="2055">0.871416</shell-conductance>
+                        <shell-conductance year="2060">0.8622432</shell-conductance>
+                        <shell-conductance year="2065">0.8530704</shell-conductance>
+                        <shell-conductance year="2070">0.8438976</shell-conductance>
+                        <shell-conductance year="2075">0.8347248</shell-conductance>
+                        <shell-conductance year="2080">0.825552</shell-conductance>
+                        <shell-conductance year="2085">0.8163792</shell-conductance>
+                        <shell-conductance year="2090">0.8072064</shell-conductance>
+                        <shell-conductance year="2095">0.7980336</shell-conductance>
+                        <shell-conductance year="2100">0.7888608</shell-conductance>
+                    </building-node-input>
+                </nodeInput>
+            </gcam-consumer>
+            <supplysector name="comm others">
+                <subsector name="electricity">
+                    <stub-technology name="electricity">
+                        <period year="1975">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7211371</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7648598</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8110782</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8320768</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8535244</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.916116189333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.978707978666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="gas">
+                    <stub-technology name="gas">
+                        <period year="1975">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.4669558</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.4879121</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.5097114</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.5203061</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.5310622</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.570006761333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.608951322666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.647895884</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.65437484284</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.66085380168</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.66733276052</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.67381171936</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6802906782</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.68676963704</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.69324859588</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.69972755472</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.70620651356</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.7126854724</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.71916443124</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.72564339008</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.73212234892</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.73860130776</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+            <supplysector name="resid others">
+                <subsector name="electricity">
+                    <stub-technology name="electricity">
+                        <period year="1975">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7211371</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7648598</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8110782</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8320768</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8535244</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.916116189333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.978707978666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="gas">
+                    <stub-technology name="gas">
+                        <period year="1975">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.4669558</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.4879121</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.5097114</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.5203061</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.5310622</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.570006761333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.608951322666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.647895884</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.65437484284</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.66085380168</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.66733276052</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.67381171936</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6802906782</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.68676963704</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.69324859588</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.69972755472</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.70620651356</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.7126854724</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.71916443124</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.72564339008</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.73212234892</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.73860130776</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+            <supplysector name="comm cooling">
+                <subsector name="electricity">
+                    <stub-technology name="electricity">
+                        <period year="1975">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1.9232275</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.1332925</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.3658489</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.4636154</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.5651377</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.753247798</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.941357896</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.129467994</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.16076267394</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.19205735388</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.22335203382</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.25464671376</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.2859413937</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.31723607364</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.34853075358</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.37982543352</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.41112011346</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.4424147934</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.47370947334</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.50500415328</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.53629883322</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.56759351316</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+            <supplysector name="resid cooling">
+                <subsector name="electricity">
+                    <stub-technology name="electricity">
+                        <period year="1975">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1.8527796</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.0551499</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.2791878</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.3733731</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.4711766</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.65239621733333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>2.83361583466667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.014835452</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.04498380652</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.07513216104</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.10528051556</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.13542887008</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.1655772246</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.19572557912</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.22587393364</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.25602228816</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.28617064268</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.3163189972</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.34646735172</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.37661570624</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.40676406076</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>3.43691241528</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+            <supplysector name="comm heating">
+                <subsector name="electricity">
+                    <stub-technology name="electricity">
+                        <period year="1975">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7580349</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7802799</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8030239</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8156331</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8283485</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.889094056666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.949839613333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="gas">
+                    <stub-technology name="gas">
+                        <period year="1975">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6148251</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6424176</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.67112</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6850697</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6992319</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.750508906</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.801785912</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.853062918</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.86159354718</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.87012417636</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.87865480554</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.88718543472</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.8957160639</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.90424669308</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.91277732226</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.92130795144</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.92983858062</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.9383692098</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.94689983898</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.95543046816</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.96396109734</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.97249172652</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+            <supplysector name="resid heating">
+                <subsector name="electricity">
+                    <stub-technology name="electricity">
+                        <period year="1975">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7580349</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.7802799</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8030239</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8156331</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.8283485</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.889094056666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>0.949839613333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="elect_td_bld">
+                                <efficiency>1</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+                <subsector name="gas">
+                    <stub-technology name="gas">
+                        <period year="1975">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6226077</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="1990">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6505495</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2005">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6796152</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2010">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.6937415</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2015">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.7080829</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2020">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.760008979333333</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2025">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.811935058666667</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2030">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.863861138</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2035">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.87249974938</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2040">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.88113836076</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2045">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.88977697214</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2050">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.89841558352</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2055">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.9070541949</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2060">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.91569280628</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2065">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.92433141766</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2070">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.93297002904</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2075">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.94160864042</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2080">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.9502472518</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2085">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.95888586318</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2090">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.96752447456</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2095">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.97616308594</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                        <period year="2100">
+                            <minicam-energy-input name="delivered gas">
+                                <efficiency>0.98480169732</efficiency>
+                                <market-name>Colombia</market-name>
+                            </minicam-energy-input>
+                        </period>
+                    </stub-technology>
+                </subsector>
+            </supplysector>
+        </region>
+    </world>
+</scenario>
