@@ -10,10 +10,11 @@ This file must be referenced in the configuration file of interest, with batch r
 		<!--Colombia-specific files-->
 	    <!-- Socio-Economics -->
 		<Value name = "colombia_population_gdp">../input/idb_5.3/reference/Colombia_refPopGDP_gSSP2.xml</Value>
-		<Value name = "colombia_foodDemand_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_FoodDemand_incelas.xml</Value>
+		<!--Value name = "colombia_foodDemand_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_FoodDemand_incelas.xml</Value-->
 		<Value name = "colombia_cement_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_cement_incelas_gssp2.xml</Value>
 		<Value name = "colombia_industry_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_industry_incelas_gssp2.xml</Value>
         <!-- Electricity -->
+		<Value name = "Colombia_ref_noCoalIGCC_RefLiqCCS">../input/idb_5.3/reference/Colombia_CoalIGCC_RefLiqCC_CCS_Zero.xml</Value>
 		<Value name = "colombia_refElecShareWeights_ref">../input/idb_5.3/reference/Colombia_ref_L223.SubsectorShrwt.xml</Value>
 		<Value name = "colombia_ref_hydro">../input/idb_5.3/reference/Colombia_ref_hydro.xml</Value>
         <!-- Water-->
@@ -26,11 +27,11 @@ This file must be referenced in the configuration file of interest, with batch r
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_socioeconomics_gSSP2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value>
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value-->
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value-->
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value-->
         <!-- Final Energy-->
-        <Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value>
+        <!--Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value-->
         <!-- Electricity -->
         <Value name = "Uruguay_refElecShareWeights_ref">../input/idb_5.3/reference/Uruguay_refElecShareWeights_L223.SubsectorShrwt.xml</Value>
         <Value name = "Uruguay_refHydro">../input/idb_5.3/reference/Uruguay_refElecHydro.xml</Value>
@@ -46,13 +47,14 @@ This file must be referenced in the configuration file of interest, with batch r
 
 		<FileSet name="Impacts">
 		<!--Reference files from above-->
-		<!--Colombia-specific files-->
+	<!--Colombia-specific files-->
 	    <!-- Socio-Economics -->
 		<Value name = "colombia_population_gdp">../input/idb_5.3/reference/Colombia_refPopGDP_gSSP2.xml</Value>
-		<Value name = "colombia_foodDemand_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_FoodDemand_incelas.xml</Value>
+		<!--Value name = "colombia_foodDemand_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_FoodDemand_incelas.xml</Value-->
 		<Value name = "colombia_cement_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_cement_incelas_gssp2.xml</Value>
 		<Value name = "colombia_industry_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_industry_incelas_gssp2.xml</Value>
         <!-- Electricity -->
+		<Value name = "Colombia_ref_noCoalIGCC_RefLiqCCS">../input/idb_5.3/reference/Colombia_CoalIGCC_RefLiqCC_CCS_Zero.xml</Value>
 		<Value name = "colombia_refElecShareWeights_ref">../input/idb_5.3/reference/Colombia_ref_L223.SubsectorShrwt.xml</Value>
 		<Value name = "colombia_ref_hydro">../input/idb_5.3/reference/Colombia_ref_hydro.xml</Value>
         <!-- Water-->
@@ -65,11 +67,11 @@ This file must be referenced in the configuration file of interest, with batch r
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_socioeconomics_gSSP2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value>
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value-->
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value-->
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value-->
         <!-- Final Energy-->
-        <Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value>
+        <!--Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value-->
         <!-- Electricity -->
         <Value name = "Uruguay_refElecShareWeights_ref">../input/idb_5.3/reference/Uruguay_refElecShareWeights_L223.SubsectorShrwt.xml</Value>
         <Value name = "Uruguay_refHydro">../input/idb_5.3/reference/Uruguay_refElecHydro.xml</Value>
@@ -83,20 +85,20 @@ This file must be referenced in the configuration file of interest, with batch r
 		<Value name = "argentina_population_gdp">../input/idb_5.3/reference/Argentina_refPop_gSSP2.xml</Value>
 
 		<!--Climate Impacts Files-->
-      <Value name = "hydro">../input/idb_5.3/impacts/Hydro/hydro_impacts_HadGEM2-ES_rcp8p5.xml</Value> <!--need to change all Xanthos output-->
-      <Value name = "water">../input/idb_5.3/impacts/Water/runoff_impacts_HadGEM2-ES_rcp8p5.xml</Value>
-      <!--<Value name = "water">../input/idb_5.3/impacts/Water/water_cc_hadgem_8p5_exp_wg.xml</Value>-->
-      <Value name = "ag">../input/idb_5.3/impacts/Ag/ag_prodchange_rcp8p5_hadgem2_pdssat.xml</Value> 
+      <Value name = "hydro">../input/idb_5.3/impacts/Hydro/hydro_impacts_GFDL-ESM2M_rcp2p6.xml</Value> 
+      <Value name = "water">../input/idb_5.3/impacts/Water/runoff_impacts_GFDL-ESM2M_rcp2p6.xml</Value>
+      <Value name = "ag">../input/idb_5.3/impacts/Ag/ag_prodchange_rcp2p6_gfdl_pdssat.xml</Value> 
 		</FileSet>
 		<FileSet name="Policy">
 		<!--Reference files and climate impacts files from above-->
-		<!--Colombia-specific files-->
+<!--Colombia-specific files-->
 	    <!-- Socio-Economics -->
 		<Value name = "colombia_population_gdp">../input/idb_5.3/reference/Colombia_refPopGDP_gSSP2.xml</Value>
-		<Value name = "colombia_foodDemand_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_FoodDemand_incelas.xml</Value>
+		<!--Value name = "colombia_foodDemand_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_FoodDemand_incelas.xml</Value-->
 		<Value name = "colombia_cement_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_cement_incelas_gssp2.xml</Value>
 		<Value name = "colombia_industry_incelas">../input/idb_5.3/reference/Colombia_refPopGDP_industry_incelas_gssp2.xml</Value>
         <!-- Electricity -->
+		<Value name = "Colombia_ref_noCoalIGCC_RefLiqCCS">../input/idb_5.3/reference/Colombia_CoalIGCC_RefLiqCC_CCS_Zero.xml</Value>
 		<Value name = "colombia_refElecShareWeights_ref">../input/idb_5.3/reference/Colombia_ref_L223.SubsectorShrwt.xml</Value>
 		<Value name = "colombia_ref_hydro">../input/idb_5.3/reference/Colombia_ref_hydro.xml</Value>
         <!-- Water-->
@@ -109,11 +111,11 @@ This file must be referenced in the configuration file of interest, with batch r
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_socioeconomics_gSSP2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value>
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value-->
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value-->
+        <!--Value name = "Uruguay_refPopGDP">../input/idb_5.3/reference/Uruguay_refPopGDP_FoodDemand_incelas.xml</Value-->
         <!-- Final Energy-->
-        <Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value>
+        <!--Value name = "Uruguay_refFinalNrg">../input/idb_5.3/reference/Uruguay_refFinalNrg.xml</Value-->
         <!-- Electricity -->
         <Value name = "Uruguay_refElecShareWeights_ref">../input/idb_5.3/reference/Uruguay_refElecShareWeights_L223.SubsectorShrwt.xml</Value>
         <Value name = "Uruguay_refHydro">../input/idb_5.3/reference/Uruguay_refElecHydro.xml</Value>
@@ -127,10 +129,9 @@ This file must be referenced in the configuration file of interest, with batch r
 		<Value name = "argentina_population_gdp">../input/idb_5.3/reference/Argentina_refPop_gSSP2.xml</Value>
 
 		<!--Climate Impacts Files-->
-      <Value name = "hydro">../input/idb_5.3/impacts/Hydro/hydro_impacts_HadGEM2-ES_rcp8p5.xml</Value> <!--need to change all Xanthos output-->
-      <Value name = "water">../input/idb_5.3/impacts/Water/runoff_impacts_HadGEM2-ES_rcp8p5.xml</Value>
-      <!--<Value name = "water">../input/idb_5.3/impacts/Water/water_cc_hadgem_8p5_exp_wg.xml</Value>-->
-      <Value name = "ag">../input/idb_5.3/impacts/Ag/ag_prodchange_rcp8p5_hadgem2_pdssat.xml</Value> 
+      <Value name = "hydro">../input/idb_5.3/impacts/Hydro/hydro_impacts_GFDL-ESM2M_rcp2p6.xml</Value> 
+      <Value name = "water">../input/idb_5.3/impacts/Water/runoff_impacts_GFDL-ESM2M_rcp2p6.xml</Value>
+      <Value name = "ag">../input/idb_5.3/impacts/Ag/ag_prodchange_rcp2p6_gfdl_pdssat.xml</Value> 
 
 	<!--POLICY FILES-->
 
