@@ -31,7 +31,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -40,7 +40,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -49,7 +49,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -58,7 +58,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -67,7 +67,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -76,7 +76,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -85,7 +85,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -94,7 +94,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -103,7 +103,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -112,7 +112,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -121,7 +121,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -130,7 +130,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -139,7 +139,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -148,7 +148,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -157,7 +157,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -166,7 +166,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -175,7 +175,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -213,7 +213,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -222,7 +222,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -231,7 +231,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -240,7 +240,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -249,7 +249,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -258,7 +258,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -267,7 +267,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -276,7 +276,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -285,7 +285,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -294,7 +294,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -303,7 +303,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -312,7 +312,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -321,7 +321,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -330,7 +330,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -339,7 +339,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -348,7 +348,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -357,7 +357,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -395,7 +395,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -404,7 +404,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -413,7 +413,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -422,7 +422,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -431,7 +431,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -440,7 +440,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -449,7 +449,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -458,7 +458,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -467,7 +467,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -476,7 +476,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -485,7 +485,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -494,7 +494,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -503,7 +503,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -512,7 +512,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -521,7 +521,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -530,7 +530,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -539,7 +539,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>20</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -579,7 +579,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -588,7 +588,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -597,7 +597,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -606,7 +606,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -615,7 +615,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -624,7 +624,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -633,7 +633,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -642,7 +642,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -651,7 +651,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -660,7 +660,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -669,7 +669,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -678,7 +678,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -687,7 +687,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -696,7 +696,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -705,7 +705,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -714,7 +714,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -723,7 +723,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>15</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -758,71 +758,71 @@
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                     </period>
                 </stub-technology>
@@ -857,7 +857,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -866,7 +866,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -875,7 +875,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -884,7 +884,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -893,7 +893,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -902,7 +902,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -911,7 +911,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -920,7 +920,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -929,7 +929,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -938,7 +938,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -947,7 +947,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -956,7 +956,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -965,7 +965,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -974,7 +974,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -983,7 +983,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -992,7 +992,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1001,7 +1001,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1039,7 +1039,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1048,7 +1048,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1057,7 +1057,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1066,7 +1066,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1075,7 +1075,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1084,7 +1084,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1093,7 +1093,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1102,7 +1102,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1111,7 +1111,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1120,7 +1120,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1129,7 +1129,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1138,7 +1138,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1147,7 +1147,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1156,7 +1156,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1165,7 +1165,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1174,7 +1174,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1183,7 +1183,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1221,7 +1221,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2020">
-                        <share-weight>0.25</share-weight>
+                        <share-weight>0.375</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1230,7 +1230,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2025">
-                        <share-weight>1.375</share-weight>
+                        <share-weight>2.0625</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1239,7 +1239,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2030">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1248,7 +1248,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2035">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1257,7 +1257,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2040">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1266,7 +1266,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2045">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1275,7 +1275,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2050">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1284,7 +1284,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2055">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1293,7 +1293,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2060">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1302,7 +1302,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2065">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1311,7 +1311,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2070">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1320,7 +1320,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2075">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1329,7 +1329,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2080">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1338,7 +1338,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2085">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1347,7 +1347,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2090">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1356,7 +1356,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2095">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
@@ -1365,7 +1365,7 @@
                         </s-curve-shutdown-decider>
                     </period>
                     <period year="2100">
-                        <share-weight>2.5</share-weight>
+                        <share-weight>3.75</share-weight>
                         <CO2 name="CO2"/>
                         <lifetime>25</lifetime>
                         <s-curve-shutdown-decider name="s-curve">
