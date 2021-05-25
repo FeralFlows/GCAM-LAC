@@ -1852,7 +1852,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -2400,7 +2400,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -2948,7 +2948,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -3870,7 +3870,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -4240,7 +4240,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                 </tranTechnology>
             </location-info>
@@ -4252,7 +4252,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                 </tranTechnology>
             </location-info>
@@ -4352,7 +4352,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -4996,7 +4996,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -5907,7 +5907,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
@@ -6818,7 +6818,7 @@
                 </tranTechnology>
                 <tranTechnology name="NG">
                     <interpolation-rule apply-to="share-weight" from-year="2015" to-year="2100">
-                        <interpolation-function name="linear"/>
+                        <interpolation-function name="fixed"/>
                     </interpolation-rule>
                     <period year="1975">
                         <share-weight>0</share-weight>
