@@ -34,7 +34,7 @@
 		<Value name = "fertilizer_energy">../input/gcamdata/xml/en_Fert.xml</Value>
 		<Value name = "hddcdd">../input/gcamdata/xml/HDDCDD_constdd_no_GCM.xml</Value>
 		<Value name = "building">../input/gcamdata/xml/building_det.xml</Value>
-		<Value name = "transportation">../input/idb_5.3/rdm/uncertainty/Technology/ElectricVehicles/transportation_UCD_CORE_ModEVcost_Colombia_noPubTrninterp.xml</Value>
+		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVcost_Colombia_noPubTrninterp.xml</Value>
 		<Value name = "transportation">../input/idb_5.3/update_trn/transportation_UCD_CORE_ModEVsw.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
