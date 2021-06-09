@@ -9,12 +9,12 @@
                         <interpolation-function name="fixed"/>
  						<overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
-                    <share-weight year="2020">0.0985</share-weight>
-                    <share-weight year="2025">0.0985</share-weight>
-                    <share-weight year="2030">0.0985</share-weight>
-                    <share-weight year="2035">0.0985</share-weight>
-                    <share-weight year="2040">0.0985</share-weight>
-                    <share-weight year="2045">0.0985</share-weight>
+                    <share-weight year="2020">0.197</share-weight>
+                    <share-weight year="2025">0.180666667</share-weight>
+                    <share-weight year="2030">0.164333333</share-weight>
+                    <share-weight year="2035">0.148</share-weight>
+                    <share-weight year="2040">0.131666667</share-weight>
+                    <share-weight year="2045">0.115333333</share-weight>
                     <share-weight year="2050">0.0985</share-weight>
                     <share-weight year="2055">0.0985</share-weight>
                     <share-weight year="2060">0.0985</share-weight>
@@ -33,12 +33,12 @@
                         <interpolation-function name="fixed"/>
  						<overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
-                    <share-weight year="2020">0.0855</share-weight>
-                    <share-weight year="2025">0.0855</share-weight>
-                    <share-weight year="2030">0.0855</share-weight>
-                    <share-weight year="2035">0.0855</share-weight>
-                    <share-weight year="2040">0.0855</share-weight>
-                    <share-weight year="2045">0.0855</share-weight>
+                    <share-weight year="2020">0.171</share-weight>
+                    <share-weight year="2025">0.156833333</share-weight>
+                    <share-weight year="2030">0.142666667</share-weight>
+                    <share-weight year="2035">0.1285</share-weight>
+                    <share-weight year="2040">0.114333333</share-weight>
+                    <share-weight year="2045">0.100166667</share-weight>
                     <share-weight year="2050">0.0855</share-weight>
                     <share-weight year="2055">0.0855</share-weight>
                     <share-weight year="2060">0.0855</share-weight>
@@ -57,13 +57,13 @@
                         <interpolation-function name="fixed"/>
  						<overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
-                    <share-weight year="2020">0.1955</share-weight>
-                    <share-weight year="2025">0.1955</share-weight>
-                    <share-weight year="2030">0.1955</share-weight>
-                    <share-weight year="2035">0.1955</share-weight>
-                    <share-weight year="2040">0.1955</share-weight>
-                    <share-weight year="2045">0.1955</share-weight>
-                    <share-weight year="2050">0.1955</share-weight>
+                    <share-weight year="2020">0.391</share-weight>
+                    <share-weight year="2025">0.3585</share-weight>
+                    <share-weight year="2030">0.326</share-weight>
+                    <share-weight year="2035">0.2935</share-weight>
+                    <share-weight year="2040">0.261</share-weight>
+                    <share-weight year="2045">0.2285</share-weight>
+                    <share-weight year="2050">0.196</share-weight>
                     <share-weight year="2055">0.1955</share-weight>
                     <share-weight year="2060">0.1955</share-weight>
                     <share-weight year="2065">0.1955</share-weight>
@@ -81,12 +81,12 @@
                         <interpolation-function name="fixed"/>
  						<overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
-                    <share-weight year="2020">0.002</share-weight>
-                    <share-weight year="2025">0.002</share-weight>
-                    <share-weight year="2030">0.002</share-weight>
-                    <share-weight year="2035">0.002</share-weight>
-                    <share-weight year="2040">0.002</share-weight>
-                    <share-weight year="2045">0.002</share-weight>
+                    <share-weight year="2020">0.004</share-weight>
+                    <share-weight year="2025">0.003666667</share-weight>
+                    <share-weight year="2030">0.003333333</share-weight>
+                    <share-weight year="2035">0.003</share-weight>
+                    <share-weight year="2040">0.002666667</share-weight>
+                    <share-weight year="2045">0.002333333</share-weight>
                     <share-weight year="2050">0.002</share-weight>
                     <share-weight year="2055">0.002</share-weight>
                     <share-weight year="2060">0.002</share-weight>
@@ -105,12 +105,12 @@
                         <interpolation-function name="fixed"/>
  						<overwrite-policy warn="0">NEVER</overwrite-policy>
                     </interpolation-rule>
-                    <share-weight year="2020">0.07</share-weight>
-                    <share-weight year="2025">0.07</share-weight>
-                    <share-weight year="2030">0.07</share-weight>
-                    <share-weight year="2035">0.07</share-weight>
-                    <share-weight year="2040">0.07</share-weight>
-                    <share-weight year="2045">0.07</share-weight>
+                    <share-weight year="2020">0.14</share-weight>
+                    <share-weight year="2025">0.128333333</share-weight>
+                    <share-weight year="2030">0.116666667</share-weight>
+                    <share-weight year="2035">0.105</share-weight>
+                    <share-weight year="2040">0.093333333</share-weight>
+                    <share-weight year="2045">0.081666667</share-weight>
                     <share-weight year="2050">0.07</share-weight>
                     <share-weight year="2055">0.07</share-weight>
                     <share-weight year="2060">0.07</share-weight>
