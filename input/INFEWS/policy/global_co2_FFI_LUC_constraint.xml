@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="USA">
+            <ghgpolicy name="GHG">
+                <market>global</market>
+                <constraint year="2020">33860.17679</constraint>
+                <constraint year="2025">28864.413</constraint>
+                <constraint year="2030">23868.64921</constraint>
+                <constraint year="2035">18872.88542</constraint>
+                <constraint year="2040">13877.12163</constraint>
+                <constraint year="2045">8881.357846</constraint>
+                <constraint year="2050">3885.594057</constraint>
+            </ghgpolicy>
+        </region>
+    </world>
+</scenario>

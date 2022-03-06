@@ -3,7 +3,7 @@
 # Description: Base-year fraction of residue biomass produced by region and source
 # Original source: Workbook put together by Kate Calvin
 # Units: NA
-# Column types: innn 
+# Column types: innn
 # ----------
 GCAM_region_ID,ag,For,Mill
 1,0.261919425,0.6,0.8

@@ -21,7 +21,6 @@ module_aglu_L2242.land_input_4_irr_mgmt <- function(command, ...) {
   if(command == driver.DECLARE_INPUTS) {
     return(c(FILE = "aglu/A_LandNode_logit_irr",
              FILE = "aglu/A_bio_ghost_share",
-             FILE = "aglu/A_bio_ghost_share_region",
              FILE = "aglu/A_LT_Mapping",
              FILE = "aglu/A_LandLeaf3",
              "L2012.AgYield_bio_ref",
@@ -42,13 +41,9 @@ module_aglu_L2242.land_input_4_irr_mgmt <- function(command, ...) {
     # Load required inputs
     A_LandNode_logit_irr <- get_data(all_data, "aglu/A_LandNode_logit_irr")
     A_bio_ghost_share <- get_data(all_data, "aglu/A_bio_ghost_share")
-
-    #BY 3-1-21: add regionally differentiated ghost share
-    A_bio_ghost_share_region <-  get_data(all_data, "aglu/A_bio_ghost_share_region")
-
     A_LT_Mapping <- get_data(all_data, "aglu/A_LT_Mapping")
     A_LandLeaf3 <- get_data(all_data, "aglu/A_LandLeaf3")
-    L2012.AgYield_bio_ref <- get_data(all_data, "L2012.AgYield_bio_ref")
+    L2012.AgYield_bio_ref <- get_data(all_data, "L2012.AgYield_bio_ref", strip_attributes = TRUE)
     L2012.AgProduction_ag_irr_mgmt <- get_data(all_data, "L2012.AgProduction_ag_irr_mgmt")
 
     # L2242.LN4_Logit: Logit exponent of the fourth land nest by region
@@ -86,12 +81,9 @@ module_aglu_L2242.land_input_4_irr_mgmt <- function(command, ...) {
              LandNode4 = paste(LandLeaf, GLU_name, sep = "_")) %>%
       repeat_add_columns(tibble::tibble(year = MODEL_FUTURE_YEARS)) %>%
       filter(year >= aglu.BIO_START_YEAR) %>%
-      left_join(A_bio_ghost_share, by = year) %>%
-#      left_join(A_bio_ghost_share_region, by = c(year, region)) %>%
-      group_by(region, LandNode1, LandNode2, LandNode3, LandNode4) %>%
+      left_join(A_bio_ghost_share, by = "year") %>%
       mutate(ghost.unnormalized.share = approx_fun(year, ghost.share)) %>%
-      select(-GLU_name, -GCAM_commodity, -AgSupplySubsector, -LandLeaf, -Land_Type, -ghost.share) %>%
-      ungroup()  ->
+      select(-GLU_name, -GCAM_commodity, -AgSupplySubsector, -LandLeaf, -Land_Type, -ghost.share) ->
       L2242.LN4_NodeGhostShare
 
     # L2242.LN4_NodeIsGhostShareRel:

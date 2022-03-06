@@ -57,7 +57,10 @@ module_aglu_LA106.ag_an_NetExp_FAO_R_C_Y <- function(command, ...) {
       left_join_error_no_match(iso_GCAM_regID, by = "iso") %>%                     # Map in GCAM regions
       left_join(FAO_items_map, by = "item") %>%                                    # Map in GCAM commodities, creates NAs
       filter(!is.na(GCAM_commodity)) %>%                                           # Remove commodities not included in GCAM
+    # ORIGINAL DATA SYSTEM
       group_by(GCAM_region_ID, GCAM_commodity, element, year) %>%                  # Group by region, commodity, year
+    # BY 1/3/22: country grouping (comment out to run normally)
+    #  group_by(countries, GCAM_commodity, element, year) %>%                  # Group by region, commodity, year
       summarise(value = sum(value)) %>%                                            # Aggregate exports and imports
       ungroup() %>%
       mutate(element = sub("ag_", "", element),                                    # Change the element (export and import) name for wide format

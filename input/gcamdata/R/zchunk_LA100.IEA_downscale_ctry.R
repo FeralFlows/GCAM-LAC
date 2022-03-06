@@ -69,13 +69,14 @@ module_energy_LA100.IEA_downscale_ctry <- function(command, ...) {
       L100.IEAfull[CTG_entries & L100.IEAfull$PRODUCT == "Other bituminous coal", hy] <-
         L100.IEAfull[CTG_entries & L100.IEAfull$PRODUCT == "Gas works gas", hy] *
         COAL_TO_GAS_COEF * -1     # Multiply by -1 because inputs and outputs have a different sign
-
+      
       # UFA2b. Uruguay also has coal-to-gas with an IO coef higher than our assumed values, and low/zero natural gas
       # Here, rounding errors require the use of a different "flow" (TFC = total final consumption) to re-estimate the production
       L100.IEAfull[L100.IEAfull$COUNTRY == "Uruguay" & L100.IEAfull$FLOW == "TGASWKS" & L100.IEAfull$PRODUCT == "Hard coal (if no detail)", hy] <- 0
       L100.IEAfull[L100.IEAfull$COUNTRY == "Uruguay" & L100.IEAfull$FLOW == "TFC" & L100.IEAfull$PRODUCT == "Gas works gas", hy] <-
         L100.IEAfull[CTG_entries & L100.IEAfull$PRODUCT == "Gas works gas", hy] *
         COAL_TO_GAS_COEF * -1     # Multiply by -1 because inputs and outputs have a different sign
+      
 
       # UFA3. Turkey has electricity production from primary solid biofuels (elautoc) between 1971 and 1981
       # with no corresponding fuel input by any sectors; add a fuel input to avoid negative numbers later on.

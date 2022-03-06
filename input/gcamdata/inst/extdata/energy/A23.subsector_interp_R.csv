@@ -4,7 +4,7 @@
 # Units: Unitless share-weights
 # Source: GCAM assumptions; documented in proposal 210_GCAM4p1_Electricity Generation Assumptions.pdf (page 23)
 # Comment: Share-weight interpolation for USA to turn off coal in 2020 only
-# Column types: ccccccnc 
+# Column types: ccccccnc
 # ----------
 region,supplysector,subsector,apply.to,from.year,to.year,to.value,interpolation.function
 USA,electricity,refined liquids,share-weight,final-calibration-year,2100,,fixed
@@ -39,6 +39,7 @@ Southeast Asia,electricity,refined liquids,share-weight,final-calibration-year,2
 Taiwan,electricity,refined liquids,share-weight,final-calibration-year,2100,1,linear
 Argentina,electricity,refined liquids,share-weight,final-calibration-year,2100,1,linear
 Colombia,electricity,refined liquids,share-weight,final-calibration-year,2100,1,linear
+Uruguay,electricity,refined liquids,share-weight,final-calibration-year,2100,1,linear
 USA,electricity,coal,share-weight,final-calibration-year,initial-future-year,,linear
 USA,electricity,coal,share-weight,initial-future-year,2035,,linear
 USA,electricity,coal,share-weight,2035,2300,1,s-curve
@@ -49,4 +50,3 @@ European Free Trade Association,electricity,nuclear,share-weight,2050,2200,1,s-c
 Colombia,electricity,gas,share-weight,final-calibration-year,2030,0.5,linear
 Colombia,electricity,gas,share-weight,2025,2035,0.375,linear
 Colombia,electricity,gas,share-weight,2030,2100,0.5,linear
-Uruguay,electricity,refined liquids,share-weight,final-calibration-year,2100,1,linear

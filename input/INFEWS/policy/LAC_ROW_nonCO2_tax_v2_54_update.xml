@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario name="NonCO2tax">
+    <world>
+        <region name="Argentina">
+            <ghgpolicy name="nonCO2">
+                <market>Argentina</market>
+                <fixedTax year="2020">0</fixedTax>
+                <fixedTax year="2025">0</fixedTax>
+				<fixedTax year="2030">66.4947</fixedTax>
+                <fixedTax year="2035">279.55</fixedTax>
+                <fixedTax year="2040">454.633</fixedTax>
+                <fixedTax year="2045">612.594</fixedTax>
+                <fixedTax year="2050">741.651</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Brazil">
+            <ghgpolicy name="nonCO2">
+                <market>Brazil</market>
+                <fixedTax year="2020">0</fixedTax>
+                <fixedTax year="2025">0</fixedTax>
+				<fixedTax year="2030">0</fixedTax>
+                <fixedTax year="2035">373.613</fixedTax>
+                <fixedTax year="2040">525.941</fixedTax>
+                <fixedTax year="2045">682.312</fixedTax>
+                <fixedTax year="2050">642.765</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Central America and Caribbean">
+            <ghgpolicy name="nonCO2">
+                <market>Central America and Caribbean</market>
+                <fixedTax year="2020">74.405</fixedTax>
+                <fixedTax year="2025">261.419</fixedTax>
+				<fixedTax year="2030">354.654</fixedTax>
+                <fixedTax year="2035">457.351</fixedTax>
+                <fixedTax year="2040">552.002</fixedTax>
+                <fixedTax year="2045">681.372</fixedTax>
+                <fixedTax year="2050">753.727</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Colombia">
+            <ghgpolicy name="nonCO2">
+                <market>Colombia</market>
+                <fixedTax year="2020">71.8221</fixedTax>
+                <fixedTax year="2025">314.819</fixedTax>
+				<fixedTax year="2030">377.017</fixedTax>
+                <fixedTax year="2035">435.987</fixedTax>
+                <fixedTax year="2040">525.899</fixedTax>
+                <fixedTax year="2045">662.251</fixedTax>
+                <fixedTax year="2050">683.205</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Mexico">
+            <ghgpolicy name="nonCO2">
+                <market>Mexico</market>
+                <fixedTax year="2020">198.557</fixedTax>
+                <fixedTax year="2025">312.622</fixedTax>
+				<fixedTax year="2030">351.917</fixedTax>
+                <fixedTax year="2035">421.462</fixedTax>
+                <fixedTax year="2040">511.098</fixedTax>
+                <fixedTax year="2045">632.065</fixedTax>
+                <fixedTax year="2050">735.1</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="South America_Northern">
+            <ghgpolicy name="nonCO2">
+                <market>South America_Northern</market>
+                <fixedTax year="2020">0</fixedTax>
+                <fixedTax year="2025">0</fixedTax>
+				<fixedTax year="2030">12.8523</fixedTax>
+                <fixedTax year="2035">224.771</fixedTax>
+                <fixedTax year="2040">615.846</fixedTax>
+                <fixedTax year="2045">823.82</fixedTax>
+                <fixedTax year="2050">956.321</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="South America_Southern">
+            <ghgpolicy name="nonCO2">
+                <market>South America_Southern</market>
+                <fixedTax year="2020">0</fixedTax>
+                <fixedTax year="2025">11.0837</fixedTax>
+				<fixedTax year="2030">224.759</fixedTax>
+                <fixedTax year="2035">382.415</fixedTax>
+                <fixedTax year="2040">541.255</fixedTax>
+                <fixedTax year="2045">711.229</fixedTax>
+                <fixedTax year="2050">823.756</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Uruguay">
+            <ghgpolicy name="nonCO2">
+                <market>Uruguay</market>
+                <fixedTax year="2020">0</fixedTax>
+                <fixedTax year="2025">162.26</fixedTax>
+				<fixedTax year="2030">327.596</fixedTax>
+                <fixedTax year="2035">451.691</fixedTax>
+                <fixedTax year="2040">555.208</fixedTax>
+                <fixedTax year="2045">671.676</fixedTax>
+                <fixedTax year="2050">699.834</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="USA">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+                <fixedTax year="2020">136.782</fixedTax>
+                <fixedTax year="2025">253.084</fixedTax>
+				<fixedTax year="2030">306.678</fixedTax>
+                <fixedTax year="2035">393.759</fixedTax>
+                <fixedTax year="2040">516.081</fixedTax>
+                <fixedTax year="2045">679.016</fixedTax>
+                <fixedTax year="2050">829.79</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Canada">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="EU-15">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Europe_Non_EU">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="European Free Trade Association">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Japan">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Australia_NZ">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Central Asia">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Russia">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="China">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Middle East">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Eastern">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Northern">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Southern">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Western">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Africa">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Indonesia">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Pakistan">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Asia">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Southeast Asia">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Taiwan">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Europe_Eastern">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="EU-12">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Korea">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+        <region name="India">
+            <ghgpolicy name="nonCO2">
+                <market>row</market>
+            </ghgpolicy>
+        </region>
+    </world>
+</scenario>
