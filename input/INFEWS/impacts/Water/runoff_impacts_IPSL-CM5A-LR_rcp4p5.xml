@@ -2555,27 +2555,6 @@
             </renewresource>
         </region>
         <region name="India">
-            <renewresource name="AdnNicIsl_water withdrawals">
-                <sub-renewable-resource name="runoff">
-                    <maxSubResource year="2015">9.86896516672356</maxSubResource>
-                    <maxSubResource year="2020">10.0261887929154</maxSubResource>
-                    <maxSubResource year="2025">10.1277948988388</maxSubResource>
-                    <maxSubResource year="2030">10.1319277037216</maxSubResource>
-                    <maxSubResource year="2035">10.1402984603314</maxSubResource>
-                    <maxSubResource year="2040">10.1403718919447</maxSubResource>
-                    <maxSubResource year="2045">10.1375479093607</maxSubResource>
-                    <maxSubResource year="2050">10.1167719789259</maxSubResource>
-                    <maxSubResource year="2055">10.1408605452503</maxSubResource>
-                    <maxSubResource year="2060">10.2263397354537</maxSubResource>
-                    <maxSubResource year="2065">10.2721968325422</maxSubResource>
-                    <maxSubResource year="2070">10.3006544822316</maxSubResource>
-                    <maxSubResource year="2075">10.3159664723168</maxSubResource>
-                    <maxSubResource year="2080">10.3238294198897</maxSubResource>
-                    <maxSubResource year="2085">10.3348044445575</maxSubResource>
-                    <maxSubResource year="2090">10.3433861266818</maxSubResource>
-                    <maxSubResource year="2095">10.3476735654193</maxSubResource>
-                </sub-renewable-resource>
-            </renewresource>
             <renewresource name="BrahmaniR_water withdrawals">
                 <sub-renewable-resource name="runoff">
                     <maxSubResource year="2015">48.9944878795688</maxSubResource>
@@ -4343,27 +4322,6 @@
                     <maxSubResource year="2095">523.094677693906</maxSubResource>
                 </sub-renewable-resource>
             </renewresource>
-            <renewresource name="Micronesia_water withdrawals">
-                <sub-renewable-resource name="runoff">
-                    <maxSubResource year="2015">169.186980026204</maxSubResource>
-                    <maxSubResource year="2020">174.423582409887</maxSubResource>
-                    <maxSubResource year="2025">180.497641242955</maxSubResource>
-                    <maxSubResource year="2030">188.852985503966</maxSubResource>
-                    <maxSubResource year="2035">194.867672960177</maxSubResource>
-                    <maxSubResource year="2040">194.116808909068</maxSubResource>
-                    <maxSubResource year="2045">196.178826864802</maxSubResource>
-                    <maxSubResource year="2050">200.076431217691</maxSubResource>
-                    <maxSubResource year="2055">204.887874662569</maxSubResource>
-                    <maxSubResource year="2060">210.675497795949</maxSubResource>
-                    <maxSubResource year="2065">215.747942624694</maxSubResource>
-                    <maxSubResource year="2070">220.540185472783</maxSubResource>
-                    <maxSubResource year="2075">228.613490508164</maxSubResource>
-                    <maxSubResource year="2080">238.551671304095</maxSubResource>
-                    <maxSubResource year="2085">250.392574904915</maxSubResource>
-                    <maxSubResource year="2090">263.977076761502</maxSubResource>
-                    <maxSubResource year="2095">279.581153343963</maxSubResource>
-                </sub-renewable-resource>
-            </renewresource>
             <renewresource name="BorneoCstN_water withdrawals">
                 <sub-renewable-resource name="runoff">
                     <maxSubResource year="2015">353.056197744112</maxSubResource>
@@ -4383,27 +4341,6 @@
                     <maxSubResource year="2085">404.877439084416</maxSubResource>
                     <maxSubResource year="2090">403.266200238505</maxSubResource>
                     <maxSubResource year="2095">400.393460537574</maxSubResource>
-                </sub-renewable-resource>
-            </renewresource>
-            <renewresource name="Guam_water withdrawals">
-                <sub-renewable-resource name="runoff">
-                    <maxSubResource year="2015">83.0972314519486</maxSubResource>
-                    <maxSubResource year="2020">83.9860104177968</maxSubResource>
-                    <maxSubResource year="2025">85.2405747132706</maxSubResource>
-                    <maxSubResource year="2030">87.8667532858189</maxSubResource>
-                    <maxSubResource year="2035">89.8002601772041</maxSubResource>
-                    <maxSubResource year="2040">91.1989241600512</maxSubResource>
-                    <maxSubResource year="2045">91.5042449985404</maxSubResource>
-                    <maxSubResource year="2050">90.1211218076039</maxSubResource>
-                    <maxSubResource year="2055">89.1914752490173</maxSubResource>
-                    <maxSubResource year="2060">87.8298056393205</maxSubResource>
-                    <maxSubResource year="2065">87.3279931996695</maxSubResource>
-                    <maxSubResource year="2070">87.2689280188504</maxSubResource>
-                    <maxSubResource year="2075">87.1671277956967</maxSubResource>
-                    <maxSubResource year="2080">87.2241052393171</maxSubResource>
-                    <maxSubResource year="2085">87.5090007115084</maxSubResource>
-                    <maxSubResource year="2090">87.9798387265047</maxSubResource>
-                    <maxSubResource year="2095">88.5250718802725</maxSubResource>
                 </sub-renewable-resource>
             </renewresource>
             <renewresource name="PapuaCst_water withdrawals">
