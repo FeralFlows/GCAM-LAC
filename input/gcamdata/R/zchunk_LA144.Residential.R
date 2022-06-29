@@ -46,7 +46,7 @@ module_gcamusa_LA144.Residential <- function(command, ...) {
       state <- subregion9 <- year <- variable <- HOUSEHOLDS <- NWEIGHT <- . <- value.x <- value.y <- variable <- pcflsp_m2 <-
       pcflsp_m2.x <- pcflsp_m2.y <- conv_9_13 <- sector <- fuel <- service <- DIVISION <- val_1993 <- conv <- val_1990 <-
       Fuel <- Service <- tv_1995 <- fuel_sum <- share <- service.x <- Sector <- RECS_flspc_2010 <- scaler <- EIA_sector <-
-      val_2009 <- NULL
+      val_2009 <- RECS_flspc <- NULL
 
     all_data <- list(...)[[1]]
 
@@ -69,7 +69,7 @@ module_gcamusa_LA144.Residential <- function(command, ...) {
     RECS_2005 <- get_data(all_data, "gcam-usa/RECS_2005")
     RECS_2009 <- get_data(all_data, "gcam-usa/RECS_2009")
     RECS_2015 <- get_data(all_data, "gcam-usa/RECS_2015")
-    L142.in_EJ_state_bld_F <- get_data(all_data, "L142.in_EJ_state_bld_F")
+    L142.in_EJ_state_bld_F <- get_data(all_data, "L142.in_EJ_state_bld_F", strip_attributes = TRUE)
     L143.share_state_Pop_CDD_sR13 <- get_data(all_data, "L143.share_state_Pop_CDD_sR13")
     L143.share_state_Pop_HDD_sR13 <- get_data(all_data, "L143.share_state_Pop_HDD_sR13")
 
@@ -155,8 +155,8 @@ module_gcamusa_LA144.Residential <- function(command, ...) {
         if("HOUSEHOLDS" %in% names(df)) {
           flsp_var <- names(df)[which(names(df) %in% flsp_vars)]
           df %>%
-            dplyr::select_("year", "subregion9", "HOUSEHOLDS", flsp_var) %>%
-            tidyr::gather_("variable", "value", flsp_var) %>%
+            select(tidyselect::all_of(c("year", "subregion9", "HOUSEHOLDS", flsp_var))) %>%
+            gather("variable", "value", tidyselect::all_of(flsp_var)) %>%
             group_by(year, subregion9, variable) %>%
             summarise(value = sum(value * HOUSEHOLDS * CONV_MILFT2_M2)) %>%
             ungroup()
@@ -165,8 +165,8 @@ module_gcamusa_LA144.Residential <- function(command, ...) {
           if("NWEIGHT" %in% names(df)) {
             flsp_var <- names(df)[which(names(df) %in% flsp_vars)]
             df %>%
-              dplyr::select_("year", "subregion9", "NWEIGHT", flsp_var) %>%
-              tidyr::gather_("variable", "value", flsp_var) %>%
+              select(tidyselect::all_of(c("year", "subregion9", "NWEIGHT", flsp_var))) %>%
+              gather("variable", "value", tidyselect::all_of(flsp_var)) %>%
               group_by(year, subregion9, variable) %>%
               summarise(value = sum(value * NWEIGHT * CONV_FT2_M2)) %>%
               ungroup()
@@ -187,8 +187,8 @@ module_gcamusa_LA144.Residential <- function(command, ...) {
         if("subregion13" %in% names(df)) {
           flsp_var <- names(df)[which(names(df) %in% flsp_vars)]
           df %>%
-            dplyr::select_("year", "subregion13", "NWEIGHT", flsp_var) %>%
-            tidyr::gather_("variable", "value", flsp_var) %>%
+            select(tidyselect::all_of(c("year", "subregion13", "NWEIGHT", flsp_var))) %>%
+            gather("variable", "value", tidyselect::all_of(flsp_var)) %>%
             group_by(year, subregion13, variable) %>%
             summarise(value = sum(value * NWEIGHT * CONV_FT2_M2)) %>%
             ungroup()
@@ -265,21 +265,24 @@ module_gcamusa_LA144.Residential <- function(command, ...) {
       select(state, subregion13, sector, year, value)
 
     # Final step - adjustment for AEO 2015 harmonization. NEMS residential floorspace is a lot lower than RECS.
-    AEO_2015_flsp %>%
-      gather_years() %>%
-      filter(Sector == "Residential",
-             year == max(HISTORICAL_YEARS)) %>%
-      left_join_error_no_match(L144.flsp_bm2_state_res %>%
-                                 filter(year == max(HISTORICAL_YEARS)) %>%
-                                 group_by(sector, year) %>%
-                                 summarise(RECS_flspc_2010 = sum(value)) %>%
-                                 ungroup(),
-                               by = c("year")) %>%
-      mutate(scaler = value / RECS_flspc_2010) %>%
-      select(sector, scaler) -> L144.flsp_scaler
+    L144.flsp_bm2_state_res    %>%
+      group_by(sector, year) %>%
+      summarise(RECS_flspc = sum(value)) %>%
+      ungroup() %>%
+      select(-sector) %>%
+      # use left_join due to lack of AEO data prior to 1993
+      left_join(AEO_2015_flsp %>%
+                gather_years() %>%
+                filter(Sector == "Residential") %>%
+                select(-Sector),
+              by = c("year")) %>%
+      mutate(scaler = value / RECS_flspc) %>%
+      # extrapolate the scaler to years before 1993
+      mutate(scaler =if_else(is.na(scaler),approx_fun(year, scaler, rule = 2),scaler)) %>%
+      select(year, scaler) -> L144.flsp_scaler
 
-    L144.flsp_bm2_state_res %>%
-      left_join_error_no_match(L144.flsp_scaler, by = c("sector")) %>%
+   L144.flsp_bm2_state_res %>%
+      left_join_error_no_match(L144.flsp_scaler, by = c("year")) %>%
       mutate(value = if_else(year %in% HISTORICAL_YEARS, value * scaler, value)) %>%
       select(-scaler) -> L144.flsp_bm2_state_res
 

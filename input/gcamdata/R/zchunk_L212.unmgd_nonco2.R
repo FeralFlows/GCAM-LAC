@@ -30,7 +30,8 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
              "L124.deforest_coefs",
              "L125.bcoc_tgbkm2_R_grass_2000",
              "L125.bcoc_tgbkm2_R_forest_2000",
-             "L125.deforest_coefs_bcoc"))
+             "L125.deforest_coefs_bcoc",
+             "L120.LC_prot_land_frac_GLU"))
   } else if(command == driver.DECLARE_OUTPUTS) {
     return(c("L212.AgSupplySector",
              "L212.AgSupplySubsector",
@@ -61,22 +62,23 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
     # Silencing package checks
     GCAM_region_ID <- region <- AgSupplySubsector <- GLU <- itemName <- AgSupplySector <-
       UnmanagedLandTechnology <- year <- value <- Non.CO2 <- em_factor <- technology <-
-      emiss.coef <- input.emissions <- input.name <- NULL
+      emiss.coef <- input.emissions <- input.name <- Land_Type <- prot_frac <- NULL
 
     all_data <- list(...)[[1]]
 
     # Load required inputs
-    GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
+    GCAM_region_names <- get_data(all_data, "common/GCAM_region_names", strip_attributes = TRUE)
     basin_to_country_mapping <- get_data(all_data, "water/basin_to_country_mapping")
     A_regions <- get_data(all_data, "emissions/A_regions")
-    L124.nonco2_tg_R_grass_Y_GLU <- get_data(all_data, "L124.nonco2_tg_R_grass_Y_GLU") %>%
+    L124.nonco2_tg_R_grass_Y_GLU <- get_data(all_data, "L124.nonco2_tg_R_grass_Y_GLU", strip_attributes = TRUE) %>%
       replace_GLU(basin_to_country_mapping)
-    L124.nonco2_tg_R_forest_Y_GLU <- get_data(all_data, "L124.nonco2_tg_R_forest_Y_GLU") %>%
+    L124.nonco2_tg_R_forest_Y_GLU <- get_data(all_data, "L124.nonco2_tg_R_forest_Y_GLU", strip_attributes = TRUE) %>%
       replace_GLU(basin_to_country_mapping)
     L124.deforest_coefs <- get_data(all_data, "L124.deforest_coefs")
-    L125.bcoc_tgbkm2_R_grass_2000 <- get_data(all_data, "L125.bcoc_tgbkm2_R_grass_2000")
-    L125.bcoc_tgbkm2_R_forest_2000 <- get_data(all_data, "L125.bcoc_tgbkm2_R_forest_2000")
+    L125.bcoc_tgbkm2_R_grass_2000 <- get_data(all_data, "L125.bcoc_tgbkm2_R_grass_2000", strip_attributes = TRUE)
+    L125.bcoc_tgbkm2_R_forest_2000 <- get_data(all_data, "L125.bcoc_tgbkm2_R_forest_2000", strip_attributes = TRUE)
     L125.deforest_coefs_bcoc <- get_data(all_data, "L125.deforest_coefs_bcoc")
+    L120.LC_prot_land_frac_GLU <- get_data(all_data, "L120.LC_prot_land_frac_GLU") %>%  filter(year == MODEL_FINAL_BASE_YEAR) %>% select(-year) %>% distinct()
 
     # ===================================================
     # Unmanaged land sector info
@@ -130,7 +132,7 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
              input.name = emissions.UNMGD_LAND_INPUT_NAME) %>%
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename_SO2(A_regions) %>%
-      select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology, year, Non.CO2, input.emissions = value, input.name)
+      select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology, year, Non.CO2, input.emissions = value, input.name, GCAM_region_ID, GLU)
 
     # Grassland emissions factors for BC/OC
     # L212.GrassEmissions: Grassland fire emissions factors for BC/OC in all regions
@@ -141,22 +143,22 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       # Add in GCAM_region_ID for joining
       left_join_error_no_match(GCAM_region_names, by = "region") %>%
       # Join in emission factor values
-      left_join_error_no_match(L125.bcoc_tgbkm2_R_grass_2000, by = c("Non.CO2", "GCAM_region_ID")) %>%
-      mutate(em_factor = round(em_factor, emissions.DIGITS_EMISSIONS),
-             input.name = emissions.UNMGD_LAND_INPUT_NAME) %>%
+      left_join(L125.bcoc_tgbkm2_R_grass_2000, by = c("Non.CO2", "GCAM_region_ID","year")) %>%
+      mutate(em_factor=if_else(is.na(em_factor),0,round(em_factor, emissions.DIGITS_EMISSIONS)),input.name = emissions.UNMGD_LAND_INPUT_NAME) %>%
       select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology, year, Non.CO2, emiss.coef = em_factor, input.name)
 
     # L212.Forest: Forest fire and deforestation emissions in all regions
     # Will split up by technology in final product creation
     L212.FOREST <- L124.nonco2_tg_R_forest_Y_GLU %>%
       filter(year %in% emissions.MODEL_BASE_YEARS) %>%
+      filter(year<= max(emissions.DEFOREST_COEF_YEARS)) %>%
       mutate(value = round(value, emissions.DIGITS_EMISSIONS),
              AgSupplySector = "UnmanagedLand",
              AgSupplySubsector = paste(technology, GLU, sep = "_"),
              UnmanagedLandTechnology = AgSupplySubsector) %>%
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename_SO2(A_regions) %>%
-      select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology, technology, year, Non.CO2, input.emissions = value)
+      select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology, technology, year, Non.CO2, input.emissions = value, GCAM_region_ID, GLU)
 
     # L212.FORESTEmissionsFactors_BCOC: Forest emissions factors for BC/OC in all regions
     # Will split up by technology in final product creation
@@ -167,8 +169,8 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       # Add in GCAM_region_ID for joining
       left_join_error_no_match(GCAM_region_names, by = "region") %>%
       # Join in emission factor values
-      left_join_error_no_match(L125.bcoc_tgbkm2_R_forest_2000, by = c("Non.CO2", "technology", "GCAM_region_ID")) %>%
-      mutate(em_factor = round(em_factor, emissions.DIGITS_EMISSIONS)) %>%
+      left_join(L125.bcoc_tgbkm2_R_forest_2000, by = c("Non.CO2", "technology", "GCAM_region_ID")) %>%
+      mutate(em_factor = if_else(is.na(em_factor),0,round(em_factor, emissions.DIGITS_EMISSIONS))) %>%
       select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology, year, Non.CO2, emiss.coef = em_factor, technology)
 
     # Reading in default emissions factors for deforestation in future periods.
@@ -184,7 +186,7 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       select(region, AgSupplySector, AgSupplySubsector, UnmanagedLandTechnology) %>%
       distinct() %>%
       # Take minimum model year greater than emissions model base years
-      mutate(year = as.integer(min(MODEL_YEARS[MODEL_YEARS > max(emissions.MODEL_BASE_YEARS)]))) %>%
+      mutate(year = as.integer(min(MODEL_YEARS[MODEL_YEARS > max(emissions.DEFOREST_COEF_YEARS)]))) %>%
       repeat_add_columns(L212.default_coefs) %>%
       mutate(emiss.coef = round(emiss.coef, emissions.DIGITS_EMISSIONS)) %>%
       rename_SO2(A_regions) %>%
@@ -211,23 +213,32 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
     # Emissions: names in protected files are prefixed, and emissions in both are multiplied by protected land fraction
     # Grassland emissions
     L212.GRASSEmissions_prot <- L212.GRASSEmissions %>%
+      left_join(L120.LC_prot_land_frac_GLU %>% filter(Land_Type =="Grassland"), by= c("GCAM_region_ID","GLU")) %>%
       mutate(UnmanagedLandTechnology = paste0("Protected", UnmanagedLandTechnology),
-             input.emissions = input.emissions * aglu.PROTECT_LAND_FRACT)
+             input.emissions = if_else(is.na(prot_frac),input.emissions * aglu.PROTECT_DEFAULT,input.emissions*prot_frac)) %>%
+      select(-GCAM_region_ID, -GLU)
 
     L212.GRASSEmissions_noprot <- L212.GRASSEmissions %>%
-      mutate(input.emissions = input.emissions * (1 - aglu.PROTECT_LAND_FRACT))
+      left_join(L120.LC_prot_land_frac_GLU %>% filter(Land_Type =="Grassland") , by= c("GCAM_region_ID","GLU")) %>%
+      mutate(input.emissions = if_else(is.na(prot_frac),input.emissions * (1 - aglu.PROTECT_DEFAULT),input.emissions*(1 - prot_frac))) %>%
+      select(-GCAM_region_ID, -GLU)
 
     # Forest emissions - fires and deforest
     L212.FORESTEmissions_prot <- L212.FOREST %>%
+      left_join(L120.LC_prot_land_frac_GLU %>% filter(Land_Type =="Forest") , by= c("GCAM_region_ID","GLU")) %>%
       mutate(UnmanagedLandTechnology = paste0("Protected", UnmanagedLandTechnology),
-             input.emissions = input.emissions * aglu.PROTECT_LAND_FRACT)
+             input.emissions = if_else(is.na(prot_frac),input.emissions * aglu.PROTECT_DEFAULT,input.emissions*prot_frac)) %>%
+      select(-GCAM_region_ID, -GLU)
 
-    L212.FORESTEmissions_noprot <- L212.FOREST %>%
-      mutate(input.emissions = input.emissions * (1 - aglu.PROTECT_LAND_FRACT))
+    L212.FORESTEmissions_noprot <- L212.FOREST  %>%
+      left_join(L120.LC_prot_land_frac_GLU %>% filter(Land_Type =="Forest") , by= c("GCAM_region_ID","GLU")) %>%
+      mutate(input.emissions = if_else(is.na(prot_frac),input.emissions * (1 - aglu.PROTECT_DEFAULT),input.emissions*(1 - prot_frac))) %>%
+      select(-GCAM_region_ID, -GLU)
 
     # Emissions factors: names in protected files are prefixed, and factors are left unchanged
     L212.GRASSEmissionsFactors_BCOC_prot <- L212.GRASSEmissionsFactors_BCOC %>%
       mutate(UnmanagedLandTechnology = paste0("Protected", UnmanagedLandTechnology))
+
 
     L212.FORESTEmissionsFactors_BCOC_prot <- L212.FORESTEmissionsFactors_BCOC %>%
       mutate(UnmanagedLandTechnology = paste0("Protected", UnmanagedLandTechnology))
@@ -361,7 +372,8 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       add_units("Tg/yr") %>%
       add_comments("L212.GRASSEmissions values multiplied by protected land fraction") %>%
       add_legacy_name("L212.GRASSEmissions_prot") %>%
-      same_precursors_as(L212.GRASSEmissions) ->
+      add_precursors("common/GCAM_region_names", "emissions/A_regions",
+                     "L124.nonco2_tg_R_grass_Y_GLU", "water/basin_to_country_mapping","L120.LC_prot_land_frac_GLU")->
       L212.GRASSEmissions_prot
 
     L212.GRASSEmissions_noprot %>%
@@ -369,7 +381,8 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       add_units("Tg/yr") %>%
       add_comments("L212.GRASSEmissions values multiplied by 1 minus protected land fraction") %>%
       add_legacy_name("L212.GRASSEmissions_noprot") %>%
-      same_precursors_as(L212.GRASSEmissions) ->
+      add_precursors("common/GCAM_region_names", "emissions/A_regions",
+                     "L124.nonco2_tg_R_grass_Y_GLU", "water/basin_to_country_mapping","L120.LC_prot_land_frac_GLU")->
       L212.GRASSEmissions_noprot
 
     L212.FORESTEmissions_prot %>%
@@ -380,8 +393,9 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       add_units("Tg/yr") %>%
       add_comments("L212.FORESTEmissions_FF values multiplied by protected land fraction") %>%
       add_legacy_name("L212.FORESTEmissions_FF_prot") %>%
-      same_precursors_as(L212.FORESTEmissions_FF) ->
-      L212.FORESTEmissions_FF_prot
+      add_precursors("common/GCAM_region_names", "emissions/A_regions",
+                     "L124.nonco2_tg_R_grass_Y_GLU", "water/basin_to_country_mapping","L120.LC_prot_land_frac_GLU")->L212.FORESTEmissions_FF_prot
+
 
     L212.FORESTEmissions_noprot %>%
       filter(technology == "ForestFire") %>%
@@ -391,7 +405,8 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
       add_units("Tg/yr") %>%
       add_comments("L212.FORESTEmissions_FF values multiplied by 1 minus protected land fraction") %>%
       add_legacy_name("L212.FORESTEmissions_FF_noprot") %>%
-      same_precursors_as(L212.FORESTEmissions_FF) ->
+      add_precursors("common/GCAM_region_names", "emissions/A_regions",
+                     "L124.nonco2_tg_R_grass_Y_GLU", "water/basin_to_country_mapping","L120.LC_prot_land_frac_GLU")->
       L212.FORESTEmissions_FF_noprot
 
     L212.FORESTEmissions_prot %>%
@@ -425,10 +440,10 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
     L212.GRASSEmissionsFactors_BCOC %>%
       # Useless mutate to add different attributes
       mutate(region = region) %>%
-      add_title("BC/OC Unprotected Emissions Factors-Grassland Fires") %>%
+      add_title("BC/OC Unprotected Emissions Factors-Grassland Fires", overwrite = TRUE) %>%
       add_units("Tg/bm2") %>%
       add_comments("Same values as L212.GRASSEmissionsFactors_BCOC") %>%
-      add_legacy_name("L212.GRASSEmissionsFactors_BCOC_noprot") %>%
+      add_legacy_name("L212.GRASSEmissionsFactors_BCOC_noprot", overwrite = TRUE) %>%
       same_precursors_as(L212.GRASSEmissionsFactors_BCOC) ->
       L212.GRASSEmissionsFactors_BCOC_noprot
 
@@ -445,10 +460,10 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
 
     L212.FORESTEmissionsFactors_BCOC_FF %>%
       mutate(input.name = emissions.UNMGD_LAND_INPUT_NAME) %>%
-      add_title("BC/OC Unprotected Emissions Factors-Forest Fires") %>%
+      add_title("BC/OC Unprotected Emissions Factors-Forest Fires", overwrite = TRUE) %>%
       add_units("Tg/bm2") %>%
       add_comments("Same values as L212.FORESTEmissionsFactors_BCOC_FF") %>%
-      add_legacy_name("L212.FORESTEmissionsFactors_BCOC_FF_noprot") %>%
+      add_legacy_name("L212.FORESTEmissionsFactors_BCOC_FF_noprot", overwrite = TRUE) %>%
       same_precursors_as(L212.FORESTEmissionsFactors_BCOC_FF) ->
       L212.FORESTEmissionsFactors_BCOC_FF_noprot
 
@@ -465,10 +480,10 @@ module_emissions_L212.unmgd_nonco2 <- function(command, ...) {
     L212.FORESTEmissionsFactors_BCOC_D %>%
       # Useless mutate to add different attributes
       mutate(region = region) %>%
-      add_title("BC/OC Unprotected Emissions Factors-Deforestation") %>%
+      add_title("BC/OC Unprotected Emissions Factors-Deforestation", overwrite = TRUE) %>%
       add_units("Tg/bm2") %>%
       add_comments("Same values as L212.FORESTEmissionsFactors_BCOC_D") %>%
-      add_legacy_name("L212.FORESTEmissionsFactors_BCOC_D_noprot") %>%
+      add_legacy_name("L212.FORESTEmissionsFactors_BCOC_D_noprot", overwrite = TRUE) %>%
       same_precursors_as(L212.FORESTEmissionsFactors_BCOC_D) ->
       L212.FORESTEmissionsFactors_BCOC_D_noprot
 

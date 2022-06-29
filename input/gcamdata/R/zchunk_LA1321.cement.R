@@ -31,7 +31,8 @@ module_energy_LA1321.cement <- function(command, ...) {
              "L102.CO2_Mt_R_F_Yh",
              "L123.in_EJ_R_elec_F_Yh",
              "L123.out_EJ_R_elec_F_Yh",
-             "L132.in_EJ_R_indenergy_F_Yh"))
+             "L132.in_EJ_R_indenergy_F_Yh",
+             "L1011.en_bal_EJ_R_Si_Fi_Yh"))
   } else if(command == driver.DECLARE_OUTPUTS) {
     return(c("L1321.out_Mt_R_cement_Yh",
              "L1321.IO_GJkg_R_cement_F_Yh",
@@ -46,7 +47,7 @@ module_energy_LA1321.cement <- function(command, ...) {
     emiss_ktC <- fuel <- heat_EJ <- heat_GJkg <- in.value <- ind.value <- iso <-
     old.year <- out.value <- process_emissions_MtC <- process_emissions_ktC <-
     prod_Mt <- prod_emiss_ratio <- reg_process_emissions <- region_GCAM3 <- sector <-
-    share <- value <- cement <- year <- value.y <- value.x <- NULL
+    share <- value <- cement <- year <- value.y <- value.x <- neg <- NULL
 
     all_data <- list(...)[[1]]
 
@@ -62,7 +63,8 @@ module_energy_LA1321.cement <- function(command, ...) {
     L102.CO2_Mt_R_F_Yh <- get_data(all_data, "L102.CO2_Mt_R_F_Yh")
     L123.in_EJ_R_elec_F_Yh <- get_data(all_data, "L123.in_EJ_R_elec_F_Yh")
     L123.out_EJ_R_elec_F_Yh <- get_data(all_data, "L123.out_EJ_R_elec_F_Yh")
-    L132.in_EJ_R_indenergy_F_Yh <- get_data(all_data, "L132.in_EJ_R_indenergy_F_Yh")
+    L132.in_EJ_R_indenergy_F_Yh <- get_data(all_data, "L132.in_EJ_R_indenergy_F_Yh", strip_attributes = TRUE)
+    L1011.en_bal_EJ_R_Si_Fi_Yh <- get_data(all_data, "L1011.en_bal_EJ_R_Si_Fi_Yh")
 
     # ===================================================
     # 2. Perform computations
@@ -119,6 +121,26 @@ module_energy_LA1321.cement <- function(command, ...) {
       ungroup() ->
       L1321.Cement_Worrell_R
 
+    ### SRSdS, 19Jan22: Handling NA values in broken out regions.
+    # Burkina Faso and Chad have NA in the emissions ratio computed in L1321.Cement_Worrell_R. As this ratio cannot be computed due
+    # to the lack of data, it is going to be assumed the same emissions ratio as its parental region, Africa_Western.
+    missing_cement_regions <- c("bfa", "tcd")
+    Orig_GCAM_ID        <- c(5, 5)
+    idx                 <- length(missing_cement_regions)
+    
+    # Get the GCAM_region_ID of the regions in the vector "missing_cement_regions".
+    for (index in 1:idx){
+      iso_GCAM_regID %>%
+        filter(iso == missing_cement_regions[index]) -> missing_cement_reg_tbl
+      missing_cement_Region_ID <- missing_cement_reg_tbl$GCAM_region_ID[1]
+      
+      # The lines below are executed only if any region in the vector "missing_cement_regions" has been broken out.
+      if (missing_cement_Region_ID != Orig_GCAM_ID[index]){
+        L1321.Cement_Worrell_R$prod_emiss_ratio[missing_cement_Region_ID] <- L1321.Cement_Worrell_R$prod_emiss_ratio[Orig_GCAM_ID[index]]
+      }
+    }
+    ###
+    
     # Calculate cement production over time using ratio of production to emissions for L1321.out_Mt_R_cement_Yh
     # assuming that this ratio is constant over time for each region
     # ---------------------------------------------------------------------------------------------------------
@@ -214,7 +236,11 @@ module_energy_LA1321.cement <- function(command, ...) {
       ungroup() ->
       L1321.IO_R_elec_Yh
 
-    # Set cap on IO coefficients for regions and years exceeding maximum value - NOTE: Not sure why we have this cap? Worth revisiting.
+    # Set cap on IO coefficients for regions and years exceeding maximum value
+    # Generation technologies with extremely low efficiency indicate that a significant portion of the power sector 
+    # in the given region/year is combined heat and power systems.
+    # Since we don't account for that here, we use this constant to set a reasonable limit on how much of the 
+    # total primary energy in IEA's estimate is electricity-related. (see issue #833)
     L1321.IO_R_elec_Yh$value[L1321.IO_R_elec_Yh$value > energy.MAX_IOELEC] <- energy.MAX_IOELEC
 
     # Build data frame including all above calculated values for cement production - intensity, fuel shares, energy for heat and electricity
@@ -298,6 +324,88 @@ module_energy_LA1321.cement <- function(command, ...) {
       bind_rows(L1321.IO_Cement_R_limestone_Yh) ->
       L1321.IO_GJkg_R_cement_F_Yh
 
+    ### SRSdS, 29Jan22: Handling NA values in historical years in broken out regions.
+    # Chad has NAs in all historical years. Assume data from its parental region, Africa_Western.
+    tcd_Region_ID_original <- 5
+    iso_GCAM_regID %>%
+      filter(iso == "tcd") -> tcd_tbl
+    tcd_Region_ID <- tcd_tbl$GCAM_region_ID[1]
+    
+    # The lines below are executed only if Chad has been broken out.
+    if (tcd_Region_ID != tcd_Region_ID_original){
+      # Get the table for all other regions except for Chad
+      L1321.IO_GJkg_R_cement_F_Yh %>%
+        filter(GCAM_region_ID != tcd_Region_ID) -> Regions_tbl
+      # Get the table for the Africa_Western region and use it as assumption for Chad
+      L1321.IO_GJkg_R_cement_F_Yh %>%
+        filter(GCAM_region_ID == tcd_Region_ID_original) -> AW_tcd_tbl
+      AW_tcd_tbl["GCAM_region_ID"][AW_tcd_tbl["GCAM_region_ID"] == tcd_Region_ID_original] <- tcd_Region_ID
+      # Join the new table for Chad
+      L1321.IO_GJkg_R_cement_F_Yh <- rbind(Regions_tbl, AW_tcd_tbl)
+    }
+    
+    # Mauritania, Burkina Faso, Mali and Gabon have NAs in certain historical years.
+    L1321.IO_GJkg_R_cement_F_Yh_regions <- c("mrt", "bfa", "mli", "gab")
+    Orig_GCAM_ID                        <- c(5, 5, 5, 5)
+    idx                                 <- length(L1321.IO_GJkg_R_cement_F_Yh_regions)
+    
+    # Get the GCAM_region_ID of the regions in the vector "L1321.IO_GJkg_R_cement_F_Yh_regions".
+    for (index in 1:idx){
+      iso_GCAM_regID %>%
+        filter(iso == L1321.IO_GJkg_R_cement_F_Yh_regions[index]) -> L1321.IO_GJkg_R_cement_F_Yh_reg_tbl
+      L1321.IO_GJkg_R_cement_F_Yh_Region_ID <- L1321.IO_GJkg_R_cement_F_Yh_reg_tbl$GCAM_region_ID[1]
+      
+      # The lines below are executed only if any region in the vector "L1321.IO_GJkg_R_cement_F_Yh_regions" has been broken out.
+      if (L1321.IO_GJkg_R_cement_F_Yh_Region_ID != Orig_GCAM_ID[index]){
+
+        # Check if L1321.IO_GJkg_R_cement_F_Yh has NAs in the historical years.
+        # 1975
+        which(L1321.IO_GJkg_R_cement_F_Yh$year == 1975) -> All_1975_IDX   # All 1975 indices
+        # From the 1975 indices, get only those indices associated with NA values
+        which(is.na(L1321.IO_GJkg_R_cement_F_Yh$value[All_1975_IDX])) -> NA_1975
+        All_1975_IDX[NA_1975] -> IND_NA_1975
+        # 1990
+        which(L1321.IO_GJkg_R_cement_F_Yh$year == 1990) -> All_1990_IDX   # All 1990 indices
+        # From the 1990 indices, get only those indices associated with NA values
+        which(is.na(L1321.IO_GJkg_R_cement_F_Yh$value[All_1990_IDX])) -> NA_1990
+        All_1990_IDX[NA_1990] -> IND_NA_1990    
+        # 2005
+        which(L1321.IO_GJkg_R_cement_F_Yh$year == 2005) -> All_2005_IDX   # All 2005 indices
+        # From the 2005 indices, get only those indices associated with NA values
+        which(is.na(L1321.IO_GJkg_R_cement_F_Yh$value[All_2005_IDX])) -> NA_2005
+        All_2005_IDX[NA_2005] -> IND_NA_2005
+        # 2010
+        which(L1321.IO_GJkg_R_cement_F_Yh$year == 2010) -> All_2010_IDX   # All 2010 indices
+        # From the 2010 indices, get only those indices associated with NA values
+        which(is.na(L1321.IO_GJkg_R_cement_F_Yh$value[All_2010_IDX])) -> NA_2010
+        All_2010_IDX[NA_2010] -> IND_NA_2010
+        # 2015
+        which(L1321.IO_GJkg_R_cement_F_Yh$year == 2015) -> All_2015_IDX   # All 2015 indices
+        # From the 2015 indices, get only those indices associated with NA values
+        which(is.na(L1321.IO_GJkg_R_cement_F_Yh$value[All_2015_IDX])) -> NA_2015
+        All_2015_IDX[NA_2015] -> IND_NA_2015
+        
+        # If NAs are found in the historical years, they need to be replaced by data from other available year (1995 is a suitable
+        # year for all countries in the vector "L1321.IO_GJkg_R_cement_F_Yh_regions".
+        if (length(IND_NA_1975) > 0) {
+          L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_1975] <- L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_1975+20]
+        }
+        if (length(IND_NA_1990) > 0) {
+          L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_1990] <- L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_1990+5]
+        }
+        if (length(IND_NA_2005) > 0) {
+          L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_2005] <- L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_2005-10]
+        }
+        if (length(IND_NA_2010) > 0) {
+          L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_2010] <- L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_2005-10]
+        }
+        if (length(IND_NA_2015) > 0) {
+          L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_2015] <- L1321.IO_GJkg_R_cement_F_Yh$value[IND_NA_2005-10]
+        }    
+      }  
+    }
+    ###
+
     # Calculate input energy for cement production by region, fuel, and year for L1321.in_EJ_R_cement_F_Y
     # ---------------------------------------------------------------------------------------------------
 
@@ -318,6 +426,31 @@ module_energy_LA1321.cement <- function(command, ...) {
       select(-old.year) %>%
       bind_rows(L1321.in_EJ_R_cement_F_Y_base) ->
       L1321.in_EJ_R_cement_F_Y
+
+    # ---------------------------------------------------------------------------------------------------------------------
+    ## 7/30/21: Modification for detailed industry
+    ## Manually adjust coal use in South Korea, so there is enough left for iron and steel sector
+    ## Upper bound is IEA coal consumption in non-metallic minerals
+
+    L1321.in_EJ_R_cement_F_Y %>%
+      left_join(L1011.en_bal_EJ_R_Si_Fi_Yh %>% filter(sector == "cement") %>% select(-sector),
+                by = c("GCAM_region_ID", "year", "fuel")) %>%
+      mutate(value = if_else(fuel == "coal" & GCAM_region_ID == 28 & value.x > value.y, value.y, value.x),
+             neg = if_else(fuel == "coal" & GCAM_region_ID == 28 & value.x > value.y, value.y - value.x, 0)) ->
+      L1321.in_EJ_R_cement_F_Y_adj
+
+    # extra coal use will be moved to biomass
+    L1321.in_EJ_R_cement_F_Y_adj %>%
+      filter(neg < 0) %>%
+      select(GCAM_region_ID, sector, fuel, year, value=neg) ->
+      korea_coal_neg_en
+
+    # Replace cement energy data frame with adjusted version
+    L1321.in_EJ_R_cement_F_Y_adj %>%
+      select(-value.x, -value.y, -neg) ->
+      L1321.in_EJ_R_cement_F_Y
+    # ---------------------------------------------------------------------------------------------------------------------
+
 
     # Calculate remaining industrial energy use (input), subtracting cement production energy from energy balances
     # ------------------------------------------------------------------------------------------------------------
@@ -360,6 +493,8 @@ module_energy_LA1321.cement <- function(command, ...) {
       L1321.cement_adj_neg
 
     L1321.cement_adj_neg %>%
+      # STEEL DECARONBONIZATION MODIFICATION: add korea excess coal to biomass
+      bind_rows(korea_coal_neg_en) %>%
       mutate(fuel = "biomass") %>%
       group_by(GCAM_region_ID, sector, fuel, year) %>%
       summarise(value = sum(value) * -1) %>%
@@ -406,7 +541,7 @@ module_energy_LA1321.cement <- function(command, ...) {
       add_comments("Multiplied by raw fuel shares, all from IEA") %>%
       add_legacy_name("L1321.in_EJ_R_cement_F_Y") %>%
       add_precursors("L100.CDIAC_CO2_ctry_hist", "L102.CO2_Mt_R_F_Yh", "L123.in_EJ_R_elec_F_Yh", "L123.out_EJ_R_elec_F_Yh", "energy/IEA_cement_elec_kwht",
-                     "energy/IEA_cement_TPE_GJt", "energy/IEA_cement_fuelshares", "common/iso_GCAM_regID") ->
+                     "energy/IEA_cement_TPE_GJt", "energy/IEA_cement_fuelshares", "common/iso_GCAM_regID", "L1011.en_bal_EJ_R_Si_Fi_Yh") ->
       L1321.in_EJ_R_cement_F_Y
 
     L1321.in_EJ_R_indenergy_F_Yh %>%

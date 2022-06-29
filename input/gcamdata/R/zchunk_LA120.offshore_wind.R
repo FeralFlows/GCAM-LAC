@@ -23,14 +23,14 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
   if(command == driver.DECLARE_INPUTS) {
     return(c(FILE = "common/iso_GCAM_regID",
              FILE = "common/GCAM_region_names",
-             FILE = "energy/A23.globaltech_capital",
-             FILE = "energy/A23.globaltech_OMfixed",
              FILE = "energy/A20.wind_class_CFs",
              FILE = "energy/A20.offshore_wind_depth_cap_cost",
              FILE = "energy/NREL_offshore_energy",
              FILE = "energy/NREL_wind_energy_distance_range",
              FILE = "energy/offshore_wind_grid_cost",
-             FILE = "energy/offshore_wind_potential_scaler"))
+             FILE = "energy/offshore_wind_potential_scaler",
+             "L113.globaltech_capital_ATB",
+             "L113.globaltech_OMfixed_ATB"))
   } else if(command == driver.DECLARE_OUTPUTS) {
     return(c("L120.RsrcCurves_EJ_R_offshore_wind",
              "L120.TechChange_offshore_wind",
@@ -51,9 +51,9 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
 
     # Load required inputs
     iso_GCAM_regID <- get_data(all_data, "common/iso_GCAM_regID")
-    GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
-    A23.globaltech_capital <- get_data(all_data, "energy/A23.globaltech_capital")
-    A23.globaltech_OMfixed <- get_data(all_data, "energy/A23.globaltech_OMfixed")
+    GCAM_region_names <- get_data(all_data, "common/GCAM_region_names", strip_attributes = TRUE)
+    L113.globaltech_capital_ATB <- get_data(all_data, "L113.globaltech_capital_ATB")
+    L113.globaltech_OMfixed_ATB <- get_data(all_data, "L113.globaltech_OMfixed_ATB")
     A20.wind_class_CFs <- get_data(all_data, "energy/A20.wind_class_CFs")
     A20.offshore_wind_depth_cap_cost <- get_data(all_data, "energy/A20.offshore_wind_depth_cap_cost")
     NREL_offshore_energy  <- get_data(all_data, "energy/NREL_offshore_energy")
@@ -69,7 +69,7 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
     NREL_offshore_energy %>%
       select(-total) %>%
       left_join_error_no_match(iso_GCAM_regID %>%
-                                 select(country_name, GCAM_region_ID),
+                                 select(country_name, GCAM_region_ID) %>% distinct(),
                                by = c("IAM_country" = "country_name")) %>%
       gather(wind_class, resource.potential.PWh, -IAM_country, -GCAM_region_ID, -depth_class, -distance_to_shore) %>%
       mutate(resource.potential.EJ = resource.potential.PWh * 1000 * CONV_TWH_EJ ) %>%
@@ -78,14 +78,36 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       ungroup() %>%
       filter(resource.potential.EJ != 0) -> L120.offshore_wind_potential_EJ
 
+    #............................
+    # Edit for gcambreakout
+    # When remaining broken out region countries do not have offshore wind assign zeroes
+    #...........................
+
+    unique_regions <- L120.offshore_wind_potential_EJ$GCAM_region_ID %>% unique()
+    missing_regions <- (iso_GCAM_regID$GCAM_region_ID%>%unique())[
+      !(iso_GCAM_regID$GCAM_region_ID%>%unique()) %in% unique_regions]
+
+    missing_regions_df <- L120.offshore_wind_potential_EJ %>%
+      dplyr::select(wind_class,depth_class) %>%
+      unique() %>%
+      merge(data.frame(GCAM_region_ID=missing_regions))
+
+    if(nrow(missing_regions_df)>0){
+    L120.offshore_wind_potential_EJ %>%
+      dplyr::bind_rows(missing_regions_df) %>%
+      tidyr::replace_na(list(resource.potential.EJ=0))->
+      L120.offshore_wind_potential_EJ}
+
+    #............................................
+
     L120.offshore_wind_capital <- A20.offshore_wind_depth_cap_cost
 
-    A23.globaltech_capital %>%
+    L113.globaltech_capital_ATB %>%
       filter(technology == "wind_offshore") %>%
       select(fixed.charge.rate) -> L120.offshore_wind_fcr
     L120.offshore_wind_fcr <- as.numeric(L120.offshore_wind_fcr)
 
-    A23.globaltech_OMfixed %>%
+    L113.globaltech_OMfixed_ATB %>%
       gather_years() %>%
       filter(technology == "wind_offshore",
              year == max(HISTORICAL_YEARS)) %>%
@@ -169,6 +191,21 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
                                energy.DIGITS_MAX_SUB_RESOURCE)) %>%
       select(GCAM_region_ID, mid.price) -> L120.mid.price
 
+    #.................
+    # Edit for gcambreakout
+    # Add 0 fr missing region midpoint
+    #..................
+
+    missing_regions_mid_price_df <- data.frame(GCAM_region_ID = missing_regions) %>%
+      dplyr::mutate(mid.price = 0.1)
+
+    if(nrow(missing_regions_mid_price_df)>0){
+    L120.mid.price <- L120.mid.price %>%
+      dplyr::bind_rows(missing_regions_mid_price_df)}
+
+    #.....................
+
+
     L120.offshore_wind_curve %>%
       left_join_error_no_match(L120.mid.price, by = c("GCAM_region_ID")) -> L120.offshore_wind_curve
 
@@ -214,9 +251,12 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
     # Thus, we calculate model input parameter techChange (which is the reduction per year) as 1-a'^(1/5)
 
     # First, calculate capital cost over time for "wind_offshore" technology
-    A23.globaltech_capital %>%
-      filter(technology == "wind_offshore") %>%
+    L113.globaltech_capital_ATB %>%
+      # filter for wind and offshore wind technologies; wind is needed because it serves
+      # as a "shadow technology" for offshore wind in fill_exp_decay_extrapolate function
+      filter(technology %in% c("wind", "wind_offshore")) %>%
       fill_exp_decay_extrapolate(c(MODEL_BASE_YEARS, MODEL_FUTURE_YEARS)) %>%
+      filter(technology == "wind_offshore") %>%
       rename(capital.overnight=value, intermittent.technology=technology) -> L120.offshore_wind_cap_cost
 
     # Second, calculate technological change
@@ -241,7 +281,7 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
     # not expected that regions would be able to exhaust the potential offered by the highest capacity class available.
     NREL_offshore_energy %>%
       select(-depth_class,-distance_to_shore,-total) %>%
-      left_join_error_no_match(iso_GCAM_regID %>%
+      inner_join(iso_GCAM_regID %>%
                                  select(country_name, GCAM_region_ID),
                                by = c("IAM_country" = "country_name")) %>%
       left_join_error_no_match(GCAM_region_names, by = c("GCAM_region_ID")) %>%
@@ -259,6 +299,26 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       ungroup() %>%
       unique() -> L120.offshore_wind_CF
 
+    #..................................
+    # For gcambreakout
+    # Adding in missing countries and regions as 0 to L120.offshore_wind_CF
+    # Mostly these regions have no off_shore wind
+    L120.offshore_wind_CF_missing_gcam_regions <-
+      unique(GCAM_region_names$region)[!unique(GCAM_region_names$region) %in%
+                                         unique(L120.offshore_wind_CF$region)]
+
+    missing_regions_df <- data.frame(CF = 0) %>%
+      merge(data.frame(region=L120.offshore_wind_CF_missing_gcam_regions))
+
+    if(nrow(missing_regions_df)>0){
+    L120.offshore_wind_CF %>%
+      bind_rows(missing_regions_df) %>%
+      replace_na(list(CF = 0)) %>%
+      unique()->
+      L120.offshore_wind_CF}
+    #......................................
+
+
     # Grid connection costs are read in as fixed non-energy cost adders (in $/GJ). This is calculated using three things:
     # 1. the offshore wind $/kW-km cost based on distance cut-offs.
     # 2. Average distance from shore of existing and upcoming project for each bin used by NREL to assess wind potential - which are  basically midpoints, and
@@ -270,7 +330,7 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
     # First, get share of potential by each distance bin for each GCAM region
     NREL_offshore_energy %>%
       select(IAM_country, distance_to_shore, total) %>%
-      left_join_error_no_match(iso_GCAM_regID %>%
+      inner_join(iso_GCAM_regID %>%
                                  select(country_name, GCAM_region_ID),
                                by = c("IAM_country" = "country_name")) %>%
       left_join_error_no_match(GCAM_region_names, by = c("GCAM_region_ID")) %>%
@@ -281,6 +341,25 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       group_by(region) %>%
       mutate(share = total / sum(total)) %>%
       ungroup() -> L120.offshore_wind_potential_share
+
+    #..................................
+    # For gcambreakout
+    # Adding in missing countries and regions as 0 to L120.offshore_wind_potential_share
+    # Mostly these regions have no off_shore wind
+    L120.offshore_wind_potential_share_missing_gcam_regions <-
+      unique(GCAM_region_names$region)[!unique(GCAM_region_names$region) %in%
+                                              unique(L120.offshore_wind_potential_share$region)]
+
+    missing_regions_df <- data.frame(distance_to_shore = c("far","intermediate","near")) %>%
+      merge(data.frame(region=L120.offshore_wind_potential_share_missing_gcam_regions))
+
+    if(nrow(missing_regions_df)>0){
+    L120.offshore_wind_potential_share %>%
+      bind_rows(missing_regions_df) %>%
+      replace_na(list(total = 0, share = 0)) %>%
+      unique()->
+      L120.offshore_wind_potential_share}
+    #......................................
 
     # Then, generate bins for each cost point using representative distances from the shore
     NREL_wind_energy_distance_range %>%
@@ -307,6 +386,15 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       mutate(fcr = L120.offshore_wind_fcr,
              grid.cost = fcr * cost / (CONV_YEAR_HOURS * CF* CONV_KWH_GJ) * gdp_deflator(1975, 2013)) -> L120.grid.cost
 
+    #..................................
+    # For gcam breakout
+    # Make sure no NaNs introduced because of the additional regions with no offshore wind added
+
+    L120.grid.cost %>%
+      tidyr::replace_na(list(grid.cost=0)) -> L120.grid.cost
+    #....................................
+
+
     # Set grid connection cost for all regions
     GCAM_region_names %>%
       select(region) %>%
@@ -326,8 +414,8 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       add_units("EJ") %>%
       add_comments("Offshore wind resource curve by region") %>%
       add_precursors("common/iso_GCAM_regID", "common/GCAM_region_names", "energy/NREL_offshore_energy",
-                     "energy/A20.wind_class_CFs", "energy/A23.globaltech_capital",
-                     "energy/A23.globaltech_OMfixed", "energy/A20.offshore_wind_depth_cap_cost",
+                     "energy/A20.wind_class_CFs", "L113.globaltech_capital_ATB",
+                     "L113.globaltech_OMfixed_ATB", "energy/A20.offshore_wind_depth_cap_cost",
                      "energy/offshore_wind_potential_scaler") ->
       L120.RsrcCurves_EJ_R_offshore_wind
 
@@ -335,7 +423,7 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       add_title("Technological Change Offshore Wind") %>%
       add_units("Unitless") %>%
       add_comments("Technological Change associated with offshore wind by year") %>%
-      add_precursors("energy/A23.globaltech_capital", "energy/A23.globaltech_OMfixed") ->
+      add_precursors("L113.globaltech_capital_ATB", "L113.globaltech_OMfixed_ATB") ->
       L120.TechChange_offshore_wind
 
     L120.GridCost_offshore_wind %>%
@@ -343,7 +431,7 @@ module_energy_LA120.offshore_wind <- function(command, ...) {
       add_units("$1975/GJ") %>%
       add_comments("Adder by GCAM Region") %>%
       add_precursors("common/iso_GCAM_regID", "common/GCAM_region_names", "energy/NREL_offshore_energy",
-                     "energy/A20.wind_class_CFs", "energy/A23.globaltech_capital",
+                     "energy/A20.wind_class_CFs", "L113.globaltech_capital_ATB",
                      "energy/offshore_wind_grid_cost", "energy/NREL_wind_energy_distance_range") ->
       L120.GridCost_offshore_wind
 

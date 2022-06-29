@@ -56,12 +56,13 @@ add_comments <- function(x, comments) {
 #'
 #' @param x An object
 #' @param legacy_name Legacy name (character)
+#' @param overwrite Allow overwrite of legacy_name? Logical
 #' @return \code{x} with legacy name set.
-add_legacy_name <- function(x, legacy_name) {
+add_legacy_name <- function(x, legacy_name, overwrite = FALSE) {
   assertthat::assert_that(is.character(legacy_name) | is.null(legacy_name))
 
-  if(!is.null(attr(x, ATTR_LEGACY_NAME))) {
-    stop("Not allowed to overwrite current title '", attr(x, ATTR_LEGACY_NAME), "'")
+  if(!overwrite && !is.null(attr(x, ATTR_LEGACY_NAME))) {
+    stop("Not allowed to overwrite current legacy name '", attr(x, ATTR_LEGACY_NAME), "'")
   }
   attr(x, ATTR_LEGACY_NAME) <- legacy_name
   x
@@ -197,12 +198,15 @@ get_reference <- function(x) { attr(x, ATTR_REFERENCE) }
 #'
 #' @param all_data Data structure
 #' @param name Name of data to return
+#' @param strip_attributes Boolean indicating that `gcamdata` attributes should be
+#'                         removed when this data chunk is loaded.
 #' @return Data object (currently, a tibble or data frame). If the object was marked
 #' \code{NA} in the data store, indicating an optional input that was not found,
 #' a \code{NULL} is returned.
-get_data <- function(all_data, name) {
+get_data <- function(all_data, name, strip_attributes = FALSE) {
   assertthat::assert_that(is_data_list(all_data))
 
+  names(all_data) <- gsub(data.USER_MOD_POSTFIX, '', names(all_data))
   if(is.null(all_data[[name]])) {
     stop("Data system: couldn't find ", name)
   }
@@ -213,7 +217,20 @@ get_data <- function(all_data, name) {
   if(nrow(all_data[[name]]) > 0 && all(is.na(all_data[[name]]))) {
     return(NULL)
   }
-  all_data[[name]]
+
+  # If strip_attributes == TRUE, remove all attributes.
+  # As of dplyr 1.0.0, these can no longer be easily overwritten, so we remove them
+  if(strip_attributes) {
+    attr(all_data[[name]], ATTR_TITLE) <- NULL
+    attr(all_data[[name]], ATTR_UNITS) <- NULL
+    attr(all_data[[name]], ATTR_COMMENTS) <- NULL
+    attr(all_data[[name]], ATTR_PRECURSORS) <- NULL
+    attr(all_data[[name]], ATTR_LEGACY_NAME) <- NULL
+    attr(all_data[[name]], ATTR_REFERENCE) <- NULL
+    all_data[[name]]
+  } else {
+    all_data[[name]]
+  }
 }
 
 
@@ -226,7 +243,19 @@ get_data <- function(all_data, name) {
 #' @return Object ready for insertion into the data system data structure.
 return_data <- function(...) {
   dots <- list(...)
-  names(dots) <- as.list(substitute(list(...)))[-1L]
+  raw_names <- as.list(substitute(list(...)))[-1L]
+  # if a user explicitly named a return data then keep their name
+  # otherwise use the name of the raw variable to set the name
+  if(is.null(names(dots))) {
+    # if none of the arguments were explicitly named then `names(dots)`
+    # returns NULL and we should set all the names to the raw names
+    names(dots) <- raw_names
+  } else {
+    # at least some variables are explicitly named
+    # those that are not will have an empty name so replace those with
+    # the raw name
+    names(dots)[names(dots) == ""] <- raw_names[names(dots) == ""]
+  }
   # disallow any data which is "grouped" as it may lead to unexpected
   # behavior, especially for unsuspecting chunks which may use it down
   # the line not expecting any groupings.
@@ -237,13 +266,31 @@ return_data <- function(...) {
     # any other data could not possibly be grouped so we can skip the
     # check for them
     if(is_tibble(dots[[dname]])) {
-      assert_that(is.null(dplyr::groups(dots[[dname]])), msg =
+      assert_that(length(dplyr::groups(dots[[dname]])) == 0, msg =
                     paste0(dname, " is being returned grouped. This is not allowed; please ungroup()"))
     }
   })
   dots
 }
 
+#' return_modified
+#'
+#' Construct a data structure of objects (\code{...}) and return it.
+#' This version should only be used in user modification chunks where
+#' it is used in place of \link{return_data}.
+#'
+#' @param ... Objects to handle
+#' @return Object ready for insertion into the data system data structure.
+#' @export
+return_modified <- function(...) {
+  data_list <- return_data(...)
+  lapply(names(data_list), function(dname) {
+    attr(data_list[[dname]], ATTR_PRECURSORS) <<- c(dname)
+  })
+  names(data_list) <- paste0(names(data_list), data.USER_MOD_POSTFIX)
+
+  data_list
+}
 
 #' empty_data
 #'
@@ -303,14 +350,17 @@ is_data_list <- function(data_list) {
 }
 
 
-#' prebuilt_data
+#' extract_prebuilt_data
 #'
 #' Extract a prebuilt data object from the PREBUILT_DATA store.
 #'
 #' @param object_name The name of the desired object, character
 #' @param pb \code{PREBUILT_DATA} object; overridden only for testing
 #' @return The data object (a tibble).
-prebuilt_data <- function(object_name, pb = PREBUILT_DATA) {
+extract_prebuilt_data <- function(object_name, pb = NULL) {
+  if(is.null(pb)) {
+    pb <- PREBUILT_DATA
+  }
   if(object_name %in% names(pb)) {
     pb[[object_name]] %>%
       add_comments("** PRE-BUILT; RAW IEA DATA NOT AVAILABLE **")
@@ -328,7 +378,10 @@ prebuilt_data <- function(object_name, pb = PREBUILT_DATA) {
 #' @param pb \code{PREBUILT_DATA} object; overridden only for testing
 #' @note Called primarily for its side effects: a warning is issued for each non-identical object.
 #' @return A logical indicating whether a mismatch occurred.
-verify_identical_prebuilt <- function(..., pb = PREBUILT_DATA) {
+verify_identical_prebuilt <- function(..., pb = NULL) {
+  if(is.null(pb)) {
+    pb <- PREBUILT_DATA
+  }
   dots <- list(...)
   names(dots) <- as.list(substitute(list(...)))[-1L]
   mismatch <- FALSE

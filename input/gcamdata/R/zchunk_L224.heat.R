@@ -53,8 +53,8 @@ module_energy_L224.heat <- function(command, ...) {
     has_district_heat <- region <- year.fillout <- to.value <- efficiency <-
       technology <- coef <- subsector <- supplysector <- minicam.energy.input <-
       input.cost <- minicam.non.energy.input <- share.weight <- sector <- fuel <-
-      value <- subs.share.weight <- calibrated.value <- secondary.output.name <-
-      secondary.output <- stub.technology <- cost_modifier <- year <- NULL
+      value <- subs.share.weight <- calibrated.value <- secondary.output <-
+      stub.technology <- cost_modifier <- year <- output.ratio <- NULL
 
     all_data <- list(...)[[1]]
 
@@ -62,16 +62,16 @@ module_energy_L224.heat <- function(command, ...) {
     GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
     calibrated_techs <- get_data(all_data, "energy/calibrated_techs")
     A_regions <- get_data(all_data, "energy/A_regions")
-    A24.sector <- get_data(all_data, "energy/A24.sector")
-    A24.subsector_logit <- get_data(all_data, "energy/A24.subsector_logit")
-    A24.subsector_shrwt <- get_data(all_data, "energy/A24.subsector_shrwt")
-    A24.subsector_interp <- get_data(all_data, "energy/A24.subsector_interp")
+    A24.sector <- get_data(all_data, "energy/A24.sector", strip_attributes = TRUE)
+    A24.subsector_logit <- get_data(all_data, "energy/A24.subsector_logit", strip_attributes = TRUE)
+    A24.subsector_shrwt <- get_data(all_data, "energy/A24.subsector_shrwt", strip_attributes = TRUE)
+    A24.subsector_interp <- get_data(all_data, "energy/A24.subsector_interp", strip_attributes = TRUE)
     A24.globaltech_coef <- get_data(all_data, "energy/A24.globaltech_coef")
     A24.globaltech_cost <- get_data(all_data, "energy/A24.globaltech_cost")
     A24.globaltech_shrwt <- get_data(all_data, "energy/A24.globaltech_shrwt")
     L1231.eff_R_elec_F_tech_Yh <- get_data(all_data, "L1231.eff_R_elec_F_tech_Yh")
-    L124.in_EJ_R_heat_F_Yh <- get_data(all_data, "L124.in_EJ_R_heat_F_Yh")
-    L124.heatoutratio_R_elec_F_tech_Yh <- get_data(all_data, "L124.heatoutratio_R_elec_F_tech_Yh")
+    L124.in_EJ_R_heat_F_Yh <- get_data(all_data, "L124.in_EJ_R_heat_F_Yh", strip_attributes = TRUE)
+    L124.heatoutratio_R_elec_F_tech_Yh <- get_data(all_data, "L124.heatoutratio_R_elec_F_tech_Yh", strip_attributes = TRUE)
 
     # Changing input data into long format
     A24.globaltech_coef %>%
@@ -208,16 +208,15 @@ module_energy_L224.heat <- function(command, ...) {
                   select(sector, fuel, supplysector, subsector, technology) %>%
                   distinct, by = c("sector", "fuel", "technology")) %>%
       mutate(stub.technology = technology,
-             secondary.output.name = A24.sector[["supplysector"]]) %>%
-      select(LEVEL2_DATA_NAMES[["StubTechYr"]], "secondary.output.name", "value") %>%
-      mutate(secondary.output = round(value, energy.DIGITS_CALOUTPUT)) %>%
-      select(-value) -> L224.StubTechSecOut_elec
+             secondary.output = A24.sector[["supplysector"]],
+             output.ratio = round(value, energy.DIGITS_CALOUTPUT)) %>%
+      select(LEVEL2_DATA_NAMES[["StubTechSecOut"]]) -> L224.StubTechSecOut_elec
 
     # Calculate cost adjustment, equal to the output of heat multiplied by the heat price (to minimize the distortion of including the secondary output)
     L224.StubTechSecOut_elec %>%
-      select(LEVEL2_DATA_NAMES[["StubTechYr"]], "secondary.output") %>%
+      select(LEVEL2_DATA_NAMES[["StubTechYr"]], "output.ratio") %>%
       mutate(minicam.non.energy.input = "heat plant",
-             input.cost = round(secondary.output*energy.HEAT_PRICE, energy.DIGITS_COST))-> L224.StubTechCost_elec
+             input.cost = round(output.ratio * energy.HEAT_PRICE, energy.DIGITS_COST))-> L224.StubTechCost_elec
 
     # The secondary output of heat from CHP in the electric sector can cause the price of the technologies
     # to go very low or negative if the technology cost is not modified to reflect the additional costs of
@@ -240,7 +239,7 @@ module_energy_L224.heat <- function(command, ...) {
                   select(region, subsector, stub.technology, year, cost_modifier),
                 by = c("region", "subsector", "stub.technology", "year")) %>%
       mutate(input.cost = if_else(!is.na(cost_modifier), round(pmax(0, input.cost + cost_modifier), energy.DIGITS_COST), input.cost)) %>%
-      select(-cost_modifier, -secondary.output) -> L224.StubTechCost_elec
+      select(-cost_modifier, -output.ratio) -> L224.StubTechCost_elec
 
     # Need to fill out object names for all model time periods
     L224.StubTechCost_elec %>%

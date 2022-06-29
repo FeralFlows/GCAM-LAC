@@ -6,10 +6,11 @@
 \usage{
 info(
   object_name,
-  gcam_data_map = GCAM_DATA_MAP,
+  gcam_data_map = NULL,
   previous_tracelist = NULL,
   upstream = TRUE,
-  downstream = TRUE
+  downstream = TRUE,
+  print = TRUE
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ info(
 \item{upstream}{Print and return upstream precursors? Logical}
 
 \item{downstream}{Print and return downstream dependents? Logical}
+
+\item{print}{Print to console? Logical}
 }
 \value{
 If called directly, returns an entry from \code{GCAM_DATA_MAP}; if called from \code{\link{dstrace}}, a two-

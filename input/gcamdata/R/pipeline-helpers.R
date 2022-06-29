@@ -65,15 +65,18 @@ left_join_error_no_match <- function(d, ..., ignore_columns = NULL) {
 #' supplied explicitly.
 #' @return Joined table.  In case of multiple matches, only the first will be
 #' included.
-#' @importFrom dplyr left_join
+#' @importFrom dplyr ungroup left_join
 left_join_keep_first_only <- function(x, y, by) {
-  ## Our strategy is to use "distinct" to filter y to a single element for
-  ## each match category, then join that to x.
+  ## Our strategy is to use summarize/first on y for each non-match category,
+  ## then join that to x.
   . <- NULL                           # silence notes on package check
-  ll <- as.list(by)
+  ll <- by
   names(ll) <- NULL
-  do.call(dplyr::distinct_, c(list(y), ll, list(.keep_all = TRUE))) %>%
-    left_join(x, ., by = by)
+  y %>%
+    dplyr::group_by_at(tidyselect::all_of(ll)) %>%
+    dplyr::summarize_at(dplyr::vars(-tidyselect::any_of(ll)), first) %>%
+    ungroup() %>%
+    left_join(x, ., by=by)
 }
 
 
@@ -162,6 +165,34 @@ approx_fun <- function(year, value, rule = 1) {
 
   if(rule == 1 | rule == 2) {
     tryCatch(stats::approx(as.vector(year), value, rule = rule, xout = year, ties = mean)$y,
+             error = function(e) NA)
+
+  } else {
+    stop("Use fill_exp_decay_extrapolate!")
+  }
+}
+
+#' approx_fun_constant
+#'
+#' \code{\link{approx}} (interpolation) for use in a dplyr pipeline.
+#'
+#' @param year Numeric year, in a melted tibble or data frame
+#' @param value Numeric value to interpolate
+#' @param rule Rule to use; see \code{\link{approx}} and details
+#' @details This is a slight change to approx_fun that can be used if there is only one value, not two to interpolate between.
+#' @details This function will apply the one value you do have to all other years in a grouping.
+#' @return Interpolated values.
+#' @importFrom assertthat assert_that
+#' @export
+#' @examples
+#' df <- data.frame(year = 1:5, value = c(1, 2, NA, 4, 5))
+#' approx_fun_constant(df$year, df$value, rule = 2)
+approx_fun_constant <- function(year, value, rule = 1) {
+  assert_that(is.numeric(year))
+  assert_that(is.numeric(value))
+
+  if(rule == 1 | rule == 2) {
+    tryCatch(stats::approx(as.vector(year), value, rule = rule, xout = year, ties = mean, method = "constant")$y,
              error = function(e) NA)
 
   } else {
@@ -314,7 +345,7 @@ missing_data <- function() {
 gdp_deflator <- function(year, base_year) {
   # This time series is the BEA "A191RD3A086NBEA" product
   # Downloaded April 13, 2017 from https://fred.stlouisfed.org/series/A191RD3A086NBEA
-  gdp_years <- 1929:2016
+  gdp_years <- 1929:2019
   gdp <- c(9.896, 9.535, 8.555, 7.553, 7.345, 7.749, 7.908, 8.001, 8.347,
            8.109, 8.033, 8.131, 8.68, 9.369, 9.795, 10.027, 10.288, 11.618,
            12.887, 13.605, 13.581, 13.745, 14.716, 14.972, 15.157, 15.298,
@@ -325,11 +356,12 @@ gdp_deflator <- function(year, base_year) {
            59.885, 61.982, 64.392, 66.773, 68.996, 70.569, 72.248, 73.785,
            75.324, 76.699, 78.012, 78.859, 80.065, 81.887, 83.754, 85.039,
            86.735, 89.12, 91.988, 94.814, 97.337, 99.246, 100, 101.221,
-           103.311, 105.214, 106.913, 108.828, 109.998, 111.445)
+           103.311, 105.214, 106.913, 108.828, 109.998, 111.445, 113.545,
+           116.311, 118.339)
   names(gdp) <- gdp_years
 
-  assert_that(year %in% gdp_years)
-  assert_that(base_year %in% gdp_years)
+  assert_that(all(year %in% gdp_years))
+  assert_that(all(base_year %in% gdp_years))
 
   as.vector(unlist(gdp[as.character(year)] / gdp[as.character(base_year)]))
 }

@@ -58,17 +58,17 @@ module_aglu_L2042.resbio_input_irr_mgmt <- function(command, ...) {
       residue.biomass.production <- sector.name <- subsector.name <- price <- For <-
       Mill <- colID <- fract.harvested <- HarvestIndex <- ErosCtrl_tHa <- ResEnergy_GJt <-
       WaterContent <- mass.conversion <- harvest.index <- eros.ctrl <- mass.to.energy <-
-      water.content <- Irr_Rfd <- level <- ag <- NULL  # silence package check notes
+      water.content <- Irr_Rfd <- level <- ag <- GCAM_subsector <- NULL  # silence package check notes
 
     # Load required inputs
     GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
     basin_to_country_mapping <- get_data(all_data, "water/basin_to_country_mapping")
-    A_demand_technology <- get_data(all_data, "aglu/A_demand_technology")
+    A_demand_technology <- get_data(all_data, "aglu/A_demand_technology", strip_attributes = TRUE)
     A_resbio_curves <- get_data(all_data, "aglu/A_resbio_curves")
     A_bio_frac_prod_R <- get_data(all_data, "aglu/A_bio_frac_prod_R")
     L111.ag_resbio_R_C <- get_data(all_data, "L111.ag_resbio_R_C")
-    L101.ag_Prod_Mt_R_C_Y_GLU <- get_data(all_data, "L101.ag_Prod_Mt_R_C_Y_GLU")
-    L123.For_Prod_bm3_R_Y_GLU <- get_data(all_data, "L123.For_Prod_bm3_R_Y_GLU")
+    L101.ag_Prod_Mt_R_C_Y_GLU <- get_data(all_data, "L101.ag_Prod_Mt_R_C_Y_GLU", strip_attributes = TRUE)
+    L123.For_Prod_bm3_R_Y_GLU <- get_data(all_data, "L123.For_Prod_bm3_R_Y_GLU", strip_attributes = TRUE)
 
     # the following lines convert basin identification from the current GLU### level 1 names to the
     # level 2 names.
@@ -197,14 +197,14 @@ module_aglu_L2042.resbio_input_irr_mgmt <- function(command, ...) {
     # AGRICULTURE RESIDUE BIO
     # 4. Form a table of Agricultural Residue Biomass Paramters by region-glu-year
     L101.ag_Prod_Mt_R_C_Y_GLU %>%
-      select(GCAM_region_ID, GCAM_commodity, GLU) %>%
+      select(GCAM_region_ID, GCAM_commodity, GCAM_subsector, GLU) %>%
       distinct %>%
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       # have to use left_join + na.omit to match  m e r g e  behavior in old DS
       left_join(L111.ag_resbio_R_C, by = c("GCAM_region_ID", "GCAM_commodity")) %>%
       na.omit %>%
       mutate(AgSupplySector = GCAM_commodity,
-             AgSupplySubsector = paste(GCAM_commodity, GLU, sep = aglu.CROP_GLU_DELIMITER),
+             AgSupplySubsector = paste(GCAM_subsector, GLU, sep = aglu.CROP_GLU_DELIMITER),
              AgProductionTechnology = AgSupplySubsector,
              residue.biomass.production = "biomass",
              # fill in parameters

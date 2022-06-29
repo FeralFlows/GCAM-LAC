@@ -48,25 +48,25 @@ module_emissions_L211.ag_nonco2 <- function(command, ...) {
     year <- value <- GCAM_commodity <- AgSupplySector <- GLU <- AgSupplySubsector <-
       input.emissions <- region <- AgProductionTechnology <- Non.CO2 <- nonLandVariableCost <-
       bio_N2O_coef <- supplysector <- subsector <- stub.technology <- emfact <-
-      emiss.coef <- max.reduction <- NULL
+      emiss.coef <- max.reduction <- GCAM_subsector <- NULL
 
     all_data <- list(...)[[1]]
 
     # Load required inputs
     GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
-    basin_to_country_mapping <- get_data(all_data, "water/basin_to_country_mapping")
+    basin_to_country_mapping <- get_data(all_data, "water/basin_to_country_mapping", strip_attributes = TRUE)
     A_regions <- get_data(all_data, "emissions/A_regions")
-    L2052.AgCost_bio_irr_mgmt <- get_data(all_data, "L2052.AgCost_bio_irr_mgmt")
-    L113.ghg_tg_R_an_C_Sys_Fd_Yh <- get_data(all_data, "L113.ghg_tg_R_an_C_Sys_Fd_Yh")
-    L115.nh3_tg_R_an_C_Sys_Fd_Yh <- get_data(all_data, "L115.nh3_tg_R_an_C_Sys_Fd_Yh")
-    L121.nonco2_tg_R_awb_C_Y_GLU <- get_data(all_data, "L121.nonco2_tg_R_awb_C_Y_GLU") %>%
+    L2052.AgCost_bio_irr_mgmt <- get_data(all_data, "L2052.AgCost_bio_irr_mgmt", strip_attributes = TRUE)
+    L113.ghg_tg_R_an_C_Sys_Fd_Yh <- get_data(all_data, "L113.ghg_tg_R_an_C_Sys_Fd_Yh", strip_attributes = TRUE)
+    L115.nh3_tg_R_an_C_Sys_Fd_Yh <- get_data(all_data, "L115.nh3_tg_R_an_C_Sys_Fd_Yh", strip_attributes = TRUE)
+    L121.nonco2_tg_R_awb_C_Y_GLU <- get_data(all_data, "L121.nonco2_tg_R_awb_C_Y_GLU", strip_attributes = TRUE) %>%
       replace_GLU(basin_to_country_mapping)
-    L122.ghg_tg_R_agr_C_Y_GLU <- get_data(all_data, "L122.ghg_tg_R_agr_C_Y_GLU") %>%
+    L122.ghg_tg_R_agr_C_Y_GLU <- get_data(all_data, "L122.ghg_tg_R_agr_C_Y_GLU", strip_attributes = TRUE) %>%
       replace_GLU(basin_to_country_mapping)
-    L123.bcoc_tgmt_R_awb_2000 <- get_data(all_data, "L123.bcoc_tgmt_R_awb_2000") %>%
+    L123.bcoc_tgmt_R_awb_2000 <- get_data(all_data, "L123.bcoc_tgmt_R_awb_2000", strip_attributes = TRUE) %>%
       replace_GLU(basin_to_country_mapping)
-    A11.max_reduction <- get_data(all_data, "emissions/A11.max_reduction")
-    A11.steepness <- get_data(all_data, "emissions/A11.steepness")
+    A11.max_reduction <- get_data(all_data, "emissions/A11.max_reduction", strip_attributes = TRUE)
+    A11.steepness <- get_data(all_data, "emissions/A11.steepness", strip_attributes = TRUE)
 
     # ===================================================
     # L211.AWBEmissions: Agricultural Waste Burning emissions in all regions
@@ -76,7 +76,7 @@ module_emissions_L211.ag_nonco2 <- function(command, ...) {
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename(input.emissions = value,
              AgSupplySector = GCAM_commodity) %>%
-      mutate(AgSupplySubsector = paste(AgSupplySector, GLU, sep = "_"),
+      mutate(AgSupplySubsector = paste(GCAM_subsector, GLU, sep = aglu.CROP_GLU_DELIMITER),
              AgProductionTechnology = AgSupplySubsector,
              input.emissions = round(input.emissions, emissions.DIGITS_EMISSIONS)) %>%
       select(region, AgSupplySector, AgSupplySubsector, AgProductionTechnology, year, Non.CO2, input.emissions) %>%
@@ -90,7 +90,7 @@ module_emissions_L211.ag_nonco2 <- function(command, ...) {
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename(input.emissions = value,
              AgSupplySector = GCAM_commodity) %>%
-      mutate(AgSupplySubsector = paste(AgSupplySector, GLU, sep = "_"),
+      mutate(AgSupplySubsector = paste(GCAM_subsector, GLU, sep = aglu.CROP_GLU_DELIMITER),
              AgProductionTechnology = AgSupplySubsector,
              input.emissions = round(input.emissions, emissions.DIGITS_EMISSIONS)) %>%
       select(region, AgSupplySector, AgSupplySubsector, AgProductionTechnology, year, Non.CO2, input.emissions)
@@ -133,7 +133,7 @@ module_emissions_L211.ag_nonco2 <- function(command, ...) {
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename(AgSupplySector = GCAM_commodity,
              emiss.coef = emfact) %>%
-      mutate(AgSupplySubsector = paste(AgSupplySector, GLU, sep = "_"),
+      mutate(AgSupplySubsector = paste(GCAM_subsector, GLU, sep = aglu.CROP_GLU_DELIMITER),
              AgProductionTechnology = AgSupplySubsector,
              emiss.coef = round(emiss.coef, emissions.DIGITS_EMISSIONS)) %>%
       # Repeat for model base years

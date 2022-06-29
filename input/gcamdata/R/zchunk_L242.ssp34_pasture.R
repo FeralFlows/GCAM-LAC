@@ -43,7 +43,7 @@ module_aglu_L242.ssp34_pasture <- function(command, ...) {
     GCAMLandLeaf_CdensityLT <- get_data(all_data, "aglu/GCAMLandLeaf_CdensityLT")
     A_LandLeaf_Unmgd2 <- get_data(all_data, "aglu/A_LandLeaf_Unmgd2")
     A_LandLeaf2 <- get_data(all_data, "aglu/A_LandLeaf2")
-    get_data(all_data, "L125.LC_bm2_R_LT_Yh_GLU") %>%
+    get_data(all_data, "L125.LC_bm2_R_LT_Yh_GLU", strip_attributes = TRUE) %>%
       replace_GLU(basin_to_country_mapping) ->
       L125.LC_bm2_R_LT_Yh_GLU
     L102.pcgdp_thous90USD_Scen_R_Y <- get_data(all_data, "L102.pcgdp_thous90USD_Scen_R_Y")
@@ -98,13 +98,7 @@ module_aglu_L242.ssp34_pasture <- function(command, ...) {
       L242.LN2_MgdAllocation_ALL
 
     # Create SSP4 pasture inputs, isolating poor (low GDP) regions for subsequent filtering
-    L102.pcgdp_thous90USD_Scen_R_Y %>%
-      filter(scenario == "SSP4", year == 2010) %>%
-      select(GCAM_region_ID, value) %>%
-      left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
-      mutate(value = value * gdp_deflator(2010, 1990)) %>%
-      filter(value < aglu.LOW_GROWTH_PCGDP) %>%
-      pull(region) ->
+    get_ssp_regions(L102.pcgdp_thous90USD_Scen_R_Y, GCAM_region_names, "low") ->
       low_gdp_regions
 
     # Produce outputs

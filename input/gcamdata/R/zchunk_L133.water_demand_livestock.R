@@ -18,29 +18,35 @@
 module_water_L133.water_demand_livestock <- function(command, ...) {
   if(command == driver.DECLARE_INPUTS) {
     return(c(FILE = "common/iso_GCAM_regID",
+             FILE = "aglu/A_an_supplysector",
              "L105.an_Prod_Mt_R_C_Y",
              FILE = "water/LivestockWaterFootprint_MH2010",
              FILE = "water/FAO_an_items_Stocks",
              "L100.FAO_an_Stocks",
-             "L100.FAO_an_Dairy_Stocks"))
+             "L100.FAO_an_Dairy_Stocks",
+             "L103.water_mapping_R_B_W_Ws_share"))
   } else if(command == driver.DECLARE_OUTPUTS) {
-    return(c("L133.water_demand_livestock_R_C_W_km3_Mt"))
+    return(c("L133.water_demand_livestock_R_C_W_km3_Mt",
+             "L133.water_demand_livestock_R_B_W_km3"))
   } else if(command == driver.MAKE) {
 
     all_data <- list(...)[[1]]
 
     # Load required inputs
     iso_GCAM_regID <- get_data(all_data, "common/iso_GCAM_regID")
+    A_an_supplysector <- get_data(all_data, "aglu/A_an_supplysector")
     L105.an_Prod_Mt_R_C_Y <- get_data(all_data, "L105.an_Prod_Mt_R_C_Y")
     LivestockWaterFootprint_MH2010 <- get_data(all_data, "water/LivestockWaterFootprint_MH2010")
     FAO_an_items_Stocks <- get_data(all_data, "water/FAO_an_items_Stocks")
     L100.FAO_an_Stocks <- get_data(all_data, "L100.FAO_an_Stocks")
     L100.FAO_an_Dairy_Stocks <- get_data(all_data, "L100.FAO_an_Dairy_Stocks")
+    L103.water_mapping_R_B_W_Ws_share <- get_data(all_data, "L103.water_mapping_R_B_W_Ws_share")
 
     # Silence package checks
     year <- iso <- item <- value <- dairy.to.total <- dairy.adj <-
       coefficient <- GCAM_region_ID <- GCAM_commodity <- water.consumption <-
-      water_type <- coefficient <- Coefficient <- NULL
+      water_type <- coefficient <- Coefficient <- water_sector <- share <-
+      GCAM_basin_ID <- NULL
 
     # ===================================================
     # Calculate livestock water coefficients by region ID / GCAM_commodity/ water type.
@@ -118,11 +124,16 @@ module_water_L133.water_demand_livestock <- function(command, ...) {
       L133.water_demand_livestock_R_C_W_km3_Mt
 
     # Add FAO production information to the tibble of aggregated livestock water consumption.
+    # Modification to set of commodities included (GPK) - the production data at this stage includes OtherMeat_Fish,
+    # and the M+H data have an estimate for "Horses" which is being used as a proxy for this commodity class. Obviously
+    # horses' water demands are a poor proxy for the remainder of the commodity class, which is mostly fish with some
+    # waste products. This is explicitly excluded at this stage.
     L133.water_demand_livestock_R_C_W_km3_Mt %>%
       left_join_error_no_match(L105.an_Prod_Mt_R_C_Y %>%
                                  filter(year == 2000) %>%
                                  select(GCAM_region_ID, GCAM_commodity, year, value),
-        by = c("GCAM_region_ID", "GCAM_commodity")) ->
+        by = c("GCAM_region_ID", "GCAM_commodity")) %>%
+      filter(GCAM_commodity %in% A_an_supplysector$supplysector) ->
       L133.water_demand_livestock_R_C_W_km3_Mt
 
     # Average the aggregated livestock water consumption by the total production. Since water
@@ -146,6 +157,60 @@ module_water_L133.water_demand_livestock <- function(command, ...) {
       select(GCAM_region_ID, GCAM_commodity, water_type, coefficient) ->
       L133.water_demand_livestock_R_C_W_km3_Mt
 
+    #....................
+    # 06 Oct 2021: ZK, SRSDS: Fix for NaN coefficient values for new regions
+    #...................
+    # Filter for Nan Coefficient values and find the GCAM_region_ID
+    L133.water_demand_livestock_R_C_W_km3_Mt %>%
+      filter(is.nan(coefficient)) %>%
+      unique() -> L133.water_demand_livestock_R_C_W_km3_Mt_nan_regions
+
+
+    if(nrow(L133.water_demand_livestock_R_C_W_km3_Mt_nan_regions)>0){
+
+      for(i in 1:nrow(L133.water_demand_livestock_R_C_W_km3_Mt_nan_regions)){
+
+        # Get initial values for nan row
+        GCAM_region_ID_i <- L133.water_demand_livestock_R_C_W_km3_Mt_nan_regions[i,]$GCAM_region_ID
+        GCAM_commodity_i <- L133.water_demand_livestock_R_C_W_km3_Mt_nan_regions[i,]$GCAM_commodity
+
+        # Get the corresponding region_GCAM3
+        (iso_GCAM_regID %>%
+          filter(GCAM_region_ID == GCAM_region_ID_i))$region_GCAM3 %>% unique() ->
+          region_GCAM3_i
+
+        # Select the minimum ID number (This will be the parent region)
+        (iso_GCAM_regID %>%
+            filter(region_GCAM3 == region_GCAM3_i))$GCAM_region_ID %>% min() ->
+          GCAM_region_ID_parent_i
+
+        # Assign the coefficient of the parent region
+        L133.water_demand_livestock_R_C_W_km3_Mt %>%
+          filter(GCAM_region_ID == GCAM_region_ID_parent_i,
+                        GCAM_commodity == GCAM_commodity_i) %>%
+          mutate(GCAM_region_ID = GCAM_region_ID_i) ->
+          L133.water_demand_livestock_R_C_W_km3_Mt_append_i
+
+        # Delete original NaN entry row and replace with new row
+        L133.water_demand_livestock_R_C_W_km3_Mt %>%
+          filter(!is.na(coefficient)) %>%
+          bind_rows(L133.water_demand_livestock_R_C_W_km3_Mt_append_i) ->
+          L133.water_demand_livestock_R_C_W_km3_Mt
+
+      } # Close for(GCAM_region_ID_i in L133.water ...
+    } # Close if(length(L133.water_demand_livestock_R_C_W_km3_Mt_nan_regions)>0){
+
+
+    # Final step - write out the water demands by basin
+    L133.water_demand_livestock_R_B_W_km3 <- L105.an_Prod_Mt_R_C_Y %>%
+      inner_join(L133.water_demand_livestock_R_C_W_km3_Mt,
+                by = c("GCAM_region_ID", "GCAM_commodity")) %>%
+      left_join(filter(L103.water_mapping_R_B_W_Ws_share, water_sector == "Livestock"),
+                by = c("GCAM_region_ID", "water_type")) %>%
+      mutate(value = value * coefficient * share) %>%
+      group_by(GCAM_region_ID, GCAM_basin_ID, water_type, year) %>%
+      summarise(value = sum(value)) %>%
+      ungroup()
 
     # ===================================================
 
@@ -164,7 +229,16 @@ module_water_L133.water_demand_livestock <- function(command, ...) {
                      "L100.FAO_an_Dairy_Stocks") ->
       L133.water_demand_livestock_R_C_W_km3_Mt
 
-    return_data(L133.water_demand_livestock_R_C_W_km3_Mt)
+    L133.water_demand_livestock_R_B_W_km3 %>%
+      add_title("Livestock water demands by region ID / GCAM_commodity/ water type / year") %>%
+      add_units("km^3") %>%
+      add_comments("Calculated by multiplying commodity production by water demand coefficients and basin-wise shares") %>%
+      same_precursors_as(L133.water_demand_livestock_R_C_W_km3_Mt) %>%
+      add_precursors("L103.water_mapping_R_B_W_Ws_share",
+                     "aglu/A_an_supplysector") ->
+      L133.water_demand_livestock_R_B_W_km3
+
+    return_data(L133.water_demand_livestock_R_C_W_km3_Mt, L133.water_demand_livestock_R_B_W_km3)
   } else {
     stop("Unknown command")
   }

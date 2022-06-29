@@ -8,9 +8,10 @@ dstrace(
   object_name,
   direction = "upstream",
   graph = FALSE,
-  gcam_data_map = GCAM_DATA_MAP,
+  gcam_data_map = NULL,
   previous_tracelist = NULL,
   recurse = TRUE,
+  print = TRUE,
   ...
 )
 }
@@ -26,6 +27,8 @@ dstrace(
 \item{previous_tracelist}{Information about previous objects printed}
 
 \item{recurse}{Recurse to print information about precursor objects? Logical}
+
+\item{print}{Print trace to console? Logical}
 
 \item{...}{Extra arguments passed on to \code{\link{dstrace_plot}}}
 }

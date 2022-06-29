@@ -5,12 +5,12 @@
 ..Rcheck/
 .Rapp.history
 
-# Remake files
-.remake/
+# Drake files
+.drake/
 
 # Files produced by data system
 outputs/
-xml/
+xml*/
 sample-generator/outputs/
 R/*.html
 Rplots.pdf
@@ -20,6 +20,7 @@ inst/doc
 
 # Proprietary files
 IEA_EnergyBalances_2019.csv.gz
+*CEDS_emissions.csv
 
 # OS files
 .DS_Store

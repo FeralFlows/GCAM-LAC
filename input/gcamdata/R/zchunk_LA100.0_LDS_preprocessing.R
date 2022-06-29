@@ -94,7 +94,7 @@ module_aglu_LA100.0_LDS_preprocessing <- function(command, ...) {
           at <- attributes(d)
           d %>%
             # group by everything EXCEPT for value and sum up
-            dplyr::group_by_(.dots = names(d)[-grep("value", names(d))]) %>%
+            dplyr::group_by_at(dplyr::vars(-value)) %>%
             summarise(value = sum(value)) %>%
             ungroup() %>%
             # summarise() produces a new tibble, but we don't want to lose file info
@@ -181,6 +181,74 @@ module_aglu_LA100.0_LDS_preprocessing <- function(command, ...) {
       L100.LDS_ag_HA_ha<-add_row(L100.LDS_ag_HA_ha,iso="twn",GLU="GLU103",GTAP_crop='FlaxFibr_Tow',value=2000)
       L100.LDS_ag_prod_t<-add_row(L100.LDS_ag_prod_t,iso="twn",GLU="GLU103",GTAP_crop='FlaxFibr_Tow',value=1000)
     }
+
+    #3. Adjustment for Rapeseed and Barley
+    # Move all harvested area and production from GLU078 to GLU103
+    L100.LDS_ag_HA_ha$GLU[L100.LDS_ag_HA_ha$iso == "twn" &
+                            L100.LDS_ag_HA_ha$GTAP_crop == "Rapeseed"] <- "GLU103"
+    L100.LDS_ag_prod_t$GLU[L100.LDS_ag_prod_t$iso == "twn" &
+                             L100.LDS_ag_prod_t$GTAP_crop == "Rapeseed"] <- "GLU103"
+
+    L100.LDS_ag_HA_ha$GLU[L100.LDS_ag_HA_ha$iso == "twn" &
+                            L100.LDS_ag_HA_ha$GTAP_crop == "Barley"] <- "GLU103"
+    L100.LDS_ag_prod_t$GLU[L100.LDS_ag_prod_t$iso == "twn" &
+                             L100.LDS_ag_prod_t$GTAP_crop == "Barley"] <- "GLU103"
+
+    #4. Adjustment for Soybean (production in the 1970's was >100x the production in ~2000; using the 2000-era GLU shares leads to too much land required in GLU078)
+    # Soybean: move nearly all harvested area and production from GLU078 to GLU103, by setting the production and harvested area in GLU078 to a nominal value.
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                          L100.LDS_ag_HA_ha$GTAP_crop == "Soybeans" &
+                          L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                           L100.LDS_ag_prod_t$GTAP_crop == "Soybeans" &
+                           L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+    #5. Adjustment for Sweet potatoes (production in the 1970's was >20x the production in ~2000. GLU-wise allocation from ~2000 causes issues in GLU078
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "SweetPotato" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "SweetPotato" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+    #6. Adjustment for GrndntWShll
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "GrndntWShll" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "GrndntWShll" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    #6. Adjustment for VgtbFrshNES
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "VgtbFrshNES" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "VgtbFrshNES" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+
+    ### SRSdS, 31Jan22: Mauritania shows calibration issues because it has zero forest land in SAGE (global gridded map of vegetation types)
+    # but has non-zero production of the "roundwood" commodity in FAOSTAT. To solve this, We need to remap land types so that to allocate
+    # some small portion of the total land area to forests. According to data downloaded from https://eros.usgs.gov/westafrica/data-downloads,
+    # the amount of forested area in Mauritania is 62400 ha (only 0.2% of the total area).
+
+    # First, deduct 31200 ha from land types 'openShrubland' and 'grassland/steppe' in GLU086 and GLU144, respectively.
+    which(L100.Land_type_area_ha$iso == 'mrt' & L100.Land_type_area_ha$land_code == 1202 & L100.Land_type_area_ha$GLU == "GLU086") -> tmp_tbl_1
+    L100.Land_type_area_ha$value[tmp_tbl_1] <- L100.Land_type_area_ha$value[tmp_tbl_1] - 31200
+    which(L100.Land_type_area_ha$iso == 'mrt' & L100.Land_type_area_ha$land_code == 1002 & L100.Land_type_area_ha$GLU == "GLU144") -> tmp_tbl_2
+    L100.Land_type_area_ha$value[tmp_tbl_2] <- L100.Land_type_area_ha$value[tmp_tbl_2] - 31200
+
+    # Second, for the GLUs above, assign 31200 ha to Forests (in total 62400 will be assigned to Forests).
+    L100.Land_type_area_ha %>%
+      filter(iso == 'mrt' & land_code == 1202 & GLU == "GLU086") -> tmp_tbl_3
+    tmp_tbl_3$land_code <- 202  # code taken from aglu/LDS/LDS_land_types.csv
+    tmp_tbl_3$value <- 31200
+    L100.Land_type_area_ha %>%
+      filter(iso == 'mrt' & land_code == 1002 & GLU == "GLU144") -> tmp_tbl_4
+    tmp_tbl_4$land_code <- 202  # code taken from aglu/LDS/LDS_land_types.csv
+    tmp_tbl_4$value <- 31200
+    rbind(L100.Land_type_area_ha, tmp_tbl_3, tmp_tbl_4) -> L100.Land_type_area_ha
+    ###
 
     # And we're done
     return_data(L100.Land_type_area_ha,

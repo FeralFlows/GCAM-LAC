@@ -220,8 +220,8 @@ test_that("get_ssp_regions", {
 
   pcGDP <- tibble(GCAM_region_ID = 1:3,
                   scenario = ssp,
-                  year = yr,
-                  value = gdp_deflator(1990, yr) *
+                  year = eval(yr),
+                  value = gdp_deflator(1990, eval(yr)) *
                     c(aglu.LOW_GROWTH_PCGDP - 1,
                       aglu.HIGH_GROWTH_PCGDP + 1,
                       mean(c(aglu.LOW_GROWTH_PCGDP, aglu.HIGH_GROWTH_PCGDP))))
@@ -237,7 +237,7 @@ test_that("get_ssp_regions", {
   expect_error(get_ssp_regions(pcGDP, reg_names, income_group = "zzz"))
 
   # No matches if we change year and/or scenario
-  expect_equal(get_ssp_regions(pcGDP, reg_names, income_group = "low", year_filter = yr - 1), character(0))
+  expect_equal(get_ssp_regions(pcGDP, reg_names, income_group = "low", year_filter = eval(yr) - 1), character(0))
   expect_equal(get_ssp_regions(pcGDP, reg_names, income_group = "high", ssp_filter = paste0(ssp, "x")), character(0))
 })
 
@@ -326,7 +326,7 @@ test_that("downscale_FAO_country", {
   expect_equal(ncol(d), ncol(dnew))
   expect_equal(nrow(d) - 1, nrow(dnew))  # post-dissolution country should be gone
   # ungrouped return
-  expect_null(dplyr::groups(dnew))
+  expect_equal(dplyr::groups(dnew), list())
 
   # Pre-dissolution year should be calculated from ratio of dissolution year data
   expect_equal(dnew[as.character(yrs[yrs < dy])], tibble(`1998` = c(1, 2), `1999` = c(2/3, 4/3)))
@@ -359,7 +359,7 @@ test_that("write_to_all_states", {
   expect_identical(dout$price.exp.year.fillout, rep(min(MODEL_BASE_YEARS), nrow(dout)))
 
   # ungrouped return
-  expect_null(dplyr::groups(dout))
+  expect_equal(dplyr::groups(dout), list())
 })
 
 test_that("set_subsector_shrwt", {
@@ -385,5 +385,5 @@ test_that("set_subsector_shrwt", {
   expect_equal(dout$subs.share.weight, 1)
 
   # ungrouped return
-  expect_null(dplyr::groups(dout))
+  expect_equal(dplyr::groups(dout), list())
 })

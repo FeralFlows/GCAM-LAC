@@ -52,6 +52,9 @@ module_energy_LA100.IEA_downscale_ctry <- function(command, ...) {
       L100.IEAfull <- IEA_EnergyBalances_2019[c("COUNTRY", "FLOW", "PRODUCT", hy)]
       L100.IEAfull[is.na(L100.IEAfull)] <- 0
 
+      #write.csv(L100.IEAfull, file='L100.IEAfull.csv')
+      #write.csv(hy, file='hy.csv')
+
       # UP FRONT ADJUSTMENTS (UFA) original lines 42-67
 
       # UFA1. GTL adjustment in "Other Africa" region. No longer necessary with revised energy balances (9/20/2019)
@@ -70,12 +73,14 @@ module_energy_LA100.IEA_downscale_ctry <- function(command, ...) {
         L100.IEAfull[CTG_entries & L100.IEAfull$PRODUCT == "Gas works gas", hy] *
         COAL_TO_GAS_COEF * -1     # Multiply by -1 because inputs and outputs have a different sign
 
+      ## BY 6/9/22: modification to breakout Uruguay
       # UFA2b. Uruguay also has coal-to-gas with an IO coef higher than our assumed values, and low/zero natural gas
       # Here, rounding errors require the use of a different "flow" (TFC = total final consumption) to re-estimate the production
       L100.IEAfull[L100.IEAfull$COUNTRY == "Uruguay" & L100.IEAfull$FLOW == "TGASWKS" & L100.IEAfull$PRODUCT == "Hard coal (if no detail)", hy] <- 0
       L100.IEAfull[L100.IEAfull$COUNTRY == "Uruguay" & L100.IEAfull$FLOW == "TFC" & L100.IEAfull$PRODUCT == "Gas works gas", hy] <-
         L100.IEAfull[CTG_entries & L100.IEAfull$PRODUCT == "Gas works gas", hy] *
         COAL_TO_GAS_COEF * -1     # Multiply by -1 because inputs and outputs have a different sign
+
 
       # UFA3. Turkey has electricity production from primary solid biofuels (elautoc) between 1971 and 1981
       # with no corresponding fuel input by any sectors; add a fuel input to avoid negative numbers later on.
@@ -94,7 +99,29 @@ module_energy_LA100.IEA_downscale_ctry <- function(command, ...) {
         L100.IEAfull[TNONSPEC_entries & L100.IEAfull$FLOW == "TNONSPEC", hy] <-
           L100.IEAfull[TNONSPEC_entries & L100.IEAfull$FLOW == "MAINCHP", hy]
         L100.IEAfull[TNONSPEC_entries & L100.IEAfull$FLOW == "MAINCHP", hy] <- 0
+
+       #UFA5. Several countries bitumen values for NECONSTRUC are misreported in the IEA energy balances 2019
+       # These values are reported in NONENUSE (non-energy use) FLOW but not assigned to NECONSTRUC (construction feedstocks)
+       # We copy NONENUSE/bitumen quantity to NECONSTRUC/bitumen for all regions to address the misreporting of data and subtract
+       # Bitumen usage in regions where it is used in NECHEM (non-energy use chemical sector)
+        NONENUSE_bitumen_entries <- L100.IEAfull$FLOW == "NONENUSE" & L100.IEAfull$PRODUCT == "Bitumen"
+        NECONSTRUC_bitumen_entries <- L100.IEAfull$FLOW == "NECONSTRUC" & L100.IEAfull$PRODUCT == "Bitumen"
+        NECHEM_bitumen_entries <- L100.IEAfull$FLOW == "NECHEM" & L100.IEAfull$PRODUCT == "Bitumen"
+        L100.IEAfull[NECONSTRUC_bitumen_entries,hy] <-  L100.IEAfull[NONENUSE_bitumen_entries,hy] - L100.IEAfull[NECHEM_bitumen_entries,hy]
       }
+
+      # SRSdS, Nov/18/2021
+      # UFA5. Angola has zero entries in electricity consumption of the commercial sector ('COMMPUB' product in the IEA Energy Balances).
+      # We need to relocate part of electricity consumption from the residential sector to the commercial sector to avoid errors in XMLs.
+      # First, get data from the residential sector.
+      ELECT_entries <- L100.IEAfull$COUNTRY == "Angola" & L100.IEAfull$PRODUCT == "Electricity"
+      RESIDENT_entries <- L100.IEAfull[ELECT_entries & L100.IEAfull$FLOW == "RESIDENT", hy]
+      # Fraction of the residential sector electricity consumption to be kept. The remainder (1 - energy.RESID_FRAC_OF_BLD_ELEC) will be
+      # relocated to the commercial sector.
+      energy.RESID_FRAC_OF_BLD_ELEC <- 0.6   # Based on data from South Africa. Replace here if specific data for Angola is obtained.
+      # Reassign electricity consumption in residential and commercial sectors.
+      L100.IEAfull[ELECT_entries & L100.IEAfull$FLOW == "COMMPUB", hy] <- RESIDENT_entries * (1 - energy.RESID_FRAC_OF_BLD_ELEC) # Commercial
+      L100.IEAfull[ELECT_entries & L100.IEAfull$FLOW == "RESIDENT", hy] <- RESIDENT_entries * (energy.RESID_FRAC_OF_BLD_ELEC)    # Residential
 
       # The basic problem below is that for the USSR and Yugoslavia, for most years between 1971 and 1989, the IEA
       # didn't have much info on the sectoral allocation of fuel consumption, and a lot of the energy consumption

@@ -39,7 +39,7 @@ module_emissions_L2111.ag_nonco2_IRR <- function(command, ...) {
     # Silence package checks
     SO2_name <- Non.CO2 <- AgProductionTechnology <- AgSupplySector <-
       AgSupplySubsector <- GCAM_commodity <- GLU <- GLU_code <- Non.CO2 <-
-      input.emissions <- region <- year <- GLU_name <- value <- NULL
+      input.emissions <- region <- year <- GLU_name <- value <- GCAM_subsector <- NULL
 
     all_data <- list(...)[[1]]
 
@@ -47,16 +47,16 @@ module_emissions_L2111.ag_nonco2_IRR <- function(command, ...) {
     GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
     basin_to_country_mapping <- get_data(all_data, "water/basin_to_country_mapping")
     A_regions <- get_data(all_data, "emissions/A_regions")
-    L1211.nonco2_tg_R_awb_C_Y_GLU_IRR <- get_data(all_data, "L1211.nonco2_tg_R_awb_C_Y_GLU_IRR") %>%
+    L1211.nonco2_tg_R_awb_C_Y_GLU_IRR <- get_data(all_data, "L1211.nonco2_tg_R_awb_C_Y_GLU_IRR", strip_attributes = TRUE) %>%
       # Replace GLU code with GLU name
       replace_GLU(basin_to_country_mapping)
-    L1221.ghg_tg_R_agr_C_Y_GLU_IRR <- get_data(all_data, "L1221.ghg_tg_R_agr_C_Y_GLU_IRR") %>%
+    L1221.ghg_tg_R_agr_C_Y_GLU_IRR <- get_data(all_data, "L1221.ghg_tg_R_agr_C_Y_GLU_IRR", strip_attributes = TRUE) %>%
       # Replace GLU code with GLU name
       replace_GLU(basin_to_country_mapping)
-    L211.AGRBio <- get_data(all_data, "L211.AGRBio")
-    L211.AWB_BCOC_EmissCoeff <- get_data(all_data, "L211.AWB_BCOC_EmissCoeff")
-    L211.nonghg_max_reduction <- get_data(all_data, "L211.nonghg_max_reduction")
-    L211.nonghg_steepness <- get_data(all_data, "L211.nonghg_steepness")
+    L211.AGRBio <- get_data(all_data, "L211.AGRBio", strip_attributes = TRUE)
+    L211.AWB_BCOC_EmissCoeff <- get_data(all_data, "L211.AWB_BCOC_EmissCoeff", strip_attributes = TRUE)
+    L211.nonghg_max_reduction <- get_data(all_data, "L211.nonghg_max_reduction", strip_attributes = TRUE)
+    L211.nonghg_steepness <- get_data(all_data, "L211.nonghg_steepness", strip_attributes = TRUE)
 
     # ===================================================
     # L2111.AWBEmissions: AWB emissions in all regions
@@ -66,8 +66,8 @@ module_emissions_L2111.ag_nonco2_IRR <- function(command, ...) {
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename(AgSupplySector = GCAM_commodity,
              input.emissions = value) %>%
-      mutate(AgSupplySubsector = paste(AgSupplySector, GLU, sep = "_"),
-             AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = "_"),
+      mutate(AgSupplySubsector = paste(GCAM_subsector, GLU, sep = aglu.CROP_GLU_DELIMITER),
+             AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = aglu.IRR_DELIMITER),
              input.emissions = round(input.emissions, emissions.DIGITS_EMISSIONS)) %>%
       # Rename SO2 emissions
       rename_SO2(A_regions, is_awb = TRUE) %>%
@@ -81,8 +81,8 @@ module_emissions_L2111.ag_nonco2_IRR <- function(command, ...) {
       left_join_error_no_match(GCAM_region_names, by = "GCAM_region_ID") %>%
       rename(AgSupplySector = GCAM_commodity,
              input.emissions = value) %>%
-      mutate(AgSupplySubsector = paste(AgSupplySector, GLU, sep = "_"),
-             AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = "_"),
+      mutate(AgSupplySubsector = paste(GCAM_subsector, GLU, sep = aglu.CROP_GLU_DELIMITER),
+             AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = aglu.IRR_DELIMITER),
              input.emissions = round(input.emissions, emissions.DIGITS_EMISSIONS)) %>%
       select(region, AgSupplySector, AgSupplySubsector, AgProductionTechnology, year,
              Non.CO2, input.emissions)
@@ -90,19 +90,19 @@ module_emissions_L2111.ag_nonco2_IRR <- function(command, ...) {
     # L2111.AGRBio, L2111.AWB_BCOC_EmissCoeff, L2111.nonghg_max_reduction, L2111.nonghg_steepness: repeat by irr/rfd and copy
     Irr_Rfd <- tibble(Irr_Rfd = c("IRR", "RFD"))
     L2111.AGRBio <- repeat_add_columns(L211.AGRBio, Irr_Rfd) %>%
-      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = "_")) %>%
+      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = aglu.IRR_DELIMITER)) %>%
       select(-Irr_Rfd)
 
     L2111.AWB_BCOC_EmissCoeff <- repeat_add_columns(L211.AWB_BCOC_EmissCoeff, Irr_Rfd) %>%
-      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = "_")) %>%
+      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = aglu.IRR_DELIMITER)) %>%
       select(-Irr_Rfd)
 
     L2111.nonghg_max_reduction <- repeat_add_columns(L211.nonghg_max_reduction, Irr_Rfd) %>%
-      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = "_")) %>%
+      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = aglu.IRR_DELIMITER)) %>%
       select(-Irr_Rfd)
 
     L2111.nonghg_steepness <- repeat_add_columns(L211.nonghg_steepness, Irr_Rfd) %>%
-      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = "_")) %>%
+      mutate(AgProductionTechnology = paste(AgSupplySubsector, Irr_Rfd, sep = aglu.IRR_DELIMITER)) %>%
       select(-Irr_Rfd)
     # ===================================================
 

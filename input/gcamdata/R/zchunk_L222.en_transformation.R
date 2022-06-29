@@ -46,6 +46,7 @@ module_energy_L222.en_transformation <- function(command, ...) {
              "L122.IO_R_oilrefining_F_Yh"))
   } else if(command == driver.DECLARE_OUTPUTS) {
     return(c("L222.Supplysector_en",
+             "L222.SectorUseTrialMarket_en",
              "L222.SubsectorLogit_en",
              "L222.SubsectorShrwt_en",
              "L222.SubsectorShrwtFllt_en",
@@ -80,22 +81,22 @@ module_energy_L222.en_transformation <- function(command, ...) {
 
     # Load required inputs
     GCAM_region_names <- get_data(all_data, "common/GCAM_region_names")
-    calibrated_techs <- get_data(all_data, "energy/calibrated_techs")
+    calibrated_techs <- get_data(all_data, "energy/calibrated_techs", strip_attributes = TRUE)
     A_regions <- get_data(all_data, "energy/A_regions")
-    A22.sector <- get_data(all_data, "energy/A22.sector")
-    A22.subsector_logit <- get_data(all_data, "energy/A22.subsector_logit")
-    A22.subsector_shrwt <- get_data(all_data, "energy/A22.subsector_shrwt")
-    A22.subsector_interp <- get_data(all_data, "energy/A22.subsector_interp")
-    A22.globaltech_coef <- get_data(all_data, "energy/A22.globaltech_coef")
+    A22.sector <- get_data(all_data, "energy/A22.sector", strip_attributes = TRUE)
+    A22.subsector_logit <- get_data(all_data, "energy/A22.subsector_logit", strip_attributes = TRUE)
+    A22.subsector_shrwt <- get_data(all_data, "energy/A22.subsector_shrwt", strip_attributes = TRUE)
+    A22.subsector_interp <- get_data(all_data, "energy/A22.subsector_interp", strip_attributes = TRUE)
+    A22.globaltech_coef <- get_data(all_data, "energy/A22.globaltech_coef", strip_attributes = TRUE)
     A22.globaltech_cost <- get_data(all_data, "energy/A22.globaltech_cost")
     A22.globaltech_cost_low  <- get_data(all_data, "energy/A22.globaltech_cost_low")
-    A22.globaltech_shrwt <- get_data(all_data, "energy/A22.globaltech_shrwt")
-    A22.globaltech_interp <- get_data(all_data, "energy/A22.globaltech_interp")
+    A22.globaltech_shrwt <- get_data(all_data, "energy/A22.globaltech_shrwt", strip_attributes = TRUE)
+    A22.globaltech_interp <- get_data(all_data, "energy/A22.globaltech_interp", strip_attributes = TRUE)
     A22.globaltech_co2capture <- get_data(all_data, "energy/A22.globaltech_co2capture")
-    A22.globaltech_retirement <- get_data(all_data, "energy/A22.globaltech_retirement")
-    A22.globaltech_keyword <- get_data(all_data, "energy/A22.globaltech_keyword")
+    A22.globaltech_retirement <- get_data(all_data, "energy/A22.globaltech_retirement", strip_attributes = TRUE)
+    A22.globaltech_keyword <- get_data(all_data, "energy/A22.globaltech_keyword", strip_attributes = TRUE)
     L122.out_EJ_R_gasproc_F_Yh <- get_data(all_data, "L122.out_EJ_R_gasproc_F_Yh")
-    L122.out_EJ_R_refining_F_Yh <- get_data(all_data, "L122.out_EJ_R_refining_F_Yh")
+    L122.out_EJ_R_refining_F_Yh <- get_data(all_data, "L122.out_EJ_R_refining_F_Yh", strip_attributes = TRUE)
     L122.IO_R_oilrefining_F_Yh <- get_data(all_data, "L122.IO_R_oilrefining_F_Yh")
 
     # ===================================================
@@ -109,6 +110,11 @@ module_energy_L222.en_transformation <- function(command, ...) {
       L222.Supplysector_en
     # 2b. Subsector information
     # L222.SubsectorLogit_en: Subsector logit exponents of energy transformation sectors
+
+    # Create a trial market to help with simultaneities related to refining
+    L222.SectorUseTrialMarket_en <- filter(L222.Supplysector_en, supplysector == "refining") %>%
+      select(region, supplysector) %>%
+      mutate(use.trial.market = 1)
 
     A22.subsector_logit %>%
       write_to_all_regions(c(LEVEL2_DATA_NAMES[["SubsectorLogit"]], LOGIT_TYPE_COLNAME), GCAM_region_names) ->
@@ -412,6 +418,13 @@ module_energy_L222.en_transformation <- function(command, ...) {
       add_precursors("energy/A22.sector", "common/GCAM_region_names") ->
       L222.Supplysector_en
 
+    L222.SectorUseTrialMarket_en %>%
+      add_title("Refining sector trial markets") %>%
+      add_units("unitless") %>%
+      add_comments("Trial market in the refining sector helps the model solve the simultaneities associated with refining") %>%
+      same_precursors_as(L222.Supplysector_en) ->
+      L222.SectorUseTrialMarket_en
+
     L222.SubsectorLogit_en %>%
       add_title("Subsector logit exponents of energy transformation sectors") %>%
       add_units("Unitless") %>%
@@ -624,7 +637,7 @@ module_energy_L222.en_transformation <- function(command, ...) {
       add_precursors("energy/A22.globaltech_cost_low") ->
       L222.GlobalTechCost_low_en
 
-    return_data(L222.Supplysector_en, L222.SubsectorLogit_en, L222.SubsectorShrwt_en,
+    return_data(L222.Supplysector_en, L222.SectorUseTrialMarket_en, L222.SubsectorLogit_en, L222.SubsectorShrwt_en,
                 L222.SubsectorShrwtFllt_en, L222.SubsectorInterp_en, L222.SubsectorInterpTo_en,
                 L222.StubTech_en, L222.GlobalTechInterp_en, L222.GlobalTechCoef_en, L222.GlobalTechCost_en,
                 L222.GlobalTechShrwt_en, L222.GlobalTechCapture_en, L222.GlobalTechShutdown_en,
