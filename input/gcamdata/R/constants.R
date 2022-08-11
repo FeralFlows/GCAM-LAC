@@ -395,6 +395,10 @@ aglu.CARBON_STATE <- c("q3_value")
 # Multiplier on the ghost share for irrigated land
 aglu.IRR_GHOST_SHARE_MULT <- 0.25
 
+# Adding a switch here to use the beforeadjustfile
+
+aglu.USE_BEFORE_ADJUST_FOREST_FILE <- TRUE
+
 # unManaged Land Value
 # 1975$/thou km2 ??
 aglu.UNMANAGED_LAND_VALUE <- 1

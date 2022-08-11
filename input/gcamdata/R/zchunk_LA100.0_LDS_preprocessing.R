@@ -226,6 +226,46 @@ module_aglu_LA100.0_LDS_preprocessing <- function(command, ...) {
                                L100.LDS_ag_prod_t$GTAP_crop == "VgtbFrshNES" &
                                L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
 
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "Potatoes" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "Potatoes" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "SugarCane" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "SugarCane" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "Watermelons" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "Watermelons" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+    L100.LDS_ag_HA_ha$value[L100.LDS_ag_HA_ha$iso == "twn" &
+                              L100.LDS_ag_HA_ha$GTAP_crop == "Soybeans" &
+                              L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "twn" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "Soybeans" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU078"] <- 1
+
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "egy" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "Clovr4FrgSlg" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU087"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "egy" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "Tomatoes" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU087"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "egy" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "SeedCotton" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU087"] <- 1
+    L100.LDS_ag_prod_t$value[L100.LDS_ag_prod_t$iso == "egy" &
+                               L100.LDS_ag_prod_t$GTAP_crop == "BrdBeansDry" &
+                               L100.LDS_ag_HA_ha$GLU == "GLU087"] <- 1
 
     ### SRSdS, 31Jan22: Mauritania shows calibration issues because it has zero forest land in SAGE (global gridded map of vegetation types)
     # but has non-zero production of the "roundwood" commodity in FAOSTAT. To solve this, We need to remap land types so that to allocate

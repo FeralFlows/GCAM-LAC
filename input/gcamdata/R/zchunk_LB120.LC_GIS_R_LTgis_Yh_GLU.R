@@ -25,8 +25,8 @@ module_aglu_LB120.LC_GIS_R_LTgis_Yh_GLU <- function(command, ...) {
              FILE = "aglu/SAGE_LT",
              FILE = "aglu/Various_CarbonData_LTsage",
              "L100.Land_type_area_ha",
-             "L100.Ref_veg_carbon_Mg_per_ha"))
- #            FILE = "aglu/LDS/L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust"))
+             "L100.Ref_veg_carbon_Mg_per_ha",
+             FILE = "aglu/LDS/L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust"))
   } else if(command == driver.DECLARE_OUTPUTS) {
     return(c("L120.LC_bm2_R_LT_Yh_GLU",
              "L120.LC_bm2_R_UrbanLand_Yh_GLU",
@@ -53,7 +53,7 @@ module_aglu_LB120.LC_GIS_R_LTgis_Yh_GLU <- function(command, ...) {
       iso_GCAM_regID
     LDS_land_types <- get_data(all_data, "aglu/LDS/LDS_land_types")
     SAGE_LT <- get_data(all_data, "aglu/SAGE_LT")
-  #  L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust <- get_data(all_data, "aglu/LDS/L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust")
+    L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust <- get_data(all_data, "aglu/LDS/L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust")
     L100.Land_type_area_ha <- get_data(all_data, "L100.Land_type_area_ha")
     L100.Ref_veg_carbon_Mg_per_ha <- get_data(all_data, "L100.Ref_veg_carbon_Mg_per_ha")
     Various_CarbonData_LTsage <- get_data(all_data,"aglu/Various_CarbonData_LTsage") %>%
@@ -294,25 +294,46 @@ module_aglu_LB120.LC_GIS_R_LTgis_Yh_GLU <- function(command, ...) {
       mutate(year = as.integer(year)) ->
       L120.LC_bm2_R_LT_Yh_GLU
 
-    ## BY 6/30/22 : Comment out for now
-#     # scale forest to avoid negative unmanaged forest area which caused issue for yield in Pakistan and African regions
-#     # L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust, pulled from L123.LC_bm2_R_MgdFor_Yh_GLU before managed forest scaling, was used here.
-#     L120.LC_bm2_R_LT_Yh_GLU %>%
-#       left_join(L120.LC_bm2_R_LT_Yh_GLU %>%
-#                   spread(Land_Type, value, fill = 0) %>%
-#                   left_join(L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust %>% select(-Land_Type),
-# 			by = c("GCAM_region_ID", "GLU", "year")) %>%
-#                   mutate(nonForScaler =
-#                            if_else((Forest - MgdFor) < 0 & Forest > 0,
-#                                    1 + (Forest - MgdFor)/(Grassland + Shrubland + Pasture), 1),
-#                          ForScaler = if_else((Forest - MgdFor) < 0 & Forest > 0,  MgdFor/Forest ,1)) %>%
-#                   select(GCAM_region_ID, GLU, year, nonForScaler, ForScaler),
-#                 by = c("GCAM_region_ID", "GLU", "year") ) %>%
-#       mutate(value = if_else(Land_Type %in% c("Grassland", "Shrubland" , "Pasture"),
-#                              value * nonForScaler,
-#                              if_else(Land_Type == "Forest", value * ForScaler, value) )) %>%
-#       select(-nonForScaler, -ForScaler) ->
-#       L120.LC_bm2_R_LT_Yh_GLU
+
+    # adding a switch in L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust ----
+    # The file is used if "TRUE"
+    # If not, forest yield could be wrong #' module_aglu_LB123.LC_R_MgdPastFor_Yh_GLU
+    # The file is an output from
+    # It need to be set to not "TRUE" if breaking out regions
+    # Then add L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust.csv from output to AGLU/LDS
+    # For regions with zero forest land but positive production
+    # Areas can be added in that csv
+    if (aglu.USE_BEFORE_ADJUST_FOREST_FILE) {
+      # scale forest to avoid negative unmanaged forest area which caused issue for yield in Pakistan and African regions
+      # L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust, pulled from L123.LC_bm2_R_MgdFor_Yh_GLU before managed forest scaling, was used here.
+
+      L120.LC_bm2_R_LT_Yh_GLU %>%
+        left_join(L120.LC_bm2_R_LT_Yh_GLU %>%
+                    spread(Land_Type, value, fill = 0) %>%
+                    left_join(L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust %>% select(-Land_Type),
+                              by = c("GCAM_region_ID", "GLU", "year")) %>%
+                    mutate(nonForScaler =
+                             if_else((Forest - MgdFor) < 0 & Forest > 0,
+                                     1 + (Forest - MgdFor)/(Grassland + Shrubland + Pasture), 1),
+                           ForScaler = if_else((Forest - MgdFor) < 0 & Forest > 0,  MgdFor/Forest ,1)) %>%
+                    select(GCAM_region_ID, GLU, year, nonForScaler, ForScaler),
+                  by = c("GCAM_region_ID", "GLU", "year") ) %>%
+        #If the forest scaler exceeds a limit,or if the nonForscaler goes negative then don't do this adjustment. It will lead to cropland errors downstream.
+        # These errors happen in years other than calibration years in just in one basin, namely NileR.
+        mutate( ForScaler= if_else(is.nan(ForScaler)|is.na(ForScaler) | ForScaler >= 20 | nonForScaler <1 ,1,ForScaler),
+                nonForScaler= if_else(is.nan(nonForScaler)|is.na(nonForScaler)| ForScaler >= 20| nonForScaler <1,1,nonForScaler),
+               value = if_else(Land_Type %in% c("Grassland", "Shrubland" , "Pasture"),
+                               value * nonForScaler,
+                               if_else(Land_Type == "Forest", value * ForScaler, value) )) %>%
+        select(-nonForScaler, -ForScaler) ->
+        L120.LC_bm2_R_LT_Yh_GLU
+    }
+
+    ##BY Edit 8/11/2022
+    #Copy forest values for Uruguay forward from 2010, so that there is some forest available in 2011-2015
+    L120.LC_bm2_R_LT_Yh_GLU <- L120.LC_bm2_R_LT_Yh_GLU %>%
+      mutate(value = if_else((GCAM_region_ID == 33 & Land_Type == "Forest" & year >= 2011),0.007730,value))
+
 
     # Subset the land types that are not further modified
     L120.LC_bm2_R_UrbanLand_Yh_GLU <- filter(L120.LC_bm2_R_LT_Yh_GLU, Land_Type == "UrbanLand")
@@ -350,8 +371,8 @@ module_aglu_LB120.LC_GIS_R_LTgis_Yh_GLU <- function(command, ...) {
       add_units("bm2") %>%
       add_comments("Land types from SAGE, HYDE, WDPA merged and reconciled; missing zeroes backfilled; interpolated to AGLU land cover years") %>%
       add_legacy_name("L120.LC_bm2_R_LT_Yh_GLU") %>%
-      add_precursors("common/iso_GCAM_regID", "aglu/LDS/LDS_land_types", "aglu/SAGE_LT", "L100.Land_type_area_ha") ->
-   #                  "aglu/LDS/L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust") ->
+      add_precursors("common/iso_GCAM_regID", "aglu/LDS/LDS_land_types", "aglu/SAGE_LT", "L100.Land_type_area_ha",
+                     "aglu/LDS/L123.LC_bm2_R_MgdFor_Yh_GLU_beforeadjust") ->
       L120.LC_bm2_R_LT_Yh_GLU
 
     L120.LC_bm2_R_UrbanLand_Yh_GLU %>%
