@@ -82,3 +82,8 @@ libs/
 input/gcamdata/inst/extdata/energy/IEA_EnergyBalances_2019.csv
 exe/batch-csv-out.csv
 exe/batch-csv-out.csv
+input/INFEWS/policy/all_aglu_emissions_IRR_MGMT_MAC.xml
+input/INFEWS/policy/all_aglu_emissions_IRR_MGMT_MAC_global_modified.xml
+input/INFEWS/policy/all_aglu_emissions_IRR_MGMT_MAC_LAC_modified.xml
+input/INFEWS/policy/LAC_livestock_exp_MAC_USAsteep.xml
+input/INFEWS/policy/LAC_livestock_exp_MAC_USAsteep_full.xml
