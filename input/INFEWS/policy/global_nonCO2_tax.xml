@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><scenario name="NonCO2tax">
+    <world>
+        <region name="USA">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+                <fixedTax year="2020">112.398</fixedTax>
+                <fixedTax year="2025">246.345</fixedTax>
+				<fixedTax year="2030">304.04</fixedTax>
+                <fixedTax year="2035">391.629</fixedTax>
+                <fixedTax year="2040">499.681</fixedTax>
+                <fixedTax year="2045">846.193</fixedTax>
+                <fixedTax year="2050">1751.4</fixedTax>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Northern">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Southern">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Western">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Canada">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Central Asia">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="China">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="EU-12">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="EU-15">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Europe_Eastern">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Europe_Non_EU">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="European Free Trade Association">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="India">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Indonesia">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Japan">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Middle East">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Pakistan">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Russia">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Africa">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Asia">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Korea">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Southeast Asia">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Taiwan">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Eastern">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Australia_NZ">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Argentina">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Brazil">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Central America and Caribbean">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Colombia">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Mexico">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="South America_Northern">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="South America_Southern">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+        <region name="Uruguay">
+            <ghgpolicy name="nonCO2">
+                <market>global</market>
+            </ghgpolicy>
+        </region>
+    </world>
+</scenario>
